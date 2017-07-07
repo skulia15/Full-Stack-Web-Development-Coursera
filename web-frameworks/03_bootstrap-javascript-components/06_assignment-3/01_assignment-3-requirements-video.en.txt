@@ -1,0 +1,29 @@
+In the third assignment we're going to
+continue to further modify the index or html file. There are four tasks in this assignment,
+and let me illustrate those four tasks
+to you by showing you the locations of those four tasks in
+the updated index.html page. Going to your index.html page,
+the first task is to remove the tool tab from
+this button here so when you put your mouse cursor on the button
+it will no longer show the tool tab. Now, in bootstrap on a single element you
+cannot have multiple data attributes. So which means that multiple
+JavaScript competence can't be invoked from a single element. So that's why we have to remove the tool
+tab because I'm gonna be making use of this button to invoke a model later on to show the reservation form for
+the table. The second task is to
+shift the reservation form and the alert message
+that was there in the fourth content row on this page into a model. So as you can see,
+this model now contains the table reservation form here, and also the alert
+message has been moved into this model. Now, to invoke this model,
+we are going to use the reserve table button that we have
+already included in the Jumbotron. That is the third task for you. So, the third task is to setup
+the reserve table button so that when it is clicked the model
+will be shown on the screen. The last task of this assignment is to include another row here. In this row we will have
+a button group with two radio buttons here which
+allows the user to specify weather they want the non-smoking
+or the smoking section of the restaurant. So this is a radio button group. By default,
+the non-smoking button is selected. You can allow the user to select one or
+the other buttons, so when one of the buttons is clicked,
+the other one should be deselected. The row should have
+the label name section and the Non-Smoking button
+should have green color, and the Smoking button should have red color. Make use of Bootstrap's standard colors
+for configuring these two buttons there. So this completes the third assignment.

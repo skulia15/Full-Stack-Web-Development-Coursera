@@ -1,0 +1,313 @@
+1
+00:00:03,060 --> 00:00:06,863
+Our second assignment involves various
+
+2
+00:00:06,863 --> 00:00:11,894
+modifications to be done
+to the index.html file that
+
+3
+00:00:11,894 --> 00:00:16,940
+you had at the end of the last
+exercise of this module.
+
+4
+00:00:18,700 --> 00:00:23,631
+To this page,
+you're going to add some fonts,
+
+5
+00:00:23,631 --> 00:00:29,195
+some buttons, and a media object,
+and also a label.
+
+6
+00:00:32,735 --> 00:00:39,470
+The current state of the index.html
+page is as shown here.
+
+7
+00:00:50,198 --> 00:00:55,470
+There are four tasks to be
+completed in this assignment.
+
+8
+00:00:55,470 --> 00:01:00,960
+The first task is to include a form
+
+9
+00:01:00,960 --> 00:01:06,340
+within your nav bar that allow
+the users to input their
+
+10
+00:01:06,340 --> 00:01:10,460
+registration information for
+this website and login into the website.
+
+11
+00:01:10,460 --> 00:01:13,280
+Of course,
+you just include the form at this moment,
+
+12
+00:01:13,280 --> 00:01:15,585
+it will not work at this moment.
+
+13
+00:01:15,585 --> 00:01:18,740
+The contents of this
+form should be like this.
+
+14
+00:01:18,740 --> 00:01:24,550
+So, explore the nav bar forms in more
+
+15
+00:01:24,550 --> 00:01:30,670
+detail on the Bootstrap side to understand
+how you would design something like this.
+
+16
+00:01:30,670 --> 00:01:35,730
+The second task of your assignment
+
+17
+00:01:35,730 --> 00:01:39,612
+is to include a button here.
+
+18
+00:01:39,612 --> 00:01:44,810
+This button should be
+included in its own div here,
+
+19
+00:01:44,810 --> 00:01:49,940
+so notice that this is
+occupying the left over space
+
+20
+00:01:49,940 --> 00:01:53,550
+in this row of this.
+
+21
+00:01:53,550 --> 00:01:58,280
+Now this button, when you click on it,
+it will take you down to a form at
+
+22
+00:01:58,280 --> 00:02:05,830
+the bottom, which the users can use to
+preserve their table on this restaurant.
+
+23
+00:02:08,610 --> 00:02:13,090
+When you click on the button It
+will take you down to a form,
+
+24
+00:02:13,090 --> 00:02:17,080
+which is at the bottom of this page.
+
+25
+00:02:17,080 --> 00:02:24,580
+Now this form is included as another
+row in the content of the webpage here.
+
+26
+00:02:24,580 --> 00:02:26,270
+Now what does this form contain?
+
+27
+00:02:26,270 --> 00:02:30,800
+This form contains information
+that the users need to submit
+
+28
+00:02:30,800 --> 00:02:34,290
+in order to reserve on the website.
+
+29
+00:02:34,290 --> 00:02:39,260
+So here we have a set of radio
+buttons that allow us to
+
+30
+00:02:39,260 --> 00:02:44,640
+select the number of guests, and then we
+have a Date and Time specification here.
+
+31
+00:02:44,640 --> 00:02:48,160
+Now, notice in particular
+inside the Date and Time
+
+32
+00:02:50,400 --> 00:02:55,290
+boxes here, you have the glyphicons for
+the date and time included.
+
+33
+00:02:55,290 --> 00:03:00,440
+Again, read the forms in the Bootstrap
+
+34
+00:03:00,440 --> 00:03:05,240
+documentation to understand how you
+would put glyphicons inside there.
+
+35
+00:03:06,680 --> 00:03:10,890
+And of course you have
+the action button here.
+
+36
+00:03:10,890 --> 00:03:15,750
+Which, when clicked should,
+of course obviously at this stage,
+
+37
+00:03:15,750 --> 00:03:20,800
+this form will not work, but
+you should have all these in place.
+
+38
+00:03:20,800 --> 00:03:24,500
+In the, at the end of this assignment.
+
+39
+00:03:24,500 --> 00:03:30,680
+Now, another part that you will have
+here is an alert being displayed here.
+
+40
+00:03:30,680 --> 00:03:37,195
+This alert in particular has
+a link also embedded in here.
+
+41
+00:03:37,195 --> 00:03:40,555
+And also a cross button embedded in here.
+
+42
+00:03:40,555 --> 00:03:44,955
+Again, study alerts to understand how
+you will design this warning alert.
+
+43
+00:03:46,155 --> 00:03:51,245
+This is part of this column
+that includes the font.
+
+44
+00:03:53,175 --> 00:03:58,050
+Our final task is to apply
+the media object class
+
+45
+00:03:58,050 --> 00:04:01,600
+to the second row of this page.
+
+46
+00:04:01,600 --> 00:04:05,560
+Recall that we applied the media object
+class to the first and the third row,
+
+47
+00:04:05,560 --> 00:04:09,150
+but we left the second row untied, and
+
+48
+00:04:09,150 --> 00:04:13,010
+I mentioned that we will do that
+as part of the second assignment.
+
+49
+00:04:13,010 --> 00:04:15,420
+In here I am using a media object.
+
+50
+00:04:15,420 --> 00:04:21,180
+In particular note that the image
+is displayed to the right
+
+51
+00:04:21,180 --> 00:04:28,030
+after content rather than to
+the left as we did for the other.
+
+52
+00:04:28,030 --> 00:04:33,316
+Also this should include a label here
+
+53
+00:04:33,316 --> 00:04:38,437
+with the word New inside the label.
+
+54
+00:04:40,313 --> 00:04:44,210
+This completes your second assignment.
+
+55
+00:04:44,210 --> 00:04:48,420
+So at the end of this assignment,
+your webpage should look like this.
+
+56
+00:04:49,640 --> 00:04:54,910
+First, it should have a way for
+the user to enter the login information.
+
+57
+00:04:54,910 --> 00:05:00,700
+Second, there should be a button
+here that when clicked,
+
+58
+00:05:00,700 --> 00:05:04,560
+will take the user to a reservation form.
+
+59
+00:05:04,560 --> 00:05:08,950
+Third, there will be
+a reservation form at the bottom,
+
+60
+00:05:08,950 --> 00:05:12,780
+which includes the selection of
+the number of guests and date and time.
+
+61
+00:05:12,780 --> 00:05:16,790
+And also an alert being displayed there.
+
+62
+00:05:16,790 --> 00:05:19,290
+Dismissable alert being displayed there.
+
+63
+00:05:19,290 --> 00:05:21,440
+And then finally, of course,
+
+64
+00:05:21,440 --> 00:05:26,780
+the second row being styled
+properly using a media object.
+
+65
+00:05:27,930 --> 00:05:30,900
+The image here Is already provided for
+
+66
+00:05:30,900 --> 00:05:34,790
+you in the IMG folder that
+you downloaded earlier.
+
+67
+00:05:34,790 --> 00:05:40,740
+This image is called the buffet.png.
+
+68
+00:05:40,740 --> 00:05:43,740
+And the label to be displayed here.

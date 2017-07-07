@@ -1,0 +1,44 @@
+Let us now talk about
+Bootstrap support for forms. In particular, the various classes that Bootstrap
+provides in order to style the forms. We have seen forms already in a lot
+of detail, in the previous course. So in this lecture,
+I will primarily deal with Bootstrap's own classes that are available
+to style the forms. Forms in Bootstrap are created
+using the form tags. So all the elements of the form
+are enclosed inside the form tags. If we do not specify any class for
+the form, then the standard layout for the form is used. We can specify the form
+class as form-horizontal. And if we do that,
+then we can have the labels to be displayed to the left
+side of the data entry fields. So as you see in this particular example,
+when you specify a label together with
+the data entry element, then we would use a form-group
+to enclose these two. So in here, I am specifying
+the label as the first name there, which is shown in the form
+on the left hand side. To the right of it in
+the same horizontal line, the actual field for
+entering the data is shown. Now by default within Bootstrap, the form group supports the row class. So inside the form group,
+you can use the column classes in order to style the elements
+inside the form group. So here, you see me using the column
+class for both the label as well as for the input element there. We can also define inline forms. Inline forms are shown
+completely in a single line. So this could be very useful, for example, if you want to include in
+your navbar a method for the user to type in their username and
+password and log in to your website. So inline forms use the class form-inline,
+and inside there you can
+specify the form groups. In particular, in this example,
+you see that for the label tag, I am specifying the class as sr-only, meaning that those labels
+are valid only for screen readers. Now for a normal visual display,
+those labels will be hidden. Instead, we are using the placeholder
+inside the form element itself to identify what the user is supposed
+to type into that field in the form. Another class that Bootstrap supports
+is called as an input-group. An input-group allows you to
+group together a set of elements. Now, for any data entry field
+that you have within your form, you can also have an input-group-addon, so that you can add elements to the left and
+right side of your group. So in this example,
+you see me including the left and right parenthesis to the field where I
+allow the user to type in an area code. Say, for example, a telephone number. So in here, I am attaching using the
+input-group-addon the left parentheses, and the input-group-addon the right
+parentheses for this group. So these group addons,
+I am taking the help of a div to put them together with my field there. Now, we'll move on to the next exercise, where we'll continue to
+work on our website. We're gonna add buttons to the web site,
+and also use various form
+elements in order to create a user feedback form for our restaurant.

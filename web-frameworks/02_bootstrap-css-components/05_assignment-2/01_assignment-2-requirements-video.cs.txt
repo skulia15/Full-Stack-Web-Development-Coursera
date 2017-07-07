@@ -1,0 +1,23 @@
+Náš druhý úkol zahrnuje různorodé modifikace souboru index.html, který jste měli na konci předešlého cvičení tohoto modulu. Této stránce přidáte nějaké fonty, tlačítka, media objekt, a také label. Aktuální stav stránky index.html je následující. V tomto zadání jsou 4 úkoly. Prvním úkolem je přidat formulář --form-- do vaší navigační lišty --nav bar--, 
+která umožní uživatelům vložit jejich registrační údaje pro tyto stránky a přihlásit se do nich. Samozřejmě, v tuto chvíli přidáte jen ten form, nyní ještě fungovat nebude. Obsah vašeho formu by měl být identický s tímto. Prozkoumejte detailněji formy nav-barů na stránkách Bootstrapu, 
+abyste věděli, jak něco takového vyrobit. Druhým úkolem vašeho zadání je sem na toto místo přidat tlačítko --button--. Tento button by měl být umístěn ve svém vlastním divu. Všimněte si, že ten button zabírá zbývající místo v této řadě --row-- tohoto Jumbotronu. K buttonu: pokud na něj kliknete,
+přesune vás na form, který je umístěn ve spodní části stránky, kde si uživatelé 
+budou moci zarezervovat stůl v této restauraci. Když kliknete na button,
+přesune vás dolů k formu, který je umístěn ve spodní části stránek. Tento form je vnořen 
+v samostatné row těchto stránek. Co tento form obsahuje? Obsahuje informace, které uživatelé potřebují zadat pro vytvoření rezervace na stránkách. Zde máme set radio buttonů, které nám umožní zadat počet hostů, a potom tu máme volbu data a času. Všimněte si, že v boxech pro Datum a Čas máme glyphicony pro datum a čas. Opakuji : pročtěte si formuláře --formy-- 
+na stránkách Bootstrapu, abyste zjistili, jak se dají vkládat glyphicony. A samozřejmě tu máme ještě action button. Který by měl, pokud na něj klikneme,
+- samozřejmě v této fázi form ještě fungovat nebude,
+ale měli byste to mít připravené na konci tohoto zadání. Další část práce, kterou zde budete dělat,
+je zobrazení upozorňovací hlášky --alert--. Tento konkrétní alert obsahuje odkaz --link--. A také button X k jeho uzavření. Opakuji: Prostudujte si alerty, abyste věděli,
+jakým způsobem s nimi pracovat. Toto je část této sekce,
+která obsahuje font. Naším posledním úkolem je aplikovat
+classu media object ke druhé row této stránky. Vzpomeňte si, že jsme použili 
+classu media object v první a třetí row, ale druhou row jsme nechali nedotčenou, protože, jak jsem zmínil dříve,
+to bude součástí až tohoto druhého zadání. Zde používám media object. A to tak, že je obrázek zobrazen na pravé straně až za obsahem oproti tomu, 
+kdy jsme ho v jiném media objectu dali nalevo. Také by tu měl být zastoupen label se slovem "New" uvnitř. A toto završuje vaše druhé zadání. Takže, na konci toho zadání
+by vaše stránka měla vypadat takto. Zaprvé: by měla mít způsob, 
+jakým se uživatelé mohou přihlásit. Za druhé: by tu měl být button, které přesune uživatele k rezervačnímu formu. Za třetí: Ve spodní části stránek
+bude rezervační form, který obsahuje selekci počtu hostů,
+datum, čas, a také uzavíratelný alert zobrazen zde. který obsahuje selekci počtu hostů,
+datum, čas, a také uzavíratelný alert zobrazen zde. který obsahuje selekci počtu hostů,
+datum, čas, a také uzavíratelný alert zobrazen zde. A poté, nakonec, samozřejmě druhou row stylizovanou správným použitím media objectu. Tento obrázek vám je již poskytnut v IMG souboru, který jste si stáhli dříve. Jmenuje se buffet.png. A label zobrazit zde.

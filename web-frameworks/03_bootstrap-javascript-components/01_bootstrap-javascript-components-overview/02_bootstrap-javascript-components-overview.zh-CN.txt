@@ -1,0 +1,27 @@
+在前面一些课里我们学习了一系列 通过 CSS 类来实现的 Bootstrap 组件 接下来我们将会学习 JavaScript
+对 Bootstrap 组件的支持 所有我们接下来将要学习到的组件 都需要有 JavaScript 插件作为基础 正如我们已经学习过的 Bootstrap 提供了很多 CSS 类
+你可以通过在许多 HTML 元素上应用它们 来创建 Bootstrap 组件 事实上 仅仅通过应用一些 Bootstrap 类 就可以创建这些非常棒的组件了 但这样会有一个问题 那就是你将完全忽视掉
+JavaScript 插件的强大功用 以及一些基于 JavaScript 的 Bootstrap 组件 那么接下来就让我们学习如何应用 Bootstrap 的基于 JavaScript 的组件 正如我们已经学习过的 许多组件都是以 一个基础 CSS 类来作为最外层的封装的
+比如说实现按钮时的 "class=btn" 又或是实现表格时的 "class=form"
+或者 "class=table" 如果想要实现更多的效果
+我们需要在这最外层封装的属性设置中 加入其它一些 CSS 类别 我们以按钮为例 如果单纯地应用 "class=btn"
+那么就将会是一个最简单的按钮 如果想要设置颜色的话
+就需要诸如 "class=btn-default" 这样的设置了 又或是想要设置大小的话 就是 btn-xs 之类的 我们甚至能够设置其 block 属性
+亦即设置其是否填充整行 总结起来 就是在 btn 这个基类之后 我们还能根据我们的需要来增添一些
+其它用来修饰的类 类似的还有我们学过的 nav 类 它用于创建导航栏中的组件 它也有诸如 navbar-nav 这样的用于修饰的类 在本节课中 我们将会重新学习这个 nav 类 不过我们这次将主要学习
+nav-tabs 和 nav-pills 类的使用 它们能够创建出一些不同的有意思的导航元件 那么 让我们先谈谈 Bootstrap 的 JavaScript 插件
+本身是什么东西 事实上 JavaScript 对 Bootstrap 的支持
+就是通过各种 JavaScript 插件来完成的 这些插件是建立在 jQuery 上的
+所以要想让这些插件发挥作用的话 你需要引入 jQuery 那也是为什么当我们引入
+Bootstrap 的 JavaScript 组件时 我们同时引入了 jQuery 这些插件都被设计得足够独立
+这意味着一般来说你只需要引入 你需要的那些插件 当然一下子引入所有插件也是可行的 这张图可能可以给你 JavaScript, jQuery 和 Bootstrap 组件之间关系
+的一个直观理解 如果你把 JavaScript 看成是一个巨大的相扑选手 那么 jQuery 就是一个压缩版的相扑选手 比起 JavaScript, 使用它会更加容易 因为有许多有趣的 jQuery 组件能够在 很多方面帮助到你的 web 开发 至于 Bootstrap 则还多做了一步 它将一些 jQuery 插件封装了起来
+你可以理解成将它们装进了一个小盒子 从而可以单独地方便地使用它们 你应该很快就能发现你可以
+在一行 JavaScript 代码也不写的情况下 使用 Bootstrap 的相关组件 这也是使用 Bootstrap 的 JavaScript 组件的
+优势之一 不过相应的 这会使其灵活性大大降低 毕竟一行代码都不写意味着难以定制 那么怎么才能引用 Bootstrap 的 JavaScript 插件呢 事实上我们已经在我们代码底部写了 引入 jQuery 库以及 Bootstrap 完整的
+JavaScript 插件集 的两块代码 我想再提一下的是 Bootstrap 的 JavaScript 组件 可以在不写一行 JavaScript 代码的情况下使用 这是因为 Bootstrap 有一系列 优先级很高的接口 这些接口是通过 data-xxx 属性来接入的 其中 xxx 可以是 toggle, spy 之类的 Bootstrap JS 组件定义的属性 当你想在你的网页中使用这些组件时 直接将相应的  HTML 元件的 class
+设置为相应的属性即可 然后你就可以在
+不写一行 JavaScript 代码的情况下 使用相应的 JavaScript 组件了 当然也正如我所提及的 这会使灵活性大大降低 如果想要做更多的定制
+则还是要写一些 jQuery 代码的 不过即使只用 data-xxx 属性 也能实现很多功能了 而这也正是我们接下来要学习的 我们将会学习一套相当完备的 JavaScript 接口 它们将会帮助你比较全面地掌握
+你需要掌握的 jQuery 语法 以及 JavaScript 的相关知识
+【翻译 - Carefree0910】

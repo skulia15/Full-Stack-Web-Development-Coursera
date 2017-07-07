@@ -1,0 +1,80 @@
+Many a times, you may wish to draw
+the attention of visitors to your website, to certain parts of your website. Or maybe you may want to
+deliver a message to users. This is where the radius, available mechanisms to deliver alerts to users,
+becomes very, very valuable. So in this lecture we will examine
+bootstrapped support for alerting users. We have labels, we have badges,
+we have alerts and progress bars. For simple updates to users labels and
+badges may be more than sufficient. They just display a small piece of
+information within the website. Say, for example,
+display the number of unread e-mails. Or maybe an item that is new or
+updated at this moment. These kind of things can easily be
+delivered using labels and badges. Alerts or error or warning messages
+can easily be delivered to users by highlighting the messages on the website
+by surrounding it with appropriate background so
+that it's clearly visible to the users. Progress bars are a way of indicating
+progress of any activity that is going on on your website, like uploading or
+downloading a file for example. Here is an example of the use of
+labels and badges on your website. Now, to use a label in bootstrap
+we will use the span tag and then apply the class label and
+depending on the color that you want your label to be, you would
+use label primary info danger and so on. And you can also specify
+the size of the label. Similarly, badges also use this span tag with the class badge
+applied to the span tag. So as we have already seen Labels. Use the class's label and label-color of the label that you want to use,
+and also the size. Badges are fairly straightforward. There's a single class called badge
+that you apply to the span tag, and then whatever is the contents inside the
+span tags will be displayed as a badge. The badge will automatically
+adapt to where it is displayed. So for example if the item for which it
+is included is with a darker background, the badge will be displayed in lighter
+color to match the other lettering within within the parent tech. Badges are interesting in the sense that
+if there is no content within the badge, the badge just will
+automatically collapse. So that it won't be visible on the screen. So that's one easy way of
+using badges on your website. Alerts are another way of
+delivering messages to the user. An alert will be displayed at the location
+indicated within the webpage. That alert will be
+surrounded by a bounding box with a background color that is
+determined by the specification. So in this example,
+you see me saying alert warning. So that's why the background
+color is yellow in color. In addition, within this alert,
+I am including the icon the cross icon there which when
+clicked will dismiss the alert. To make this work, of course,
+I need to include an icon for that I am using the button tag. And inside the button tag I
+am applying the close class. And also the class is
+displayed by using the times icon from HTML and for the alert itself, I need to apply the alert+dismissible
+class for this to work correctly. We can also include links within the
+messages that we displayed in the alerts, so in this example you see me using
+a link being displayed in the alert. So the links are actionable which means
+that the user can click on the link to perform the appropriate
+link action there. As you saw in the example,
+the alert class is applied to the div. And inside there you can specify
+colors and also include links and make the alert dismissible by including
+the cross button in the alert. For the dismissible action to work
+you need the JavaScript plug-in to be installed within your webpage. Finally, we have progress bars. Progress bars as I mentioned is
+a way of indicating progress of any action that is going on on a website. See, uploading a file or
+playing some music, whatever mechanism that you want to
+indicate the progress of the action would be well shown on the webpage,
+using a progress bar. To use a progress bar,
+you would use <div class="progress">. And inside the div, you will have an inner div to which
+you will apply the progress bar class. The progress bar can
+also takes on the color representation using one of
+the standard colors there. So that's why in this example you
+see me using progress bar danger. You can also make the progress bar
+striped so you can apply the class progress-bar-striped to make a striped
+class, if you don't apply that, it'll be a solid color. The width of the progress
+bar is indicated by specifying the style for the progress bar. So in this case I'm specifying
+style="width:80%" so, that's why in the progress bar,
+80% is covered. We can also include a text that can be directly displayed
+inside the progress bar. Now whatever we include in the span
+with the class sr-only Is meant for screen readers. So if screen readers are being used, then that information will
+be read out to the user. We can also include the text directly
+in the progress bar, as you see, using the 80% right in the example there. So, to use progress bars, we apply
+the progress class to an outer div and then inside that we'll have
+an inner div that's a progress bar. Now within the outer progress div you can
+have multiple progress bars, if you want. If you do include multiple progress bars,
+then they will be stacked so you can create stacked
+progress bars if required. And for a progress bar you
+can define the color and also whether it is striped or not. You can even activate
+the animation of the striped display by using the active class for
+the progress bar. This completes our discussion on
+various ways of alerting users. We'll now move on to a short exercise,
+where we will look at the use of both labels and
+badges on our website.

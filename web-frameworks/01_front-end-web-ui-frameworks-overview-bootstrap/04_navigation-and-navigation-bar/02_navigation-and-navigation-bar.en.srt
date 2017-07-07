@@ -1,0 +1,699 @@
+1
+00:00:02,926 --> 00:00:05,730
+Let's now talk about navigation.
+
+2
+00:00:05,730 --> 00:00:06,910
+What is navigation?
+
+3
+00:00:06,910 --> 00:00:10,620
+Why is it important in
+the context of websites?
+
+4
+00:00:10,620 --> 00:00:15,940
+And how do we provide navigation
+within our website hierarchy for
+
+5
+00:00:15,940 --> 00:00:17,640
+visitors to our website?
+
+6
+00:00:21,215 --> 00:00:24,284
+When we look at many websites out there,
+
+7
+00:00:24,284 --> 00:00:29,269
+we immediately realize that most
+websites are not single pages.
+
+8
+00:00:30,380 --> 00:00:34,570
+Of course, you do see occasional
+single-page websites, too.
+
+9
+00:00:34,570 --> 00:00:39,760
+But in general, most websites
+typically consist of multiple pages.
+
+10
+00:00:39,760 --> 00:00:47,240
+And so when a visitor comes to your
+main web page, typically indexed .html,
+
+11
+00:00:47,240 --> 00:00:52,250
+they might also need to navigate to
+other pages within your website.
+
+12
+00:00:52,250 --> 00:00:58,080
+And when they do so, you should have a way
+of indicating to them which other pages
+
+13
+00:00:58,080 --> 00:01:03,660
+are there on your website, and
+also if they move to another page,
+
+14
+00:01:03,660 --> 00:01:08,558
+where they are within your web page
+hierarchy on your website, and
+
+15
+00:01:08,558 --> 00:01:16,000
+also an easy way of returning to
+the main page of your website.
+
+16
+00:01:16,000 --> 00:01:20,780
+All these features can be provided
+through various navigational
+
+17
+00:01:20,780 --> 00:01:24,700
+aids that you can build
+into your websites.
+
+18
+00:01:24,700 --> 00:01:28,700
+Now there are several commonly
+used navigation patterns
+
+19
+00:01:28,700 --> 00:01:33,270
+that are used extensively
+on most websites.
+
+20
+00:01:33,270 --> 00:01:38,190
+In particular,
+navigation bar is an easy way of providing
+
+21
+00:01:39,190 --> 00:01:42,570
+the user with access to
+the hierarchy of a website.
+
+22
+00:01:44,395 --> 00:01:49,025
+When you think about website navigation,
+one of the important features that you
+
+23
+00:01:49,025 --> 00:01:53,535
+should consider is the information
+architecture that you use in your website.
+
+24
+00:01:53,535 --> 00:01:56,095
+What exactly is information architecture?
+
+25
+00:01:56,095 --> 00:02:00,092
+This has to deal with the organization,
+the labeling,
+
+26
+00:02:00,092 --> 00:02:05,142
+and the appropriate navigation
+methods that you provide through
+
+27
+00:02:05,142 --> 00:02:10,240
+the information that is
+available on your website.
+
+28
+00:02:10,240 --> 00:02:13,960
+Now, information architecture
+design is a whole field in itself.
+
+29
+00:02:13,960 --> 00:02:16,790
+And that is beyond
+the scope of this course.
+
+30
+00:02:16,790 --> 00:02:21,170
+But I have provided you with some
+additional links in the resources,
+
+31
+00:02:21,170 --> 00:02:25,860
+where you can go and explore more
+details about information architecture.
+
+32
+00:02:25,860 --> 00:02:29,143
+In particular,
+we need to consider information
+
+33
+00:02:29,143 --> 00:02:32,587
+architecture when we
+are designing websites, and
+
+34
+00:02:32,587 --> 00:02:38,126
+that also suggests what kind of navigation
+we should provide within our website.
+
+35
+00:02:40,244 --> 00:02:45,230
+Typically, websites are organized in
+some kind of a hierarchical fashion.
+
+36
+00:02:46,320 --> 00:02:50,620
+You have a top level page from
+which you might have subpages.
+
+37
+00:02:50,620 --> 00:02:55,950
+And from those, you can go into
+further down in the hierarchy.
+
+38
+00:02:55,950 --> 00:02:59,910
+You might even have,
+within a single layer,
+
+39
+00:02:59,910 --> 00:03:05,440
+cross navigation between different
+entities within that layer.
+
+40
+00:03:05,440 --> 00:03:10,420
+So, any navigation scheme that you
+design should be able to accommodate all
+
+41
+00:03:10,420 --> 00:03:14,760
+these different patterns of
+access to these different
+
+42
+00:03:14,760 --> 00:03:18,600
+objects of information
+within your web page.
+
+43
+00:03:18,600 --> 00:03:25,080
+In general,
+most websites will have a navigation bar
+
+44
+00:03:26,090 --> 00:03:31,250
+designed and available within
+the web pages of the website.
+
+45
+00:03:31,250 --> 00:03:34,420
+The navigation bar is typically
+shown either at the top or
+
+46
+00:03:34,420 --> 00:03:36,960
+at the bottom of the website.
+
+47
+00:03:36,960 --> 00:03:40,740
+Sometimes it will be fixed in location,
+either the top or
+
+48
+00:03:40,740 --> 00:03:45,250
+the bottom of the window,
+which is displaying the web page.
+
+49
+00:03:45,250 --> 00:03:50,920
+Whatever be the case, a navigation bar
+has become a de facto standard for
+
+50
+00:03:50,920 --> 00:03:55,500
+providing a way of informing a visitor
+
+51
+00:03:55,500 --> 00:04:00,250
+about various pages that
+are available within your website and
+
+52
+00:04:00,250 --> 00:04:03,170
+how you can navigate from one to another.
+
+53
+00:04:03,170 --> 00:04:07,880
+In addition, within the navigation bar,
+you might also indicate
+
+54
+00:04:07,880 --> 00:04:11,790
+where the user currently
+is within this hierarchy.
+
+55
+00:04:13,460 --> 00:04:15,960
+Taking a look at your own course website,
+
+56
+00:04:15,960 --> 00:04:21,110
+you will see the provision of a navigation
+bar within the course website.
+
+57
+00:04:21,110 --> 00:04:25,050
+In this case,
+it is provided more like a sidebar.
+
+58
+00:04:25,050 --> 00:04:27,310
+So you can see that on the left-hand side,
+
+59
+00:04:27,310 --> 00:04:31,100
+you have information like where
+you are currently at the moment.
+
+60
+00:04:31,100 --> 00:04:36,110
+And so for example, right now,
+we are on the Course Info page of
+
+61
+00:04:37,450 --> 00:04:39,380
+our course website.
+
+62
+00:04:40,780 --> 00:04:45,370
+There are a few suggestions on how
+to design a good navigation bar.
+
+63
+00:04:45,370 --> 00:04:48,788
+Here, I have a small list of them.
+
+64
+00:04:48,788 --> 00:04:54,080
+Of course, non-exhaustive list, so
+you might have more things to consider
+
+65
+00:04:54,080 --> 00:04:59,160
+when you are actually applying
+a navigation bar to your own website.
+
+66
+00:04:59,160 --> 00:05:03,068
+But when you design navigation,
+you should typically provide
+
+67
+00:05:03,068 --> 00:05:09,170
+user-friendly terms, but
+list it within your navigation bar.
+
+68
+00:05:09,170 --> 00:05:11,900
+And also,
+you have to standardize the navigation.
+
+69
+00:05:11,900 --> 00:05:16,600
+So no matter which page
+they user is at the moment,
+
+70
+00:05:16,600 --> 00:05:23,140
+they will still be able to navigate to
+any other location within your website.
+
+71
+00:05:25,200 --> 00:05:25,870
+And also,
+
+72
+00:05:25,870 --> 00:05:31,830
+some way of identifying where within
+the hierarchy the user currently is.
+
+73
+00:05:31,830 --> 00:05:38,130
+So you might highlight the current page
+that the user is viewing in the navigation
+
+74
+00:05:38,130 --> 00:05:43,470
+bar, so that it's easy for them to see
+where they are within the hierarchy.
+
+75
+00:05:45,000 --> 00:05:48,990
+There are some standard web
+conventions that people use when they
+
+76
+00:05:48,990 --> 00:05:50,620
+design navigation bars.
+
+77
+00:05:50,620 --> 00:05:53,900
+One such convention that
+has been widely adopted
+
+78
+00:05:53,900 --> 00:05:58,520
+is that if you put a logo of your
+website in your navigation bar,
+
+79
+00:05:58,520 --> 00:06:04,260
+clicking on that logo will typically take
+you back to the home page of that website.
+
+80
+00:06:05,670 --> 00:06:08,280
+Now, some things that you
+should definitely avoid
+
+81
+00:06:08,280 --> 00:06:11,390
+is to have too many items
+in your navigation bar.
+
+82
+00:06:11,390 --> 00:06:13,410
+How many is too many?
+
+83
+00:06:13,410 --> 00:06:16,990
+If you find it difficult to
+use your navigation bar, well,
+
+84
+00:06:16,990 --> 00:06:18,195
+that is always already too many.
+
+85
+00:06:19,385 --> 00:06:23,615
+It is better to have a smaller subset,
+
+86
+00:06:23,615 --> 00:06:28,805
+targeted subset,
+of links within your navigation bar.
+
+87
+00:06:28,805 --> 00:06:31,617
+Meaningful links,
+within your navigation bar.
+
+88
+00:06:31,617 --> 00:06:36,377
+Again, this is a choice of taste for
+different people that have different
+
+89
+00:06:36,377 --> 00:06:41,817
+criteria for considering what should and
+should not be in the navigation bar.
+
+90
+00:06:41,817 --> 00:06:46,010
+And also depending on the specific
+website that has been designed.
+
+91
+00:06:47,790 --> 00:06:52,240
+One other thing that you should think
+about is to avoid generic labels.
+
+92
+00:06:52,240 --> 00:06:54,700
+Things like if you put a product there.
+
+93
+00:06:54,700 --> 00:06:55,900
+What does a product mean?
+
+94
+00:06:55,900 --> 00:06:57,540
+Or a service there.
+
+95
+00:06:57,540 --> 00:07:00,160
+What kind of service
+are you talking about?
+
+96
+00:07:00,160 --> 00:07:05,290
+It is better to customize
+those labels to specific
+
+97
+00:07:05,290 --> 00:07:08,990
+items that you are providing
+within your website.
+
+98
+00:07:10,600 --> 00:07:13,280
+Another commonly used pattern for
+
+99
+00:07:13,280 --> 00:07:18,850
+providing navigational information within
+a website is what we call as a breadcrumb.
+
+100
+00:07:18,850 --> 00:07:26,060
+If you have noticed on many websites,
+at the top, you might see a set of
+
+101
+00:07:26,060 --> 00:07:30,100
+links being indicated with
+pointers to sublinks.
+
+102
+00:07:30,100 --> 00:07:39,260
+And the current page that you are on might
+be highlighted in that set of links.
+
+103
+00:07:39,260 --> 00:07:44,410
+Clicking on any one of those earlier links
+will take you back within the hierarchy.
+
+104
+00:07:44,410 --> 00:07:49,337
+So, in some sense,
+the breadcrumbs sort of also
+
+105
+00:07:49,337 --> 00:07:54,513
+reflects some kind of
+a structure of your web page.
+
+106
+00:07:54,513 --> 00:07:57,820
+Now, there are many different
+ways of designing breadcrumbs.
+
+107
+00:07:57,820 --> 00:08:03,390
+If you have a website where people
+are going through a step-by-step process,
+
+108
+00:08:03,390 --> 00:08:08,820
+say, for example, purchasing an airline
+ticket, the breadcrumbs might indicate
+
+109
+00:08:08,820 --> 00:08:16,370
+the current sequence within the entire set
+of steps that the user is at the moment.
+
+110
+00:08:16,370 --> 00:08:21,800
+Or if you have a e-commerce website,
+you might have a current sequence of steps
+
+111
+00:08:21,800 --> 00:08:28,300
+in order to order an item or
+a set of items from that company.
+
+112
+00:08:28,300 --> 00:08:31,700
+So you might indicate, for example,
+whether the user is currently in
+
+113
+00:08:31,700 --> 00:08:37,380
+the selection process of the items, or the
+user is in the payment process, and so on.
+
+114
+00:08:37,380 --> 00:08:39,010
+So, that is what we have addressed,
+
+115
+00:08:39,010 --> 00:08:43,700
+path based navigation support
+within the breadcrumbs.
+
+116
+00:08:43,700 --> 00:08:48,473
+The second approach would be to
+provide a location based information
+
+117
+00:08:48,473 --> 00:08:51,920
+within the breadcrumb hierarchy.
+
+118
+00:08:51,920 --> 00:08:55,870
+A third alternative that you
+might have seen in some websites,
+
+119
+00:08:55,870 --> 00:08:59,700
+where the breadcrumbs are not actually
+indicated as a linear sequence but
+
+120
+00:08:59,700 --> 00:09:06,950
+more like a set of choices, maybe where
+you have several set of attributes related
+
+121
+00:09:06,950 --> 00:09:12,975
+to the items that you might be
+selecting on an e-commerce website.
+
+122
+00:09:12,975 --> 00:09:18,920
+Say, for example, a price range,
+the color, or the size,
+
+123
+00:09:18,920 --> 00:09:24,150
+or the type, or maybe the manufacturer's
+information, and so on.
+
+124
+00:09:24,150 --> 00:09:28,360
+So those kind of things that
+can also form information that
+
+125
+00:09:29,680 --> 00:09:33,680
+could be characterized under breadcrumbs.
+
+126
+00:09:33,680 --> 00:09:37,940
+Let's take an example of
+your own course website
+
+127
+00:09:39,060 --> 00:09:43,390
+to see how breadcrumbs
+are being used there.
+
+128
+00:09:45,900 --> 00:09:49,500
+For example,
+when you visit your own course page,
+
+129
+00:09:51,090 --> 00:09:56,040
+as you are going through the various items
+
+130
+00:09:56,040 --> 00:10:00,608
+in the course content,
+you would notice on the top
+
+131
+00:10:00,608 --> 00:10:06,810
+a breadcrumb based navigation
+that is already provided for you.
+
+132
+00:10:06,810 --> 00:10:12,040
+In there, we have the upper level links
+
+133
+00:10:12,040 --> 00:10:16,800
+being shown in the breadcrumbs as
+links and the current location
+
+134
+00:10:17,820 --> 00:10:22,820
+being shown just by information,
+and it is not a link, but
+
+135
+00:10:22,820 --> 00:10:27,640
+just identifying where you
+are currently in the hierarchy.
+
+136
+00:10:28,720 --> 00:10:33,190
+There are several other navigation
+aids that are used in practice.
+
+137
+00:10:33,190 --> 00:10:36,410
+These include tabs, pills, pagination.
+
+138
+00:10:36,410 --> 00:10:40,970
+Especially when you have a lot of
+information to be shown to a user,
+
+139
+00:10:40,970 --> 00:10:43,980
+you might actually subdivide
+it into pages, and
+
+140
+00:10:43,980 --> 00:10:47,850
+then let the user access
+the information page by page.
+
+141
+00:10:47,850 --> 00:10:52,260
+So you would provide some kind of
+pagination support at either the top or
+
+142
+00:10:52,260 --> 00:10:57,095
+the bottom of the page of
+information that you are displaying.
+
+143
+00:10:57,095 --> 00:11:02,331
+We have dropdowns, accordions, tags,
+
+144
+00:11:02,331 --> 00:11:07,727
+Scrollspy, and Affix, and many others.
+
+145
+00:11:07,727 --> 00:11:12,289
+We will look at some of these
+in more details in subsequent
+
+146
+00:11:12,289 --> 00:11:14,295
+modules of this course.

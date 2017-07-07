@@ -1,0 +1,86 @@
+As you go through the course you must
+be wondering how to make the best use of the learning resources
+that are available to you. Let me take you through a quick journey of the learning resources that are
+available to you within this course, and how you can maximize the benefit from
+making use of these learning resources. The course content itself is
+organized into multiple modules. A module has an overarching theme that
+guides the content within that module. A module itself is organized
+into several lectures. At the end of each module,
+you will have an assignment that is due. Now, when you look at
+the organization of the content, typically a module corresponds
+to one calendar week of work. When you look at a typical
+lecture within a module, a lecture will be organized
+into several parts. At the beginning of the lecture,
+you will have objectives and outcomes that are clearly specified. Thereafter, there will be
+an introduction to some concepts and technologies that are related
+to that particular lecture. Then it is followed by a review quiz. After that you will have a hands on
+exercise where you will practice what you've just learned. And then finally, we will provide you with
+a set of additional resources that you can follow through in order to further enhance
+your understanding of the subject. To help us understand this more
+concretely, let's pay a visit to your course website and then have a look
+at the contents that are available there. So as you can see the course website, the course content is organized
+under this section here. You will see that the course
+content is organized into weeks. Each week corresponds to a module of work. Now, when you go into a particular week,
+when you select a week, you would notice that the week
+itself is organized into a set of lectures with a common theme for
+the lectures. The whole module itself
+has a common overarching theme that guides
+the design of the module. As an example, let's take a look at
+this lecture on responsive design and Bootstrap grid system. As you enter the lecture, it will start out with the objectives and
+outcomes for this lecture. I would strongly suggest that
+you read through this document in order to understand what you're
+going to encounter in this lecture and what are the outcomes at
+the end of this lecture. So at the completion of this
+lecture set you should be able to do all the outcomes that
+are listed in this document. Following this, you will see a set of
+lectures that are available to you. So you can watch all of these lectures and
+then after that, you will move on to a hands-on exercise that
+will be delivered to you. So, the hands-on exercise
+is delivered in two parts. One, So we have a video of the exercise itself, guiding you
+through every step of the exercise. You also have a written document
+that contains the instructions for the exercise. So, you should be watching the video in order to understand how
+the exercise progresses. I will be explaining in
+more detail in the video. But also together with that,
+you have this written document where I have given the step by
+step exercise instructions. So you can follow through and even the source code that I am using
+in the exercises are available to you. So in case you decide to cut and
+paste the source code, you can always obtain the source code
+right here within this written document. At the end of the hands on exercise
+you will have a quiz that will help you to review the concepts that you
+have just seen in this lecture. And at the end of each lecture we also
+have a set of additional resources. These are pointers to further
+reading that you can pursue in order to enhance what
+you have just learned. It's completely voluntary. You can find some these to
+be very informative for you to read in your own spare time. So to summarize the learning resources
+that are available to you within this course include video lectures,
+then we have practice quizzes, then hands on exercise, both in the video
+format as well as written instructions. And I would again remind you that
+you should be watching the video of the exercise in order to understand how
+the exercise progresses step by step, and then pointers to additional resources. The reason the learning resources
+are organized the way they are is that the best way to learn is
+not just focus on the concepts but also have hands-on practice so that it reinforces your
+understanding of the concepts. So that is why we have
+the hands-on exercises following the introduction to the concepts and
+the technologies. Now this is where I would remind you of
+the traditional Chinese proverb which says that what I hear, I forget, what I
+see, I remember, what I do, I understand. So let me again emphasize the importance
+of going through the hands-on exercises. That is the only way you will
+completely understand the concepts and technologies that we cover in this course. Another related point that I wanted to
+remind is from another proverb which says, he who learns does not think is lost,
+he who thinks but does not learn is in great danger. Or rather, learning without
+thinking begets ignorance. Thinking without learning
+is very dangerous. Now, this is where let me emphasize
+that as you go through the concepts and the technologies, and
+as you do the hands on exercise, ask yourself the question,
+why are you doing these steps. What exactly is it intended to convey
+to you and what is the reason for doing the steps the way
+they are being done? That is the only way you will completely
+understand what you're going through. It is very easy to go through
+this sort of exercises and concepts without thinking and at the end
+you will end up learning nothing. Similarly, if you just skip
+all the learning part and assumed that you've learned everything
+then that is equally as dangerous. So please, spare some time to think
+as you learn and to understand. We always have the discussion
+forums where any questions related to the materials can
+be clarified in more detail. I hope you have a very good learning
+experience as you go through this course.

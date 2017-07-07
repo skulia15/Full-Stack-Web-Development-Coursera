@@ -1,0 +1,283 @@
+1
+00:00:01,760 --> 00:00:04,220
+Let us now look at another
+
+2
+00:00:04,220 --> 00:00:09,030
+interesting JavaScript component
+in Bootstrap called the carousel.
+
+3
+00:00:09,030 --> 00:00:13,200
+The carousel allows you to present
+a slideshow on your webpage.
+
+4
+00:00:14,270 --> 00:00:16,080
+Let's take a look at an example and
+
+5
+00:00:16,080 --> 00:00:19,550
+then we'll come back and
+consider the carousel in more detail.
+
+6
+00:00:21,870 --> 00:00:23,301
+Going to our webpage,
+
+7
+00:00:23,301 --> 00:00:28,490
+you can see that I have already included
+the carousel component on the webpage.
+
+8
+00:00:28,490 --> 00:00:33,000
+So you can see that the carousel
+presents a set of slides that will keep
+
+9
+00:00:33,000 --> 00:00:36,700
+sliding from left to right on the webpage.
+
+10
+00:00:36,700 --> 00:00:40,830
+So this is an interesting way of
+presenting content to the users.
+
+11
+00:00:42,460 --> 00:00:47,010
+So a carousel is an interesting
+component that allows us to present
+
+12
+00:00:47,010 --> 00:00:51,310
+a slideshow on the webpage,
+as you saw from the example.
+
+13
+00:00:51,310 --> 00:00:56,990
+So the slides will keep sliding from
+left to right with a time duration,
+
+14
+00:00:56,990 --> 00:01:00,130
+typically around three
+seconds between slides.
+
+15
+00:01:00,130 --> 00:01:02,760
+The carousel also provides
+manual control so
+
+16
+00:01:02,760 --> 00:01:07,379
+that the users can navigate to any
+of the slides within the carousel.
+
+17
+00:01:08,430 --> 00:01:11,450
+We will look at all these
+in more detail next.
+
+18
+00:01:13,968 --> 00:01:19,930
+To add a carousel to your webpage, you
+will add a div with the classes carousel
+
+19
+00:01:19,930 --> 00:01:25,740
+and slide and also the data attribute,
+data-ride, carousel.
+
+20
+00:01:25,740 --> 00:01:31,671
+This is what turns this into a carousel
+control by the JavaScript plugin.
+
+21
+00:01:33,837 --> 00:01:36,558
+To add slides to the carousel, we will,
+
+22
+00:01:36,558 --> 00:01:40,961
+inside the div that we have already
+introduced for the carousel,
+
+23
+00:01:40,961 --> 00:01:45,459
+we will introduce another div
+with the class as carousel-inner.
+
+24
+00:01:46,570 --> 00:01:48,240
+And inside this div,
+
+25
+00:01:48,240 --> 00:01:54,100
+individual slides will be identified
+by an inner div class item.
+
+26
+00:01:54,100 --> 00:01:58,830
+One of those inner divs will be identified
+as an active, meaning that when you
+
+27
+00:01:58,830 --> 00:02:03,900
+first go to the webpage, that particular
+slide will be presented to that user.
+
+28
+00:02:03,900 --> 00:02:08,870
+So that is the first slide in the slide
+deck being presented to the user.
+
+29
+00:02:08,870 --> 00:02:16,810
+Now, each item can include
+an image together with a caption.
+
+30
+00:02:16,810 --> 00:02:18,719
+So inside the item div,
+
+31
+00:02:18,719 --> 00:02:23,878
+you would include another div
+with the class carousel caption.
+
+32
+00:02:23,878 --> 00:02:29,171
+So inside this inner div with carousel
+caption, you can include any HTML code.
+
+33
+00:02:29,171 --> 00:02:34,850
+Typically, we would have a heading and
+some text included there.
+
+34
+00:02:36,230 --> 00:02:39,870
+Now, to introduce manual
+controls to the carousel,
+
+35
+00:02:39,870 --> 00:02:42,580
+we can have two different
+kinds of controls.
+
+36
+00:02:42,580 --> 00:02:46,000
+One control allows you to
+select the specific slide.
+
+37
+00:02:46,000 --> 00:02:52,090
+Now, this is introduced to the carousel
+in the form of darts at the bottom,
+
+38
+00:02:52,090 --> 00:02:55,230
+as you can see in the image there.
+
+39
+00:02:55,230 --> 00:03:02,240
+You can select any one of those slides
+by clicking one of the unfilled darts.
+
+40
+00:03:02,240 --> 00:03:07,450
+If you click on those unfilled darts, you
+will move to that particular slides there.
+
+41
+00:03:07,450 --> 00:03:12,700
+The indicated controls are introduced
+into the carousel by including an ol
+
+42
+00:03:12,700 --> 00:03:18,510
+with the class carousel controls, and
+the list items in there will contain
+
+43
+00:03:18,510 --> 00:03:23,940
+two data attributes, the data target,
+which is the mycarousel,
+
+44
+00:03:23,940 --> 00:03:28,395
+and then the data-slide-to,
+which will give the number of
+
+45
+00:03:28,395 --> 00:03:32,440
+the slide to which you should move when
+you click on that particular item.
+
+46
+00:03:33,740 --> 00:03:39,730
+Carousel's also introduced left and
+right indicators to the carousel.
+
+47
+00:03:39,730 --> 00:03:44,370
+So the left and
+right indicators can be shown as left and
+
+48
+00:03:44,370 --> 00:03:47,490
+right arrow buttons on the two ends.
+
+49
+00:03:47,490 --> 00:03:52,100
+In this case, we are introducing them
+using the a tags with the classes
+
+50
+00:03:52,100 --> 00:03:56,303
+left carousel-control and
+right carousel-control.
+
+51
+00:03:57,560 --> 00:04:03,542
+These classes can include inside
+a glyphicon, so in this case
+
+52
+00:04:03,542 --> 00:04:08,260
+I am using the left chevron and the right
+chevron as the glyphicon inside, so that
+
+53
+00:04:08,260 --> 00:04:14,030
+these controls can be shown on the screen
+as the left and right buttons there.
+
+54
+00:04:14,030 --> 00:04:18,000
+Clicking on these will manually
+take you to the previous and
+
+55
+00:04:18,000 --> 00:04:21,240
+the next slide in the carousel slide deck.
+
+56
+00:04:23,240 --> 00:04:25,754
+Now we will move on to the next exercise.
+
+57
+00:04:25,754 --> 00:04:33,380
+There we will introduce a carousel into
+our webpage in the index storage TML page.
+
+58
+00:04:33,380 --> 00:04:37,904
+Now, we will also introduce manual
+controls to this carousel so
+
+59
+00:04:37,904 --> 00:04:43,450
+we learn how to introduce manual controls
+and make use of them on our carousel.

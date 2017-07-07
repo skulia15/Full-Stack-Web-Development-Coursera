@@ -1,0 +1,83 @@
+Let's now talk about Tooltips,
+Popovers, and Models. These are three different ways
+of showing content to the users. Earlier we had seen
+the use of the collapse Plugin where we were able to show and
+hide content on the webpage. But in those applications we had to have the content
+already embedded in the webpage. Tooltips, popovers, and modals are the way
+of overlaying content onto your webpage. In terms of flexibility,
+tooltips are the simplest, but provide very little flexibility. Popovers provide more
+flexibility than tooltips. Modals are, of course, a comprehensive way
+of presenting information to the users. So we'll examine each of
+these In more detail, next. To understand how tool tips work,
+let's visit our web page. And, then when we hover onto
+the reserve table button, you can see that a message
+pops up on our web page. This is enabled using a tooltip. Tooltips are a simple way of presenting
+some information to the users. A tooltip pops up whenever
+the users hovers onto a button or a link to which the tooltip
+has been added. To add a tooltip to an a tag or a button
+tag you will add three attributes. The first one,
+data toggle is equal to tooltip specifies that the tooltip has
+been added to the bottom tag. The second attribute, the title gives the message string
+that'll be shown inside the tooltip. The third attribute is data placement,
+which is either top, bottom, left, or right. And this specifies which direction
+the tooltip is going to pop up. For the tooltip to work correctly,
+you will also need to include a small amount of JavaScript code
+at the end of your page. Right after where you import the bootstrap JavaScript classes,
+you will include the script shown here. This script specifies that for all those tags to which the data toggle
+tooltip attribute has been added, the tooltip will be enabled. Looking at the example of how you
+allow tooltip to a on a button tag. Here, I have ironed the tooltip to
+the a tag, by adding the data-toggle. And the data placement and
+the title to the a tag here. This is what causes the tooltip to be popped up when you have it on
+to the button in our webpage. Popovers, are a generalization
+of tooltips. Popovers allow you to present both a title
+as well as the content in the popover. The title will be presented
+in bold at the top, and the content will be included
+at the bottom of the popover. Popovers have to be also enabled
+explicitly by including the JavaScript code shown in there into our web page. So as an example this
+is what a popover will look like when you click on the button. So in this case we have associated
+the popover with this button here, by including the data toggle as popover. The title with the information over
+displayed in the popovers title, and the data content carries the information
+to be displayed in the content part of the popover. Now the popover also can take placement attribute which specifies which
+side a popover should be shown. In this example the popover will be triggered when you click on the button,
+unlike tooltips, which will automatically appear when
+you hover onto the button or the link. The popover has to be triggered by
+clicking on the button or the link. And next time when you
+click again on the button of the link the popover will be hidden. So the popover will remain open until you
+click again onto the button of the link. Modals are a more gentle way of
+presenting information to the users. Modals allow you to define the information
+to represented in a lot more detail. You can even format the information and specify the information in
+the form of many HTML code. The models contain both a header,
+body, and a footer. Typically, you will include most of the
+information in the body of the message. The footer is usually
+used to include buttons, maybe cancel or an action button, okay? The header usually carries some
+information about the specific modal. Let's look at an example and then come
+back and examine how we create a modal. Going back to our web page, all right? You can see that there is a log in
+link on the right side of the Nav bar. When you click on it, a modal will pop up. So you see that I have designed
+this modal to include their log in form that previously
+existed in the nav bar. So I have moved the form
+into this modal here. So here, in this modal,
+we can see that there is a header and the body of the model contains the font. This particular example
+doesn't have a footer. Now looking at the modal example, you see that the modal is
+created by defining a div, and giving it an ID, and
+the class to be given to the div is modal. If you want the modal to
+fade in when the button or the a tag is clicked, then we give
+the fade class also to the modal. Inside the modal, we'll have an inner
+div with the modal dialogue class. In addition you can specify the size
+of the modal as modal hyphen lg or modal hyphen sm. The default size would be invoked
+if you do not specify the size. The modal also includes an inner div. The modal content. Now inside the modal content div you would
+include the header, body and the footer. The header will be another div
+with the class model header. The body will be a div with the class
+model body and then, of course, the footer will be a div
+with the class modal footer. Now, in this example,
+we are going to include the form HTML code inside the modal body
+of this particular modal. How do you trigger the modal? To do that, you need to include in
+the information in either the a tag. A button tag. So to an A tag or a button tag you will
+give the data toggle as a modal, and the data target will be the ID
+of the modal to be specified. So in this example, the login modal's
+ID is specified as the data target. So that's why when the link,
+the login link on the and navbar is clicked,
+the modal pops up onto the webpage. We'll now move on to the next exercise. While we're there we will
+consider tooltips and modals. So we introduce a tooltip so that when
+the user hovers onto to the reserve table button, the tooltip also pops up. In addition, we'll have the login
+form enclosed inside a modal, and so when the user clicks on
+the login button in the nav bar, the modal will pop up on the screen.

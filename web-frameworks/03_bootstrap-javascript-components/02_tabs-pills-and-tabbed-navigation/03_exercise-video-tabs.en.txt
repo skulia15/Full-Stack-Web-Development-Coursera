@@ -1,0 +1,110 @@
+In this exercise, we're gonna
+look at tabs and tabs navigation, and how we can make use
+of that on our website. So we'll go back to the website that
+we have been working on so far, and add tab navigation to one part
+of about our aboutus.html page. So let's quickly visit the current
+state of the aboutus.html page, and identify where we can introduce tabs and
+tab navigation. Taking a look at the aboutus.html page. As we scroll down we notice that this location where we have the list of
+corporate leadership at our restaurant. Provides an excellent opportunity for
+us to apply tabs and tab navigation. Now we can use tabs to
+separate out the content from each of the corporate leadership members. And then use tab navigation to
+navigate Between the different profiles of the different members there. To introduce tab navigation
+to the aboutus.html page, add the location that we identified,
+let's go to the HTML code in brackets. And scroll down to the location where we need to introduce the tabs and
+tab navigation. Here you can see that I
+have already introduced the part of the code that is required
+to setup the tab navigation. So let's go and look at the result
+of this on the web page. And then we'll come back and
+examine this code. Going to the webpage you'll now
+notice that just below the corporate leadership we now have
+tab elements in place. This has been introduced by the code
+that we added to the about us HTML page. In particular notice how
+this tab navigation works. So you can click on any one of these tabs
+in order to switch between the tabs. Now, obviously as I
+switched between the tabs, nothing happened, because we haven't
+introduced the rest of the code to enable us to separate
+the content into different tabs. And then when we click on the tabs, we should be able to navigate
+to the different tabs. Going back to the source code,
+you'll notice that the tab elements there have been constructed using the ul class with the nav and
+nav-tabs as their class for the ul and of course,
+the role that we have given this tablist. Now, inside this ul,
+a list elements specify the various tabs that will form
+part of this tab navigation. So let's go in and
+look at the individual list elements and then identify the various parts that
+are specified in those list of elements. So going down we see that the first
+list element corresponds to the tab for the CEO of the company. In here we specify for the list. We specify the class as active. Which means that this is the tab
+that the users will see when they first navigate down to
+that location on the webpage. The remaining tabs will be
+hidden behind the scene and they users can navigate to
+those tabs by clicking on the tab items in the tab navigation. In addition,
+inside the list item we have a a tag which contains the actual
+content of the list item there. So this a tag contains the href that we're
+gonna make use of to refer to the specific tab item, which will be
+included as part of this tab. We'll talk about how we include
+the tab content in the next step, but you notice that I have already
+introduced the link to that tab content. So, what is left is for
+me to design the tab content and then specify the appropriate link for
+the tab content. In addition, there are specifying
+that the data toggle is a tab, so this way we know that we are activating
+the JavaScript component that enables support
+to the tab navigation. Looking at the remaining
+list items in this ul here, you'll notice that for
+the remaining ones also, the specification is similar in
+the a tag you specify the ID of the tab content element,
+that we are going to introduce later. Now that we have constructed
+the navigation part of the tabbed design. Let's look at how we're gonna
+take the actual content and enclose them inside tabs. So to do that, let's scroll down and then we see that we have
+the content down below here. We want to separate this content into four
+different tabs, so that when the user clicks on one of those tabs then they
+user will be able to navigate to that specific tab containing the details of the
+person selected from the tab navigation. To divide the content
+into multiple tab panes, the first thing that we do is
+to enclose the entire content into a div with the class tab-content. Now, then after we will
+introduce tab panes, which will contain individual items
+that correspond to each of the tabs that have been identified in the tab
+navigation that we have already set up. We set up the content for
+each tab pane by enclosing the content inside a dev
+which is given the class tab-pane as you see in the code there. Now for this class, aside from tab-pane I
+have also specified the fade and the in. fade meaning that when you transition to
+this tab, then this tab will fade in,. So we introduce some transitions
+into the web page so that when you're navigating
+to different parts, the navigation,
+the movement looks fluid on the screen. The in part is to identify that
+this tab should be left open when the user first navigates
+to this part of the webpage. So in this case, we will have the first
+tab corresponding to the CEO always open when the user first navigates
+down to this part of the webpage. So subsequently the user can select
+the remaining tabs by clicking on the tab items there. We are now going to repeat the same for
+the remaining content in here. After we complete that, then we'll go and
+look at the new state of the pitch. After enclosing all
+the content respectively into their respective tab page, Let's
+go and look at the resulting webpage. Moving back to our webpage, you now notice that the content has
+been neatly organized into tabs there. We have now separated each of
+the content into the individual dibs with the class tab page. And attached them appropriately to the tab navigation elements that are part of the
+tab navigation that we already introduced. No when we'll click on the are tabs, the content will appropriately switch
+to show the corresponding content. Now, for each of these tab pages,
+we have appropriately set up the IDs so that the links that have
+been introduced for these tab- navigation image
+there will work correctly. One last minor change that we
+would like to introduce here is to enclose this content inside a pane with actual borders to introduce the pane
+so that it looks like a real tab here. I'm going to go in and
+introduce some minor changes to the tab content element
+what we have described. To introduce borders for
+the tab content I'm gonna go into the mystyles.html page and set up the appropriate code for
+the tab content page there. So looking at the code here, you'll see
+that I have set up the CSS class for the tab content to include
+borders on the left, right, and the bottom of the tab content
+with a padding of ten pixels. Now this will complete the look and
+feel of the tab content, such that it looks really like tabs there. Going back to our webpage,
+you now notice that the content of the tab panes are now enclosed neatly
+inside bolded tabs and they have connected themselves to the tab
+navigation elements appropriately. So that it looks like a real tab. So when you navigate
+to the different tabs. You do notice a nice, clean interface
+being delivered for these tabs there. This completes the exercise on using tabs. So in this exercise, we examined tabs and
+tab navigation, and how we can, put content into tab panes, and then
+appropriately associated those tab panes. With the tab navigation elements, so
+that the navigation works correctly. Now, obviously as we have stated earlier,
+for the tab navigation to work, you need JavaScript component to
+be included into your web page. We have already included
+the bootstrap.min.js file there. So that's why this JavaScript plugin
+is already included into our webpage.

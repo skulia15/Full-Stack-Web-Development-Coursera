@@ -1,0 +1,246 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h1 level="1">
+  Exercise (Instructions): Web Tools: Bower
+ </h1>
+ <h3 level="3">
+  Objectives and Outcomes
+ </h3>
+ <p>
+  In this exercise we will explore Bower to enable us to automatically fetch Bootstrap and Font Awesome files. Then we will make use of the files fetched by Bower in our web page. At the end of this exercise you will be able to:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Use Bower to fetch web packages and assets from global repositories automatically
+   </p>
+  </li>
+  <li>
+   <p>
+    Use the Bower components in your web page
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Installing Bower
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Install Bower as a global node module. To do this, type the following at the command prompt:
+   </p>
+  </li>
+ </ul>
+ <pre language="sh">     npm install -g bower
+</pre>
+ <p>
+  Note: Precede this command with
+  <em>
+   sudo
+  </em>
+  on Mac or Linux
+ </p>
+ <h3 level="3">
+  Creating bower.json File
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Create and initialize a bower.json file by typing the following at the command prompt:
+   </p>
+  </li>
+ </ul>
+ <pre language="sh">     bower init</pre>
+ <p>
+  Bower will ask several questions which you should answer as follows:
+ </p>
+ <p>
+  Name: conFusion (the default)
+ </p>
+ <p>
+  version: 1.0.0
+ </p>
+ <p>
+  description: Website for an awesome restaurant
+ </p>
+ <p>
+  main file: index.html
+ </p>
+ <p>
+  what type of modules does this package expose? (leave all unselected, just hit enter)
+ </p>
+ <p>
+  keywords: conFusion, Fusion Restaurant
+ </p>
+ <p>
+  author: (Your own name)
+ </p>
+ <p>
+  license: (MIT)
+ </p>
+ <p>
+  Say yes to the remaining questions except the last one.
+ </p>
+ <p>
+  Looks Good? Y
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Have a look at the contents of the
+    <em>
+     bower.json
+    </em>
+    file that was created.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Installing Bower Components
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    We will first install Bootstrap using Bower. To do this type the following at the command prompt:
+   </p>
+  </li>
+ </ul>
+ <pre language="sh">     bower install bootstrap -S
+</pre>
+ <p>
+  This will install Bootstrap to our project, and since Bootstrap depends on jQuery, it will automatically install jQuery. The "-S" flag indicates that Bootstrap should be saved as a dependency for our our project in the
+  <em>
+   bower.json
+  </em>
+  file.
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Next, to install Font Awesome, you need to type the following at the command prompt:
+   </p>
+  </li>
+ </ul>
+ <pre language="sh">     bower install font-awesome -S</pre>
+ <h3 level="3">
+  Examining Bower Components
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    In the
+    <em>
+     conFusion
+    </em>
+    folder, you will find a
+    <em>
+     bower_components
+    </em>
+    folder that Bower created. The components that Bower fetched for you are stored in this folder. Browse the folder and the sub-folders therein to see the contents.
+   </p>
+  </li>
+  <li>
+   <p>
+    Back in the
+    <em>
+     conFusion
+    </em>
+    folder, examine the contents of the
+    <em>
+     bower.json
+    </em>
+    file to see that Bower has added in new information about dependencies. This specifies that the current project is dependent on Bootstrap and Font Awesome.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Using Bower Components
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    To make use of the Bower components, we will update the CSS and JS links in our web pages to use the files in the Bower components folder. Update the CSS links in the index.html, aboutus.html and contacts.html page as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">    &lt;link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"&gt;
+    &lt;link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Similarly, update the JS links in the files as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">    &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+    &lt;script src="bower_components/bootstrap/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    The project now makes use of the files fetched by Bower in the web pages.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Conclusions
+ </h3>
+ <p>
+  In this project we learnt about Bower and how we can make use of Bower to fetch the web components. Thereafter we learnt how to make use of the web components in our project.
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

@@ -1,0 +1,70 @@
+In the previous module we have
+seen a number of bootstrapped components that are supported
+through the CSS classes. In this module we'll look at the Java
+script supported bootstrap components. All these components that we
+examine this module will require a JavaScript plugin to be in place for
+them to work correctly. As we have seen in
+the previous two modules, Bootstrap provides a rich set of
+CSS classes that can be applied to many HTML elements in order to
+create the Bootstrap components. These components,
+as we saw in the previous module, are created by just applying
+the Bootstrap's CSS classes. Now, you can use Bootstrap purely for
+its CSS classes and completely ignore
+the JavaScript plugins and the JavaScript based
+components in Bootstrap. But let's also examine how we
+can make use of the Java Script based components in
+Bootstrap in this module. As we saw in the previous module,
+CSS classes for many components start with the base class,
+like for example the button class. Or from class or
+the table class and so on. But these classes can be
+further modified by applying additional CSS classes that belong
+to the same group of classes. As an example,
+let's look at the button class. We can create a simple button by
+just applying the btn class, but we would want to further qualify it by
+giving it one of the standard colors. Perhaps even specify
+the size of the class. And also whether it should
+be a block button or not. So all these additional classes
+that belong to the button group of classes act as modifiers
+to the button base class. Similarly, we have seen the nav class
+before, which was applied to URL and for creating a component
+within the nav bar. Be applied to the UL, the nav, and
+then the navbar-nav class too. In this module, we'll examine
+the nav class again, but here, we will apply the nav-tabs and
+the nav-pills class to create different kinds of navigational elements. Now, let's talk about
+Bootstrap's JavaScript plugins themselves. Bootstrap's JavaScript support comes
+through a set of JavaScript plugins. These plugins are built upon Jquery,
+so Bootstrap's JavaScript competence depend upon Jquery to
+be present within your picture. That is the reason why,
+when we include in the Bootstraps, JS competence,
+we also include a Jquery under the pitch. The plugins themselves have designs
+such that you can only include those plugins that you really need. If you want to include all the plugins,
+that is also feasible. This graphic may help you to better
+understand the view of JavaScript, JQuery, and Bootstrap's components. If you look at JavaScript as
+the big heavy Sumo wrestler. Then JQuery is a condensed
+version of the sumo wrestler, more easier to handle, so
+to speak, than the full JavaScript. Because the JQuery library
+plugins that come in, are very very useful to achieve many
+interesting aspects within your web page. Now, what Bootstrap does is
+goes one more step further, and then builds upon JQuery plugins,
+and then boxes them in. Into tiny little components
+which can be used on their own. You will pretty soon realize that you can
+use the Bootstrap's components without writing a single line of JavaScript code. That's the advantage that you get
+with Bootstrap's JS components. But again, it comes with less flexibility, when you use it without
+writing JavaScript code. How do you include the Bootstrap's
+JavaScript plugins in your page? We've already seen that at the bottom
+of the page we would include these two statements to import that JQuery library, as well as the Bootstraps complete
+set of JavaScript plugins. Now again, as I said, Bootstraps
+JavaScript components can be used without writing a single line of code. Now this is feasible
+because Bootstraps applies what they call is a first class API. With data-stash attributes, for example the data-toggle,
+the data-spy and so on. Many attributes that
+Bootstrap JS components define. Now you can apply these attributes to the HTML elements that you use
+within your web page directly. And without even writing
+a single line of JavaScript code, the JavaScript components
+are ready to go for you. Of course,
+they won't have the flexibility that you might get with directly writing
+JQuery code to control this components. But much of the functionality
+is very much available through the data star attributes. This is the approach that we're
+gonna explore in this module. We look at them all full featured
+JavaScript API in the next module. In order for you to use the full
+fledged JavaScript API you need to be aware of the JQuery syntax and
+have enough knowledge of JavaScript.

@@ -1,0 +1,63 @@
+Spousta-krát můžete chtít přitáhnout 
+pozornost návštěvníků na váš web, nebo na konkrétní místo vašich stránek. Nebo je možná budete chtít o něčem informovat. To je moment, kdy se oblast dostupných mechanismů upozorňování uživatelů 
+stává velmi velmi ceněnou. Proto se v této lekci budeme věnovat
+Bootstrapové podpoře v upozorňování uživatelů. Máme labely, máme badge,
+máme alerty a progress bary. Pro jednoduché updaty uživatelům 
+mohou být labely a badge více než dostačující. Ty zobrazují jen malou část 
+informací z vašich stránek. Řekněme, 
+např. zobrazení počtu nepřečtených e-mailů. Nebo možná informace o novém
+nebo zupdatovaném prvku. Takovéto věci mohou být jednoduše
+spravené použitím labelů a badgů. Alerty nebo chybové či upozorňovací hlášky
+mohou být jednoduše zobrazeny uživatelům zvýrazněním zpráv na stránkách
+s přiřazením vhodného pozadí tak,
+aby ho uživatelé jasně viděli. Progress bary jsou způsob indikace
+postupu jakékoli aktivity, která právě probíhá na vašich stránkách, jako např. nahrávání
+nebo stahování souboru. Zde je příklad použití labelů a badgů
+na vašem webu. K použití labelů v Bootstrapu
+použijeme tag "span" a poté použijeme classu "label"
+a v závislosti na barvě, kterou budete pro daný label chtít,
+použijete label-primary, -info, -danger, nebo jiné. Můžete také specifikovat
+velikost labelu. Obdobně: badge používají také tag "span" s classou "badge" nadefinovanou ve "span" tagu. Vzhledem k tomu, že jsme právě shlédli labely, použijte classu "label" s parametrem "label-color" labelu, který chcete použít
+společně s jeho velikostí. Badge jsou poměrně jednoduché. Je tu jen jedna jediná classa, a to classa "badge",
+kterou použijete ve "span" tagu, a poté cokoli je obsaženo ve "span" tagu,
+bude zobrazeno jako badge. Badge se automaticky uzpůsobí místu, 
+kde je zobrazen. Např., pokud prvek, který obsahuje badge,
+má tmavší barvu, badge se zobrazí v barvě světlejší,
+aby se hodil k ostatnímu textu v parent technologii 
+// rodič-dítě Badge jsou zajímavé v tom,
+že pokud badge neobsahuje žádný obsah, tak badge automaticky zkolapsuje, a nebude tudíž na obrazovce vidět. To je tedy jeden jednoduchý způsob,
+jak používat badge na vašem webu. Alerty jsou jiný způsob, 
+jakým sdělit uživatelům informace. Alert bude zobrazen na místě 
+indikovaném ve vašem web souboru. Bude ohraničen boxem s barvou pozadí, která je
+determinovaná specifikací. V tomto případě,
+vidíte, že jsem použil "alert-warning". Proto je pozadí alertu žluté. Kromě toho, jsem do tohoto alertu
+zaintegroval ikonu. Ikonu křížku, která, pokud na ní kliknete, 
+alert zavře. Aby toto fungovalo -samozřejmě-
+potřebuji nadefinovat ikonu, kterou použiji jako button v "button" tagu A uvnitř "button" tagu použiji classu "close". Classa je zobrazrna použitím "&times;"  (x) ikony z HTML a pro samotný alert potřebujeme aplikovat classu "alert-dismissible",
+aby toto celé fungovalo. Do zpráv můžeme také vnořit odkazy,
+které budou zobrazeny v alertech. V tomto případě vidíte, že jsem použil odkaz,
+který se zobrazí v alertu. Odkazy jsou akceschopné. 
+To znamená, že uživatel na ně může kliknout, a poté se vykoná daná náležitá akce 
+(přejití na adresu odkazu). Jak jste viděli v příkladu,
+classa "alert" je aplikovaná v divu. A uvnitř divu můžete nadefinovat barvy
+a také vnořit odkazy a udělat alert uzavíratelným vložením x buttonu do alertu. Aby fungovala akce pro uzavření,
+potřebujete, aby byl JavaScript plug-in nainstalovaný v rámci vašich stránek. A nakonec, máme také progress bary. Progress bary, jak jsem již zmínil,
+jsou způsob indikace pokroku jakékoli akce, která na stránkách probíhá. Nahrání souboru nebo přehrávání hudby,... Jakýkoli mechanismus, u kterého chcete indikovat  
+pokrok akce, bude zřetelně zobrazen na stránkách
+použitím progress baru. K použití progress baru,
+použijeme <div class="progress">. A uvnitř toho divu budete mít vnitřní div,
+ve kterém aplikujete classu "progress bar". Progress bar může mít i barevné zastoupení použitím jedné
+ze standardních barev. Proto mne vidíte použít v tomto příkladu
+progress bar s danger. Můžete také udělat progress bar proužkovaný
+použitím classy "progress-bar-striped".
+Pokud nepoužijete classu "progress-bar-striped", bude progress bar jednobarevný. Šířka progress baru je dána specifikací stylu pro progress bar. V tomto případě specifikuji style="width:80%". Proto je progress bar vyplňený jen z 80% šířky. Můžeme také vnořit text, který může být zobrazen uvnitř progress baru. Cokoli co zahrneme do spanu s classou "sr-only",
+bude pro screen readery. Pokud budou použity screen readery, potom bude daná informace "80% Complete (danger)"
+zpřístupněna uživateli. Můžeme také vnořit text přímo do progress baru,
+jak můžete vidět u použití "80%" v tomto příkladu. Takže, k použití progress baru potřebujeme použít
+classu "progress" pro vnější div a poté vnitřnímu divu classu "progress-bar". Uvnitř vnějšího divu s classou "progress"
+můžete mít několik progress barů - pokud chcete. Pokud použijete vícero progress barů,
+budou řazeny za sebou, takže můžete vytvářet řazené progress bary,
+pokud to bude potřeba. A pro progress bar můžete nadefinovat barvu a také, jestli bude proužkovaný nebo ne. Můžete dokonce aktivovat animaci pro ty proužkované použitím classy "activate" pro daný progress bar. Toto zakončuje naši diskuzi o různorodých způsobech
+upozorňování uživatelů. Nyní se přesuneme ke krátkému procvičení,
+kde se podíváme na použití jak labelů, tak badgů 
+na našich stránkách.

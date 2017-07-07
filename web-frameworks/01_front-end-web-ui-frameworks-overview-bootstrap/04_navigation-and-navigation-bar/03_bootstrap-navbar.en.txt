@@ -1,0 +1,132 @@
+Let us now talk about Bootstraps
+own support for navigation. In particular, in this lecture,
+we will talk about the Bootstrap's Navbar. Navbar is a very easy way of providing navigational
+information within your website. Let's look at the details next. As I already mentioned, the Navbar is a way of easily
+providing navigation for your website. The Navbar typically appears
+at the top of the page or the bottom of the page depending
+upon the design of your website. Now, Navbars can also
+support responsive features, meaning that when you're viewing
+the website on a extra small screen. Maybe you may wish to
+collapse the Navbar and only display content by toggling
+the information appropriately. For larger screen sizes, it is probably more easier to accommodate
+a full fledged navigation bar. So we will look at bootstrap support for
+both situations in more detail next. Let's talk in particular, about a simple
+navigation bar that can be provided within bootstrap and
+how we go about configuring it. So here I have an example of
+a simple navigation bar and the corresponding code that is used in
+Bootstrap to design this navigation bar. Now I am leveraging the Nav HTML
+element to design my navigation bar. To this nav HTML element, I am using the Navbar classes that
+are available as part of Bootstrap. The Navbar, which turns that HTML element
+into a Navbar and the Navbar default. So this is the default structuring of
+the navigation bar in Bootstrap or the default coloring and so on. Also notice that I am declaring
+that this Navbar takes on the role of providing
+navigation within this website. Now let's look at the example
+Navbar on the screen and then see how this is actually constructed
+by using the HTML code below there. In particular, you see that the list
+of items being displayed in the Navbar is declared in
+the code as an unsorted list with the class nav navbar-nav. And within these each list
+item is displayed using li and then you provide the href through
+the normal HTML links there. One particular list item has been
+identified as the active list item there. So for this example, I have identified
+the Home as the active list item. What this means is that in the Bootstrap's
+Navbar, this Home item is highlighted with a darker color for the default
+Navbar as you can see on the screen. I am now extending the Navbar
+into Into adding more features. One, is that I am adding in what
+we call as a brand to the navbar. So within the Navbar on the left side, you can see the name of
+the website being displayed there. That name will form part
+of the Navbar header. And inside the navbar header,
+which is a separate div there, I am declaring a class called
+navbar-brand to a link and then I am providing that link there. Now you can replace the text
+within that link by an actual image which might
+be the logo of your website. So that's another way of providing
+navigation within the navbar, specifically using the logo navigation. Typically, when you put the logo into the
+navbar, users expect that when they click on that logo, they are going to be taken
+back to the home page of the navbar. So when you specify the href for that class there, you should make sure
+that it is identifying your home page. We can also similarly put
+items to the right side, right into the screen within the navbar. To do that,
+we are going to use the nav navbar-nav for the unsorted list that we've seen already. In addition, we're going to supply
+another attribute called navbar-right. When you specify that, there are list items that are gonna be
+put on the right edge of the navbar. For left edge you, would say navbar-left,
+for right edge you would say navbar-right. We can make the navbar also responsive. Meaning that when you are viewing
+the website on an extra small screen or any chosen size of the screen. You can collapse the navbar and
+hide the items within the navbar. And instead replace it with a toggle
+button as you see in the picture here. When the user clicks on the toggle button,
+then you will expand the navigation bar to show the link items, like so. When the user again clicks
+on the toggle button, you're going to hide
+those navigation items. So this behavior can easily
+be supported within Bootstrap using the toggle button that
+can be included in the header, nav-navbar header of your Bootstrap. We will see how that is
+done in the next slide. Now we are going to examine how
+to design this responsive navbar. First, we need a toggle
+button within the navbar. So this is usually included in the
+navbar-header as shown by the code here. So in here, I am declaring a button type. And the class I am using is navbar-toggle
+and also specified as collapsed. Meaning that the items that this Button is
+referring to will be in the collapsed mode when you are viewing this page
+on an extra small device. When the user clicks on this button,
+then the further details are the extended navbar will
+be toggled and shown on the screen. Now this is implemented
+by enclosing the items within the list inside a div and
+giving it an id. This id in this example,
+the id given is navbar and that id is used as a data target for
+the button. What exactly is a data target and
+how is it used? For that,
+we need to understand that JavaScript modules that were
+implemented in Bootstrap. So I'm going to come back to refer
+to this one more time in the module where we look at JavaScript
+within Bootstrap. But here, let's understand that this id is also used to specify
+the data target for the button. Meaning that that button
+is going to toggle on and off, whatever is inside
+this div on the screen. Now for this div in addition, I'm going to give the class as
+navbar collapse and collapse. Meaning that initially
+when you are viewing this page on an extra small screen,
+the navbar will start out collapsed. When the user clicks on the button, then
+the navbar will be toggled and vice versa. Some additional configurations
+that you can give for navbars, include specifying that the navbar
+should be fixed to the top of the page. Meaning that the navbar is always visible
+and will be fixed at the top of the page. The content will scroll, but the navbar
+will remain fixed in that location. You can also similarly fix
+the navbar at the bottom. The corresponding classes
+are indicated here. .Navbar-fixed-top and
+.navbar-fixed-bottom. There are other specification that
+you can give is to specify the navbar as navbar-static-top. Meaning that this navbar will
+be at the top of the page, but will scroll when you scroll the page. So the navbar will disappear from
+the screen when you scroll the page up. In Bootstrap, earlier we saw that we
+declared the navbar as navbar default. The default navbar for bootstrap
+is a light colored navigation bar. You can also have a dark colored
+navigation bar in bootstrap by providing the class as navbar-inverse
+instead of navbar-default. So in the navbar-inverse, the background
+of the navbar will be dark in color but the text will be lighter in color. One last addition to
+the navbar that is often used, is what we refer to as a dropdown. When we talk about a dropdown, any item within the navbar can
+be turned into a dropdown. So that when the user clicks on the item,
+then you would display a list of dropdown items to the user and then allow them
+to select one of those dropdown items. Similarly, when you click
+on the item in the navbar, then we will hide this dropdown, right? So this toggling of this
+dropdown list of items is done by clicking on the item inside the navbar. In this example, if you click
+on the Menu item in the navbar, it will display the detailed list there. If you click on it again,
+then that detail list will disappear. So this is the use of dropdowns in navbar. How do we implement it? We'll examine that next. So to implement the dropdown,
+we need to Declared the drop down as a list item within
+the unsorted list that we used to construct the navbar links there. Now one of the items will be declared
+as a list item of the type dropdown. The code on the left side indicates how you would declare
+the list item as a dropdown. And in addition, you specify the class as dropdown-toggle and the data would be specified at dropdown,
+data-toggle as dropdown. And some additional rows there and in particular, notice that
+declaration of the span class caret. Now this is used to show
+these inverted triangle next to the item within the bar. To indicate that when
+the user clicks on that item, we're ging to show a dropdown list there. Now how do we declare the items
+within the dropdown list? That will be included as another
+unsorted list inside this list item. And this unsorted list shown on the right
+side has the class dropdown menu. And individual list items
+listed there will be shown in the list of items in the dropdown menu. So you can see that these list
+items correspond with Appetizers, Main Courses and so on. You can also include a separator by
+declaring the role as a separator and the class as a divider for
+one of the list items. You can also have a header there by declaring a list item with
+a class dropdown-header. So that that will not be treated as
+a link, instead it will be treated as just a header for
+the items displayed below. So this is yet another feature that
+we will use within the navbar. This completes our discussion
+on Bootstrap Navbar. In the exercise that follows, we are going
+to design a navbar for our webpage. At the end of the exercise, you will
+see our webpage having a fixed top navbar as shown in
+the website details here. And this navbar is colored
+appropriately for our website. We'll see how we can do that
+using the CSS class and we also see a dropdown
+item within the navbar.

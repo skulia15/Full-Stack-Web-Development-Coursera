@@ -1,0 +1,644 @@
+1
+00:00:03,021 --> 00:00:07,698
+In this exercise, we're gonna
+look at tabs and tabs navigation,
+
+2
+00:00:07,698 --> 00:00:11,500
+and how we can make use
+of that on our website.
+
+3
+00:00:11,500 --> 00:00:16,810
+So we'll go back to the website that
+we have been working on so far, and
+
+4
+00:00:16,810 --> 00:00:24,330
+add tab navigation to one part
+of about our aboutus.html page.
+
+5
+00:00:24,330 --> 00:00:29,640
+So let's quickly visit the current
+state of the aboutus.html page, and
+
+6
+00:00:29,640 --> 00:00:33,950
+identify where we can introduce tabs and
+tab navigation.
+
+7
+00:00:37,150 --> 00:00:40,670
+Taking a look at the aboutus.html page.
+
+8
+00:00:40,670 --> 00:00:46,110
+As we scroll down we notice that this
+
+9
+00:00:46,110 --> 00:00:53,020
+location where we have the list of
+corporate leadership at our restaurant.
+
+10
+00:00:53,020 --> 00:00:59,570
+Provides an excellent opportunity for
+us to apply tabs and tab navigation.
+
+11
+00:00:59,570 --> 00:01:04,120
+Now we can use tabs to
+separate out the content from
+
+12
+00:01:04,120 --> 00:01:08,970
+each of the corporate leadership members.
+
+13
+00:01:08,970 --> 00:01:15,010
+And then use tab navigation to
+navigate Between the different
+
+14
+00:01:15,010 --> 00:01:20,050
+profiles of the different members there.
+
+15
+00:01:20,050 --> 00:01:24,360
+To introduce tab navigation
+to the aboutus.html page,
+
+16
+00:01:24,360 --> 00:01:31,450
+add the location that we identified,
+let's go to the HTML code in brackets.
+
+17
+00:01:31,450 --> 00:01:35,840
+And scroll down to the location where
+
+18
+00:01:35,840 --> 00:01:40,720
+we need to introduce the tabs and
+tab navigation.
+
+19
+00:01:40,720 --> 00:01:44,720
+Here you can see that I
+have already introduced
+
+20
+00:01:44,720 --> 00:01:49,450
+the part of the code that is required
+to setup the tab navigation.
+
+21
+00:01:49,450 --> 00:01:54,670
+So let's go and look at the result
+of this on the web page.
+
+22
+00:01:54,670 --> 00:01:57,250
+And then we'll come back and
+examine this code.
+
+23
+00:01:59,190 --> 00:02:04,020
+Going to the webpage you'll now
+notice that just below the corporate
+
+24
+00:02:04,020 --> 00:02:08,040
+leadership we now have
+tab elements in place.
+
+25
+00:02:08,040 --> 00:02:15,720
+This has been introduced by the code
+that we added to the about us HTML page.
+
+26
+00:02:15,720 --> 00:02:19,390
+In particular notice how
+this tab navigation works.
+
+27
+00:02:19,390 --> 00:02:27,860
+So you can click on any one of these tabs
+in order to switch between the tabs.
+
+28
+00:02:27,860 --> 00:02:30,810
+Now, obviously as I
+switched between the tabs,
+
+29
+00:02:30,810 --> 00:02:35,230
+nothing happened, because we haven't
+introduced the rest of the code
+
+30
+00:02:35,230 --> 00:02:39,790
+to enable us to separate
+the content into different tabs.
+
+31
+00:02:39,790 --> 00:02:42,760
+And then when we click on the tabs,
+
+32
+00:02:42,760 --> 00:02:46,980
+we should be able to navigate
+to the different tabs.
+
+33
+00:02:48,390 --> 00:02:53,160
+Going back to the source code,
+you'll notice that the tab elements there
+
+34
+00:02:53,160 --> 00:02:58,700
+have been constructed using the ul class
+
+35
+00:02:58,700 --> 00:03:04,400
+with the nav and
+nav-tabs as their class for
+
+36
+00:03:04,400 --> 00:03:09,350
+the ul and of course,
+the role that we have given this tablist.
+
+37
+00:03:09,350 --> 00:03:13,700
+Now, inside this ul,
+a list elements specify
+
+38
+00:03:13,700 --> 00:03:18,470
+the various tabs that will form
+part of this tab navigation.
+
+39
+00:03:18,470 --> 00:03:22,850
+So let's go in and
+look at the individual list elements and
+
+40
+00:03:22,850 --> 00:03:27,670
+then identify the various parts that
+are specified in those list of elements.
+
+41
+00:03:28,670 --> 00:03:34,670
+So going down we see that the first
+list element corresponds to the tab for
+
+42
+00:03:34,670 --> 00:03:38,730
+the CEO of the company.
+
+43
+00:03:38,730 --> 00:03:41,820
+In here we specify for the list.
+
+44
+00:03:41,820 --> 00:03:44,415
+We specify the class as active.
+
+45
+00:03:44,415 --> 00:03:49,021
+Which means that this is the tab
+that the users will see when
+
+46
+00:03:49,021 --> 00:03:53,637
+they first navigate down to
+that location on the webpage.
+
+47
+00:03:53,637 --> 00:03:58,608
+The remaining tabs will be
+hidden behind the scene and
+
+48
+00:03:58,608 --> 00:04:03,358
+they users can navigate to
+those tabs by clicking on
+
+49
+00:04:03,358 --> 00:04:07,568
+the tab items in the tab navigation.
+
+50
+00:04:07,568 --> 00:04:12,808
+In addition,
+inside the list item we have a a tag
+
+51
+00:04:12,808 --> 00:04:19,500
+which contains the actual
+content of the list item there.
+
+52
+00:04:19,500 --> 00:04:25,470
+So this a tag contains the href that we're
+gonna make use of to refer to the specific
+
+53
+00:04:25,470 --> 00:04:31,790
+tab item, which will be
+included as part of this tab.
+
+54
+00:04:31,790 --> 00:04:37,200
+We'll talk about how we include
+the tab content in the next step, but
+
+55
+00:04:37,200 --> 00:04:42,560
+you notice that I have already
+introduced the link to that tab content.
+
+56
+00:04:42,560 --> 00:04:47,510
+So, what is left is for
+me to design the tab content and
+
+57
+00:04:47,510 --> 00:04:51,270
+then specify the appropriate link for
+the tab content.
+
+58
+00:04:51,270 --> 00:04:56,550
+In addition, there are specifying
+that the data toggle is a tab, so
+
+59
+00:04:56,550 --> 00:05:01,570
+this way we know that we are activating
+the JavaScript component
+
+60
+00:05:01,570 --> 00:05:04,840
+that enables support
+to the tab navigation.
+
+61
+00:05:07,520 --> 00:05:11,730
+Looking at the remaining
+list items in this
+
+62
+00:05:13,360 --> 00:05:17,220
+ul here, you'll notice that for
+the remaining ones also,
+
+63
+00:05:17,220 --> 00:05:23,820
+the specification is similar in
+the a tag you specify the ID
+
+64
+00:05:23,820 --> 00:05:28,320
+of the tab content element,
+that we are going to introduce later.
+
+65
+00:05:31,010 --> 00:05:38,120
+Now that we have constructed
+the navigation part of the tabbed design.
+
+66
+00:05:38,120 --> 00:05:41,600
+Let's look at how we're gonna
+take the actual content and
+
+67
+00:05:41,600 --> 00:05:44,260
+enclose them inside tabs.
+
+68
+00:05:44,260 --> 00:05:47,130
+So to do that, let's scroll down and
+
+69
+00:05:47,130 --> 00:05:50,050
+then we see that we have
+the content down below here.
+
+70
+00:05:50,050 --> 00:05:55,000
+We want to separate this content into four
+different tabs, so that when the user
+
+71
+00:05:55,000 --> 00:06:01,300
+clicks on one of those tabs then they
+user will be able to navigate to that
+
+72
+00:06:01,300 --> 00:06:07,090
+specific tab containing the details of the
+person selected from the tab navigation.
+
+73
+00:06:09,320 --> 00:06:13,390
+To divide the content
+into multiple tab panes,
+
+74
+00:06:13,390 --> 00:06:18,610
+the first thing that we do is
+to enclose the entire content
+
+75
+00:06:18,610 --> 00:06:23,400
+into a div with the class tab-content.
+
+76
+00:06:23,400 --> 00:06:26,790
+Now, then after we will
+introduce tab panes,
+
+77
+00:06:26,790 --> 00:06:32,360
+which will contain individual items
+that correspond to each of the tabs
+
+78
+00:06:32,360 --> 00:06:36,460
+that have been identified in the tab
+navigation that we have already set up.
+
+79
+00:06:38,340 --> 00:06:43,040
+We set up the content for
+each tab pane by enclosing
+
+80
+00:06:43,040 --> 00:06:48,155
+the content inside a dev
+which is given the class
+
+81
+00:06:48,155 --> 00:06:54,500
+tab-pane as you see in the code there.
+
+82
+00:06:54,500 --> 00:07:01,652
+Now for this class, aside from tab-pane I
+have also specified the fade and the in.
+
+83
+00:07:01,652 --> 00:07:06,888
+fade meaning that when you transition to
+this tab, then this tab will fade in,.
+
+84
+00:07:06,888 --> 00:07:11,618
+So we introduce some transitions
+into the web page so
+
+85
+00:07:11,618 --> 00:07:16,241
+that when you're navigating
+to different parts,
+
+86
+00:07:16,241 --> 00:07:22,230
+the navigation,
+the movement looks fluid on the screen.
+
+87
+00:07:22,230 --> 00:07:27,138
+The in part is to identify that
+this tab should be left open
+
+88
+00:07:27,138 --> 00:07:32,166
+when the user first navigates
+to this part of the webpage.
+
+89
+00:07:32,166 --> 00:07:37,003
+So in this case, we will have the first
+tab corresponding to the CEO always
+
+90
+00:07:37,003 --> 00:07:41,465
+open when the user first navigates
+down to this part of the webpage.
+
+91
+00:07:41,465 --> 00:07:46,312
+So subsequently the user can select
+the remaining tabs by clicking on the tab
+
+92
+00:07:46,312 --> 00:07:47,230
+items there.
+
+93
+00:07:49,970 --> 00:07:55,570
+We are now going to repeat the same for
+the remaining content in here.
+
+94
+00:07:55,570 --> 00:08:01,820
+After we complete that, then we'll go and
+look at the new state of the pitch.
+
+95
+00:08:03,630 --> 00:08:07,120
+After enclosing all
+the content respectively
+
+96
+00:08:07,120 --> 00:08:12,040
+into their respective tab page, Let's
+go and look at the resulting webpage.
+
+97
+00:08:13,670 --> 00:08:16,550
+Moving back to our webpage,
+
+98
+00:08:16,550 --> 00:08:22,230
+you now notice that the content has
+been neatly organized into tabs there.
+
+99
+00:08:22,230 --> 00:08:27,340
+We have now separated each of
+the content into the individual dibs
+
+100
+00:08:27,340 --> 00:08:29,260
+with the class tab page.
+
+101
+00:08:29,260 --> 00:08:34,610
+And attached them appropriately to the tab
+
+102
+00:08:34,610 --> 00:08:41,060
+navigation elements that are part of the
+tab navigation that we already introduced.
+
+103
+00:08:41,060 --> 00:08:45,438
+No when we'll click on the are tabs,
+
+104
+00:08:45,438 --> 00:08:52,275
+the content will appropriately switch
+to show the corresponding content.
+
+105
+00:08:52,275 --> 00:08:57,105
+Now, for each of these tab pages,
+we have appropriately set up the IDs so
+
+106
+00:08:57,105 --> 00:09:00,345
+that the links that have
+been introduced for
+
+107
+00:09:00,345 --> 00:09:05,875
+these tab- navigation image
+there will work correctly.
+
+108
+00:09:08,770 --> 00:09:15,310
+One last minor change that we
+would like to introduce here
+
+109
+00:09:15,310 --> 00:09:21,540
+is to enclose this content inside a pane
+
+110
+00:09:21,540 --> 00:09:28,050
+with actual borders to introduce the pane
+so that it looks like a real tab here.
+
+111
+00:09:29,090 --> 00:09:34,078
+I'm going to go in and
+introduce some minor changes
+
+112
+00:09:34,078 --> 00:09:39,074
+to the tab content element
+what we have described.
+
+113
+00:09:41,558 --> 00:09:46,129
+To introduce borders for
+the tab content I'm
+
+114
+00:09:46,129 --> 00:09:50,340
+gonna go into the mystyles.html page and
+
+115
+00:09:50,340 --> 00:09:57,250
+set up the appropriate code for
+the tab content page there.
+
+116
+00:09:57,250 --> 00:10:02,310
+So looking at the code here, you'll see
+that I have set up the CSS class for
+
+117
+00:10:02,310 --> 00:10:07,440
+the tab content to include
+borders on the left, right,
+
+118
+00:10:07,440 --> 00:10:12,290
+and the bottom of the tab content
+with a padding of ten pixels.
+
+119
+00:10:12,290 --> 00:10:17,070
+Now this will complete the look and
+feel of the tab content,
+
+120
+00:10:17,070 --> 00:10:20,610
+such that it looks really like tabs there.
+
+121
+00:10:20,610 --> 00:10:25,720
+Going back to our webpage,
+you now notice that the content of the tab
+
+122
+00:10:25,720 --> 00:10:30,940
+panes are now enclosed neatly
+inside bolded tabs and
+
+123
+00:10:30,940 --> 00:10:37,770
+they have connected themselves to the tab
+navigation elements appropriately.
+
+124
+00:10:37,770 --> 00:10:39,700
+So that it looks like a real tab.
+
+125
+00:10:39,700 --> 00:10:43,040
+So when you navigate
+to the different tabs.
+
+126
+00:10:43,040 --> 00:10:48,810
+You do notice a nice, clean interface
+being delivered for these tabs there.
+
+127
+00:10:51,340 --> 00:10:55,430
+This completes the exercise on using tabs.
+
+128
+00:10:55,430 --> 00:11:01,740
+So in this exercise, we examined tabs and
+tab navigation, and how we can,
+
+129
+00:11:01,740 --> 00:11:07,230
+put content into tab panes, and then
+appropriately associated those tab panes.
+
+130
+00:11:07,230 --> 00:11:14,980
+With the tab navigation elements, so
+that the navigation works correctly.
+
+131
+00:11:14,980 --> 00:11:21,770
+Now, obviously as we have stated earlier,
+for the tab navigation to work,
+
+132
+00:11:21,770 --> 00:11:27,622
+you need JavaScript component to
+be included into your web page.
+
+133
+00:11:27,622 --> 00:11:31,180
+We have already included
+the bootstrap.min.js file there.
+
+134
+00:11:31,180 --> 00:11:39,250
+So that's why this JavaScript plugin
+is already included into our webpage.

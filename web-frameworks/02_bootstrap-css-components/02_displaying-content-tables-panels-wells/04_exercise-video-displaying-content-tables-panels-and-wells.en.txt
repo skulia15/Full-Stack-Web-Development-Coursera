@@ -1,0 +1,139 @@
+In this exercise, we're going to
+learn about adding tables, panels, and wells in order to display
+content in our web page. For this exercise, we're going to use the aboutus.html
+page that have already created earlier. And then we'll go in and
+add a table there, in the process learn how
+Bootstrap tables are styled. Then, we will add a panel
+there with some information. And finally, we'll add a well there,
+with a quotation. So in this process,
+we'll learn about how we can arrange to display content on our web page
+in a more interesting manner. Taking a look at the current
+state of the aboutus.html page. As you can see in this page, we see that on the right hand side here,
+we have some empty space there. So I'm gonna put a panel here
+to display some information. And also,
+right after the history of the restaurant, I'm gonna put in a well there
+in order to display a quotation. And we'll go in to the bottom of this
+page, and then add an extra row there. That is where we're going to add a table
+of information about this restaurant. Along the way, of course, we will learn about the table classes
+that are available in Bootstrap. Going to the HTML code of
+the aboutus.html page. In brackets,
+right after the Corporate Leadership row, I'm going to add an extra row
+there called Facts and Figures. And inside this row, I'm going to
+add a table that displays some information about this restaurant. So let me add the code, and I will come
+back and review the code in more detail. Let me first show you the result
+of adding the table and the row containing the table
+to this aboutus.html page. Now, when you look at the web page itself, you will see that now we have a table
+there that displaced some information. In particular,
+this table is designed in such a way that alternate rows
+are in a slightly darker color. So that easily helps us to distinguish
+between the rows of the table. This is a class that we use called
+table-striped in Bootstrap. Let's look at the code to
+understand how we go about creating a table in this web page. Returning to the code,
+now you see that I have added another row here using
+the row row-content class. Inside that row,
+I am declaring a column class here, and inside the column class,
+I'm going to include the table. So to create a table, I am enclosing the
+table in a div called table-responsive. This makes the table responsive so that
+when it is viewed even on a very small screen, the table will
+adjust appropriately. And then if the table needs extra space, then we'll be able to
+horizontally scroll the table and look at the details of the table. Now, the table Itself, we use the table
+HTML element to design the table. So here, I have table. For that, I have given
+the class table table-striped. So this way,
+we make it very clear to Bootstrap that we are using this
+table as a real table. Now, you do realize that people
+often use the table class for styling HTML pages themselves. So we want to be clear that this table is
+actually being used as a table itself. So that's why we use the class table here,
+to specify that this is a real table. And then the second qualification
+that we are using is table-striped. So, the table-striped class will
+lead to a table with alternate rows being in a different color so
+that the table looks more clear. There are many different table
+styling classes that are available within Bootstrap, so you should explore some of those to
+understand how they are used better. Now, the table of contents themselves
+are styled like a standard table that you might have created earlier. So there is no specific Bootstrap
+classes that I am using for the table content itself. So here, you see there is a table row. And inside the table row, I have all
+the table information, the table. These are the table headers here,
+so I am using the th tag here so that these will be
+displayed in bold in the table. So this particular row contains
+all the heading information for the table, header row for the table. The next row contains information that is displayed on
+the first table row below the header row. So that's why only for
+the first column I am using the th. For the remaining columns,
+I am using td to display the information. Like that, you can go through
+the remaining rows of the table. And that is how we
+include a table in a web page using the Bootstrap classes. Returning to the web page, the next component that I'm going
+to add to this page is a panel. A panel allows you to display content
+in the web page in a enclosed box here. So here, if I scroll up, I see that there is some empty space
+on the right hand side in this row. I'm going to leverage that empty space,
+and then put a panel in place there. Now, I want the panel to
+occupy more number of columns. So I'm going to shrink the column for this particular part of
+the content in this row so that this occupies only eight columns and then I'll be left with four columns
+there to put a panel into place. So let me go to the code and
+then add in the panel code. And then we'll come back and
+look at the change to the web page. And then, we'll review the code. I have now added a panel to the web page. So as you can see on the right side, I have a panel which
+displays some information. Now, the panel carries a panel
+header here, and also some content. This content that I am displaying here, I am making use of the description list, the dl that is part of HTML. So that is what I am using to display
+the information inside this panel. So let's go and review the code to understand
+how this panel has been created. So coming to the code, you see that I have added a div class with
+the panel in place there. And the panel classes that I am
+using is panel and panel-primary. So that is the reason why the panel
+itself is displayed in blue color, because I am using
+panel-primary color there. Inside the panel,
+you see that I have two divs here. The first div is a panel-heading, so that is what contains the heading
+that I am using for the panel. So in here I define the panel-title
+as an h3 class here, so that will be displayed
+in the panel-heading. Down below here, I have the panel-body. So this is where the content of
+the panel has been enclosed. Now, looking at the content here, you see
+that I have a description list here, a dl. And the class that I am using for
+this is dl-horizontal. What this means is that
+in the description list, the term is displayed on the left side and
+the actual description of the term is displayed on the right side
+in the same horizontal line. So here, I have the first group here, so I have the dt that I am
+using to specify started. Then I am using the dd to specify
+what goes into the description. And similarly, repeating dt and dd here
+for the second line there, and so on. So I have four of these enclosed
+inside of this dl class here. So that is what creates the content of this panel that is being
+displayed in the web page. Taking one final look at the panel,
+you see that now, the panel head is being
+displayed here on the top. And then the contents of the panel,
+the dl, is being displayed inside the panel here. Panels can be used to highlight pieces
+of information on your web page. So this is a very interesting
+component that is useful for certain parts of our web page and design. The last component that I'm going
+to add to this web page is a well. Now, I'm going to put a well here
+in this row to display a quotation. Now, this quotation I am going to make use
+of the blockquotethat is available for typography in Bootstrap to
+style that particular well. Let me add in the code, and then we'll
+come back to look at the web page itself. Coming back to the web page, now you can
+see the use of a well on the web page. Inside the well,
+now I have a quotation which I am using the blockquote typography
+support in Bootstrap to style. So when I use a blockquote, the blockquote will put a vertical bar
+to the left side of this quotation. And in addition,
+I am using some additional features of the blockquote in order to
+display the actual content here. Let's go and look at the code for
+creating the well and the quotation here. Now coming back to the code here, the well is created by using a div for
+which I am specifying the class as well. I can even specify the size
+of the well as well followed by well-lg or well-sm for
+large and small wells. Or, if I don't specify the size,
+it'll be the default size well. In this example,
+I am using a default size well here. Now, inside the well, I can enclose
+whatever content that I wish to. So inside the well, I am using a
+blockquote to enclose the quotation there. Now if I use a blockquote and
+put some content inside the blockquote, what Bootstrap will do is to display
+a vertical bar to the left hand side of the blockquote to highlight
+that as a quotation on the screen. Now inside the blockquote, you see that I have a p element here
+which encloses the actual quotation. And then in addition,
+I am making use of the footer here. This footer inside a blockquote
+allows me to specify the author, or
+the person who said the quotation. So in this case,
+this quotation was by Yogi Berra, which I found to be funny enough
+to include in the web page. And also, I can use this cite tag to display the source
+of this information. So here, I say cite and
+then I say the title as source title. And then,
+I specify the information inside there. So this will be displayed as
+the source of this quotation. Coming back to the web page,
+now you can see how this well and the quotation inside the well have
+been created using the well class and the blockquote class in Bootstrap. So this completes this exercise. So in this exercise,
+we have looked at the use of tables, panels, and wells in displaying
+content on our web page. Now, you can make use of these components
+at many other locations on your web page, depending on what you're
+trying to display there. But, this is just one example to
+illustrate how we can leverage these components to display
+content on our web page.

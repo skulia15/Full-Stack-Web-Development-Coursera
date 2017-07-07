@@ -1,0 +1,402 @@
+1
+00:00:02,821 --> 00:00:06,120
+Let's now talk about Bootstrap's buttons.
+
+2
+00:00:06,120 --> 00:00:11,082
+In particular, the various classes
+that Bootstrap provides for
+
+3
+00:00:11,082 --> 00:00:14,419
+you to include buttons in your website,
+and
+
+4
+00:00:14,419 --> 00:00:17,771
+also to style the buttons
+in various forms.
+
+5
+00:00:20,691 --> 00:00:27,423
+The default Bootstrap setup is
+configured with five different colors,
+
+6
+00:00:27,423 --> 00:00:32,389
+and these colors can be
+specified within Bootstrap or
+
+7
+00:00:32,389 --> 00:00:37,575
+attached as qualifiers for
+previous classes in the form
+
+8
+00:00:37,575 --> 00:00:43,250
+of primary, success,
+info, warning and danger.
+
+9
+00:00:43,250 --> 00:00:47,271
+There five corresponding colors
+in the default Bootstrap set up.
+
+10
+00:00:47,271 --> 00:00:53,879
+Is darker blue for primary, green for
+success, light blue for info,
+
+11
+00:00:53,879 --> 00:00:59,143
+an orange color,
+somewhat of an orange yellow color for
+
+12
+00:00:59,143 --> 00:01:02,630
+warning, and red color for danger.
+
+13
+00:01:03,780 --> 00:01:07,480
+These five colors, identifications,
+
+14
+00:01:07,480 --> 00:01:12,240
+can be used together with many
+of the Bootstrap classes.
+
+15
+00:01:12,240 --> 00:01:18,860
+So, for example,
+if we want to set a text to
+
+16
+00:01:18,860 --> 00:01:25,840
+light blue in color they can say text
+info or you can say text primaries.
+
+17
+00:01:25,840 --> 00:01:30,790
+You can say button success for
+a green colored button, similarly,
+
+18
+00:01:30,790 --> 00:01:37,830
+alert danger for red colored and
+text to be displayed.
+
+19
+00:01:37,830 --> 00:01:41,260
+Similarly, background info for
+
+20
+00:01:41,260 --> 00:01:45,130
+a blue colored background to
+be created for an element.
+
+21
+00:01:45,130 --> 00:01:50,300
+So, this standard five color combinations
+
+22
+00:01:50,300 --> 00:01:56,490
+can be used together with many
+classes to specify colors for
+
+23
+00:01:56,490 --> 00:01:59,200
+those elements in Bootstrap.
+
+24
+00:02:01,330 --> 00:02:04,830
+Bootstrap provides various
+button classes that
+
+25
+00:02:04,830 --> 00:02:08,080
+allow you to style your
+buttons in various ways.
+
+26
+00:02:08,080 --> 00:02:12,970
+Now, these button classes can be applied
+to the <a> tags, to the <button> tag,
+
+27
+00:02:12,970 --> 00:02:18,600
+as well to the <input> tags
+that you use on your web site.
+
+28
+00:02:18,600 --> 00:02:22,470
+All these can be styled
+using the button class.
+
+29
+00:02:22,470 --> 00:02:26,380
+So, all of them when you apply
+the Bootstrap button classes,
+
+30
+00:02:26,380 --> 00:02:31,660
+will take the form of a button,
+they all look like a button on the screen.
+
+31
+00:02:31,660 --> 00:02:37,065
+But, in particular only button
+tags can be used inside navs and
+
+32
+00:02:37,065 --> 00:02:42,360
+navbars if you want to include
+a button in the nav or navbar.
+
+33
+00:02:42,360 --> 00:02:48,040
+Let's take a look at some example buttons
+and how they are defined in code.
+
+34
+00:02:48,040 --> 00:02:51,580
+So, looking at the example that
+we have on the screen here.
+
+35
+00:02:51,580 --> 00:02:55,870
+You can see that I have defined
+five different kinds of buttons,
+
+36
+00:02:57,025 --> 00:03:01,755
+the large button that you see there
+has been styled using button,
+
+37
+00:03:01,755 --> 00:03:05,665
+button primary, button LG class.
+
+38
+00:03:05,665 --> 00:03:09,095
+And, similarly the default,
+the small success button,
+
+39
+00:03:09,095 --> 00:03:13,060
+the extra small buttons, and even links.
+
+40
+00:03:13,060 --> 00:03:15,570
+The two buttons on the right side here
+
+41
+00:03:15,570 --> 00:03:20,510
+they use the button class
+called button block.
+
+42
+00:03:20,510 --> 00:03:23,940
+This essentially makes those buttons span
+
+43
+00:03:23,940 --> 00:03:27,890
+the entire payment block within
+which this button is contained.
+
+44
+00:03:27,890 --> 00:03:31,850
+So, in this case, the two buttons
+are spanning an entire column.
+
+45
+00:03:31,850 --> 00:03:36,738
+So, they are spanning three columns
+in that particular row there.
+
+46
+00:03:36,738 --> 00:03:41,740
+To summarize, Bootstraps button
+classes application can be done
+
+47
+00:03:41,740 --> 00:03:45,920
+by selecting one from each
+of these four choices here.
+
+48
+00:03:45,920 --> 00:03:53,770
+So, if you need to apply the button class
+to any A or Button R, the input element.
+
+49
+00:03:53,770 --> 00:03:56,870
+You would specify the class as BTN.
+
+50
+00:03:56,870 --> 00:04:02,260
+Then followed by one of the color choices
+that we have there button default,
+
+51
+00:04:02,260 --> 00:04:04,650
+button success, button info and so on.
+
+52
+00:04:04,650 --> 00:04:07,040
+Then you can also specify
+the size of the button.
+
+53
+00:04:07,040 --> 00:04:10,310
+So, you can say button large,
+button small, button xs.
+
+54
+00:04:10,310 --> 00:04:13,630
+And of course that if you
+don't specify a size,
+
+55
+00:04:13,630 --> 00:04:18,130
+the default button size will be used.
+
+56
+00:04:18,130 --> 00:04:20,520
+And you can also make the button
+
+57
+00:04:20,520 --> 00:04:24,630
+occupy the entire block by
+using the btn-block class.
+
+58
+00:04:26,330 --> 00:04:30,940
+Bootstrap also allows you to
+group buttons into button groups.
+
+59
+00:04:30,940 --> 00:04:33,410
+So, when you group a set of
+buttons into button groups,
+
+60
+00:04:33,410 --> 00:04:38,710
+these buttons are displayed
+together as a single unit.
+
+61
+00:04:38,710 --> 00:04:40,750
+So, in the picture what you see here,
+
+62
+00:04:40,750 --> 00:04:44,580
+we have three different kinds
+of button groups being used.
+
+63
+00:04:44,580 --> 00:04:50,040
+The left two button groups
+are enclosed inside a button toolbar.
+
+64
+00:04:50,040 --> 00:04:53,960
+So, you enclose button groups
+inside a button toolbar.
+
+65
+00:04:53,960 --> 00:04:58,468
+So, how do we apply the button classes for
+applying the button group?
+
+66
+00:04:58,468 --> 00:05:04,750
+You use btn-group class,
+then you can specify the size, also,
+
+67
+00:05:04,750 --> 00:05:11,940
+as btn-group -smlgr excess,
+if you would like to specify.
+
+68
+00:05:13,750 --> 00:05:17,360
+You can also specify the orientation for
+the patterns as vertical.
+
+69
+00:05:17,360 --> 00:05:20,957
+Normally, the buttons will be done in
+a horizontal manner if you include them in
+
+70
+00:05:20,957 --> 00:05:22,150
+a button group.
+
+71
+00:05:22,150 --> 00:05:26,710
+But, you can specify that the button
+group is button group vertical so
+
+72
+00:05:26,710 --> 00:05:32,480
+the buttons are going to be laid
+out stacked one upon the other.
+
+73
+00:05:32,480 --> 00:05:35,410
+As you see in the example
+on the right side.
+
+74
+00:05:35,410 --> 00:05:37,250
+So, you have the three buttons in for
+warning and
+
+75
+00:05:37,250 --> 00:05:40,160
+danger buttons stacked
+one on top of the other.
+
+76
+00:05:40,160 --> 00:05:47,011
+And the corresponding code for causing
+this is shown right there in the slide.
+
+77
+00:05:47,011 --> 00:05:52,850
+Finally, summarizing, for buttons we
+have the button class, BTN class,
+
+78
+00:05:52,850 --> 00:05:59,680
+then you have the colors, then you have
+the sizes that can be used in combination.
+
+79
+00:05:59,680 --> 00:06:03,950
+Buttons can be grouped using button
+toolbar, button group, button group
+
+80
+00:06:03,950 --> 00:06:09,300
+vertical button group justified meaning
+that the buttons will stretch to occupy
+
+81
+00:06:09,300 --> 00:06:15,680
+the entire space that they are allowed
+to occupy based upon appearance size.
+
+82
+00:06:15,680 --> 00:06:23,370
+So, if they are included in a column then
+they stretch to occupy the entire color.
+
+83
+00:06:26,070 --> 00:06:32,960
+And of course you have the button group
+with the size being specified large,
+
+84
+00:06:32,960 --> 00:06:37,969
+small, and extra small.

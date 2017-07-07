@@ -1,0 +1,322 @@
+1
+00:00:02,230 --> 00:00:05,170
+What is Full Stack Web Development?
+
+2
+00:00:05,170 --> 00:00:07,740
+Let me start by clarifying a few terms, so
+
+3
+00:00:07,740 --> 00:00:12,650
+that we start with a common
+understanding about this area.
+
+4
+00:00:12,650 --> 00:00:17,110
+First, we hear people talking
+about Front end and Back end, or
+
+5
+00:00:17,110 --> 00:00:20,200
+sometimes the Client-side and
+the Server-side.
+
+6
+00:00:20,200 --> 00:00:23,530
+Now when we talk about Front end
+we are primarily talking about
+
+7
+00:00:23,530 --> 00:00:25,790
+presenting the data to the users.
+
+8
+00:00:25,790 --> 00:00:30,610
+So this is where the users access
+the web through the browser.
+
+9
+00:00:30,610 --> 00:00:34,630
+And so we would be using
+technologies like HTML, CSS and
+
+10
+00:00:34,630 --> 00:00:38,189
+JavaScript to target the end users.
+
+11
+00:00:39,350 --> 00:00:44,460
+The Back end is more concerned with the
+business logic and the data aspect of our
+
+12
+00:00:45,500 --> 00:00:50,759
+web application, so this might be
+implemented in one of several languages.
+
+13
+00:00:53,220 --> 00:00:57,490
+We often hear people talking about
+the Three Tier Architecture for
+
+14
+00:00:57,490 --> 00:01:00,460
+web development and implementation.
+
+15
+00:01:00,460 --> 00:01:05,640
+Now in this approach, which is a common
+client-server software architecture
+
+16
+00:01:05,640 --> 00:01:10,930
+pattern, the entire development
+is divided into three layers.
+
+17
+00:01:10,930 --> 00:01:16,080
+The Presentation layer, which is
+concerned with the UI related issues and
+
+18
+00:01:16,080 --> 00:01:19,060
+how to present the data to the end-user.
+
+19
+00:01:19,060 --> 00:01:23,650
+Then we have the Business Logic layer,
+which is more concerned with
+
+20
+00:01:24,820 --> 00:01:30,270
+data validation and processing the data
+
+21
+00:01:30,270 --> 00:01:34,940
+in order to generate information for
+the users.
+
+22
+00:01:34,940 --> 00:01:39,660
+And then we have the Data Access layer,
+
+23
+00:01:39,660 --> 00:01:44,060
+which deals with data persistence and
+
+24
+00:01:44,060 --> 00:01:49,680
+storage of data behind the scenes,
+for example, in a database.
+
+25
+00:01:51,700 --> 00:01:56,730
+Exploring this further,
+let's look at what is
+
+26
+00:01:56,730 --> 00:02:00,790
+implemented in each of these
+three layers in more detail.
+
+27
+00:02:00,790 --> 00:02:05,940
+Now, the Business Logic layer is
+typically implemented, traditionally,
+
+28
+00:02:05,940 --> 00:02:12,566
+in a server,
+where we use languages like Ruby, Python,
+
+29
+00:02:12,566 --> 00:02:18,600
+C++, Java, on ASP.net,
+to implement a server.
+
+30
+00:02:18,600 --> 00:02:24,320
+This server in turn, is talking to
+a Back end database management system
+
+31
+00:02:24,320 --> 00:02:29,780
+to exchange data and
+in turn, will be generating
+
+32
+00:02:30,850 --> 00:02:35,130
+the Front end display of data to the user
+
+33
+00:02:36,570 --> 00:02:42,900
+by Server-side rendering of the HTML,
+CSS and JavaScript.
+
+34
+00:02:42,900 --> 00:02:46,060
+This has been the traditional
+approach that
+
+35
+00:02:46,060 --> 00:02:50,360
+that has been used successfully
+in the development.
+
+36
+00:02:50,360 --> 00:02:56,085
+Now in this approach, we need specialists
+in each of these three layers.
+
+37
+00:02:56,085 --> 00:03:01,010
+So, you have a Front end specialist
+who would be well versed in HTML, CSS,
+
+38
+00:03:01,010 --> 00:03:02,320
+and JavaScript.
+
+39
+00:03:02,320 --> 00:03:04,710
+And then you have
+the Back end specialists,
+
+40
+00:03:04,710 --> 00:03:09,600
+one who would be well-versed in
+Server-side implementations, say, for
+
+41
+00:03:09,600 --> 00:03:13,540
+example, one of the languages used for
+Server-side implementation.
+
+42
+00:03:13,540 --> 00:03:18,710
+And then you would have a data specialist
+who would be mostly concerned with
+
+43
+00:03:18,710 --> 00:03:24,830
+the databases and data persistence
+aspect of our web development.
+
+44
+00:03:27,700 --> 00:03:33,350
+There is an increasing trend towards
+Full Stack Web Development where
+
+45
+00:03:33,350 --> 00:03:38,920
+a single language is used for
+implementation over the entire stack.
+
+46
+00:03:38,920 --> 00:03:44,210
+So you could be having the front
+implemented as a single page application,
+
+47
+00:03:44,210 --> 00:03:48,900
+using one of the JavaScript
+frameworks like AngularJS.
+
+48
+00:03:48,900 --> 00:03:53,880
+Then the Server-side could be implemented
+using technologies like NodeJS and
+
+49
+00:03:53,880 --> 00:03:57,180
+NodeJS modules, which again,
+depends on JavaScript.
+
+50
+00:03:57,180 --> 00:04:03,410
+And then, the Data Access or
+data storage part implemented using
+
+51
+00:04:03,410 --> 00:04:10,800
+Technologies like MongoDB,
+which works based on storing JSON data,
+
+52
+00:04:10,800 --> 00:04:17,100
+and serving up information
+in the form of JSON data.
+
+53
+00:04:17,100 --> 00:04:20,560
+Now, JSON has become
+the standard format for
+
+54
+00:04:20,560 --> 00:04:24,030
+data interchange among the three layers.
+
+55
+00:04:24,030 --> 00:04:30,060
+Server side increasingly
+is delivering a REST API,
+
+56
+00:04:30,060 --> 00:04:34,680
+so that you can target multiple
+platforms through the REST API.
+
+57
+00:04:34,680 --> 00:04:39,240
+So, essentially, the server is
+serving up data in the form of JSON,
+
+58
+00:04:39,240 --> 00:04:45,310
+which can then be rendered either
+on a standard web browser, or
+
+59
+00:04:45,310 --> 00:04:51,070
+on a mobile device using
+one of the multiplied form,
+
+60
+00:04:51,070 --> 00:04:54,850
+hybrid mobile application
+development environments.
+
+61
+00:04:56,150 --> 00:05:03,500
+So, in this particular specialization
+we are targeting the entire stack.
+
+62
+00:05:03,500 --> 00:05:06,740
+We'll look at HTML,
+CSS, and JavaScript and
+
+63
+00:05:06,740 --> 00:05:12,100
+then we will look at web UI
+development using Bootstrap.
+
+64
+00:05:12,100 --> 00:05:18,030
+Then we'll look at Front end
+JavaScript frameworks like AngularJS.
+
+65
+00:05:18,030 --> 00:05:21,480
+Then we'll look at NodeJS and
+NodeJS Modules, and
+
+66
+00:05:21,480 --> 00:05:27,430
+also review Back end as a service,
+and also review
+
+67
+00:05:27,430 --> 00:05:30,920
+data support through
+MongoDB on the Server side.

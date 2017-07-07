@@ -1,0 +1,103 @@
+Let me now talk to you
+about how Bootstrap and JQuery work together to support
+the Bootstrap's JavaScript competence. We saw that Bootstrap's JavaScript
+support is through the JS Plugins. These plugins are written in JQuery. And we have already seen that the plugins
+can be individually included in our Web page, or collectively,
+the entire plugins can be included. We have also seen the relationship
+between JavaScript, JQuery and Bootstrap's JS components
+using this graphic earlier. We have also seen that the Bootstrap's JS
+components can be used without writing a single line of JavaScript
+code by using the data attributes. But of course,
+if we need the full JavaScript API to be used, then we can do that
+too by directly writing code. Now in this section, we are gonna
+examine how we can write JQuery or JavaScript based code in order to
+control the Bootstrap components. Let me give you a brief
+overview of JQuery. JQuery is a lightweight
+JavaScript library. It is a feature-rich library and
+provides a lot of interesting methods that enable you to do HTML or
+DOM manipulation, so you can modify the HTML elements directly. It allows you to add and remove CSS
+classes and do a lot of CSS manipulation. It allows you to respond
+to HTML events and upon occurrence of events,
+certain code can be executed. It allows you to do effects and
+animations, and also communicating with
+the server using AJAX. Bootstrap's JavaScript components, as we have already mentioned,
+is built upon JQuery. Let's briefly understand the JQuery
+syntax so that it'll become more easier to understand how we can control
+the Bootstrap's JavaScript components. Now, the JQuery syntax
+starts with a dollar sign. The dollar sign is defining or
+access to JQuery. Following that, within parentheses,
+you will have a selector. The selector is what allows you to
+select a specific HTML element. There are many different ways
+of specifying the selectors, as we will see in the next slide. After that, you will specify an action
+to be performed on the elements that match the selection criteria. So, as example you see that
+I have specified within the selector the value p there,
+and then the action as hide. Meaning that when this code is executed, all the HTML elements of
+tag p will be hidden. Similarly, the other example allows me to select the carousel
+with the ID mycarousel. And then make the carousel
+pause by specifying the action as carousel with
+the parameter pause there. Let's take a look at
+Bootstrap's JQuery example here. Now, as you can see, the code is
+enclosed inside the script tags. In this code, you can see that we
+have specified that for the document, when the document is ready,
+then the function will be executed. The function itself is specified
+within the parentheses. The function says that for
+those elements for which the data-toggle
+attribute is set to tooltip, all those elements that
+match that criteria, then that tooltip action will
+be executed on those elements. So, this is the way we saw that
+we can enable tooltips for those elements in which we
+include the tooltip attributes. Briefly, talking about
+the JQuery selectors. You can specify any HTML
+element as a selector. So, any HTML tag, like p, button, etc.,
+could be specified as a selector. Which means that all the elements
+whose tags correspond to that will be selected by this selector. You can also uniquely identify a particular element by specifying
+the ID of that element. You can select a whole
+set of elements that bear a certain class or
+the CSS class associated with them. So, you can specify all elements of the
+button class type or with button default. So, you can specify multiple classes and
+apply together for an HTML element only
+those will be selected. You can also specify
+based on an attribute. So, for example, you would say
+that an HTML element that contains the HREF attribute,
+only those elements will be selected. Or, we saw the use of the data-toggle
+attribute already for selecting those elements to which
+the tooltip has been applied. The current element can
+be specified as this, so which means that the current element
+will be selected by the selector. There are a lot more of
+these selector approaches. Users' interactions with
+the Web page causes DOM events, to which JQuery
+provides methods to respond. So, DOM events including mouse clicks,
+mouse in and out of a region, keyboard interactions, form-related interactions like
+clicking on the Submit button or entering an information into a field, selecting and de-selecting a field. Or even, the entire document window getting loaded, resized, unloaded. All these would cause DOM events, to which
+JQuery provides methods for responding to. Let's take the example of the Bootstrap
+carousel to understand how they can use Bootstrap's JavaScript methods
+together with the jQuery methods. As we have already learned, Bootstrap JavaScript components can be
+used purely by the data attributes. So for the carousel itself, there are four
+data attributes that can be used, as shown in this slide here. For controlling a carousel using
+a JavaScript based control, we can specify,
+as you can see in the example here. You can identify the carousel
+by specifying a selector as the carousel class, and
+then use the carousel action on it. And as an example for the carousel action, you can specify setting the interval for slide transitions to be a specified value. As in this example, the interval being
+set to 2,000 milliseconds or 2 seconds. The other JavaScript controls
+that carousel provides for us is including carousel
+with the cycle parameter, which enables the cycling of
+the slides from left to right. You can use the pause, but I make sure
+to stop the carousel from sliding. You can specify the number
+inside the parentheses as zero, one or two, to specify that you want
+to go to that particular slide. You can say prev and
+next to go to the previous and the next slide from the current slide. Now, the carousel itself causes
+two events to be generated upon occurrence of certain
+events within the carousel. One of them is the slid.bs.carousel event. This will be fired when
+the slide transition begins. The slid.bs.carousel event will
+be fired when the carousel has completed that transition
+to the next slide. Now how do we make use of it
+within the jQuery methods? As you see in this example,
+you can identify the carousel by its ID, and then you can specify
+the on as the action. And the on takes as the first parameter, the event to which this
+corresponding function responds. So in this case, we can say
+slid.bs.carousel and the function. And inside the function, you can specify what should be
+done when that event occurs. In our next exercise, we are going to look
+at Bootstrap and JQuery working together and we will see how we can add two
+buttons to the carousel that enable us to stop and
+resume the slide transitions. And we'll see how we can activate those
+buttons from writing JavaScript code.

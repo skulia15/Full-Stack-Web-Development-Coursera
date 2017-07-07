@@ -1,0 +1,658 @@
+1
+00:00:02,212 --> 00:00:06,250
+The carousel is a very
+interesting Bootstrap complement.
+
+2
+00:00:07,490 --> 00:00:11,610
+It presents a list of scrolling
+images on the screen.
+
+3
+00:00:11,610 --> 00:00:14,660
+So as the images scroll
+one by one on the screen,
+
+4
+00:00:14,660 --> 00:00:18,280
+it adds a lot of dynamism to your website.
+
+5
+00:00:18,280 --> 00:00:23,230
+Now of course, sometimes you might find it
+to be too distracting, but let's anyway
+
+6
+00:00:23,230 --> 00:00:28,470
+explore the carousel components to
+understand how we can configure it.
+
+7
+00:00:28,470 --> 00:00:36,300
+Of course, as you realize the carousel
+component is a JavaScript-based component,
+
+8
+00:00:36,300 --> 00:00:40,850
+and so would require JavaScript
+support for it to work correctly.
+
+9
+00:00:42,750 --> 00:00:47,660
+We're gonna go to the index route HTML
+page and add a carousel component.
+
+10
+00:00:47,660 --> 00:00:55,128
+At the top of the page, right after the
+restaurant's title, below the Jumbotron.
+
+11
+00:00:58,337 --> 00:01:01,916
+Taking a look at
+the index.html page I want to
+
+12
+00:01:01,916 --> 00:01:07,165
+introduce the carousel right
+after the jumbotron vec.
+
+13
+00:01:07,165 --> 00:01:11,015
+I'm going to take the content
+from the remaining three columns,
+
+14
+00:01:11,015 --> 00:01:18,080
+the content columns of this page and
+then move it into the carousel.
+
+15
+00:01:18,080 --> 00:01:20,500
+Or rather I will just copy
+it into the carousel.
+
+16
+00:01:21,910 --> 00:01:30,430
+The carousel will be in its own row at
+the top of the content part of the page.
+
+17
+00:01:30,430 --> 00:01:34,340
+After I design the carousel,
+we'll look at the entire web page, and
+
+18
+00:01:34,340 --> 00:01:38,980
+then you can decide whether you like
+the carousel better or to present
+
+19
+00:01:38,980 --> 00:01:43,910
+the information in the form of consecutive
+rows as we are doing at this moment.
+
+20
+00:01:43,910 --> 00:01:46,360
+But in any case,
+the carousel is an interesting component.
+
+21
+00:01:46,360 --> 00:01:51,628
+So let's explore that to
+understand how it works.
+
+22
+00:01:51,628 --> 00:01:56,282
+Going to the HTML code I'm
+going to introduce another row,
+
+23
+00:01:56,282 --> 00:01:59,819
+a content row,
+inside the container here and
+
+24
+00:01:59,819 --> 00:02:04,770
+inside this content row I'm
+going to introduce the carousel.
+
+25
+00:02:06,640 --> 00:02:12,400
+So as you can see I have already
+added the content row and
+
+26
+00:02:12,400 --> 00:02:18,590
+set up a div inside to expand
+the entire 12 columns.
+
+27
+00:02:18,590 --> 00:02:23,700
+Now, inside this inner div,
+I'm going to introduce the carousel.
+
+28
+00:02:23,700 --> 00:02:26,190
+Let me introduce the basic code for
+the carousel, and
+
+29
+00:02:26,190 --> 00:02:29,110
+then we will look at
+the code in more detail.
+
+30
+00:02:32,450 --> 00:02:36,950
+To set up a carousel,
+I need to introduce a div with
+
+31
+00:02:36,950 --> 00:02:42,520
+a class carousel and
+a class slide attached to this div.
+
+32
+00:02:42,520 --> 00:02:47,213
+I'm going to give, this div and
+Id as my carousel, and
+
+33
+00:02:47,213 --> 00:02:51,712
+then also a data attribute
+as data-ride carousel.
+
+34
+00:02:53,379 --> 00:02:58,285
+Inside this div,
+I have introduced another div with
+
+35
+00:02:58,285 --> 00:03:03,440
+the class carousel-inner and
+with the role list box.
+
+36
+00:03:03,440 --> 00:03:07,200
+This carousel-inner contains
+all the information
+
+37
+00:03:07,200 --> 00:03:09,158
+that will be displayed on the carousel.
+
+38
+00:03:09,158 --> 00:03:14,470
+Inside this div,
+
+39
+00:03:14,470 --> 00:03:20,350
+we will introduce each item within
+the carousel as a div with the class item.
+
+40
+00:03:22,710 --> 00:03:26,250
+One of these divs will be
+designated as active, so
+
+41
+00:03:26,250 --> 00:03:28,950
+that is the one that
+the carousel will begin with.
+
+42
+00:03:31,240 --> 00:03:34,450
+Inside the item class,
+I can include an image.
+
+43
+00:03:34,450 --> 00:03:40,400
+So what I have done here is to take the
+image that we already have for the dish
+
+44
+00:03:40,400 --> 00:03:44,710
+that we introduced earlier, and then I
+just pasted that image information here.
+
+45
+00:03:45,920 --> 00:03:50,680
+Together with the image, I can also
+have a caption being displayed for
+
+46
+00:03:50,680 --> 00:03:53,120
+that carousel slide there.
+
+47
+00:03:53,120 --> 00:03:57,695
+So, that is what I am supporting using
+the div inside there with the class
+
+48
+00:03:57,695 --> 00:03:59,450
+carousel-caption.
+
+49
+00:03:59,450 --> 00:04:03,850
+Now, inside the div carousel-caption
+I can include HTML code.
+
+50
+00:04:03,850 --> 00:04:09,364
+So, what I have done is to take
+the information from my first row,
+
+51
+00:04:09,364 --> 00:04:13,295
+and then cut and
+paste it inside this div here.
+
+52
+00:04:14,504 --> 00:04:20,370
+Now, the same thing I'm going to do for
+two more items in the carousel.
+
+53
+00:04:20,370 --> 00:04:25,610
+So, the second item corresponds to
+the second row of our existing HTML page,
+
+54
+00:04:25,610 --> 00:04:30,400
+the image and the information from there.
+
+55
+00:04:30,400 --> 00:04:36,180
+And the third item corresponds
+to the third image from,
+
+56
+00:04:36,180 --> 00:04:40,130
+rather, the third row from
+our existing web page.
+
+57
+00:04:41,780 --> 00:04:45,722
+After introducing these three items,
+
+58
+00:04:45,722 --> 00:04:50,499
+we need to go and
+fix a few things in our CSS file so
+
+59
+00:04:50,499 --> 00:04:56,129
+that the carousel is properly
+displayed on the screen.
+
+60
+00:04:59,837 --> 00:05:03,175
+Moving to the mystyles.css file,
+
+61
+00:05:03,175 --> 00:05:08,300
+I have introduced a few
+additional CSS classes there.
+
+62
+00:05:08,300 --> 00:05:10,150
+Let's take a quick look at them, and
+
+63
+00:05:10,150 --> 00:05:13,800
+then understand what these
+CSS classes are setting up.
+
+64
+00:05:13,800 --> 00:05:16,340
+The first CSS class is of course carousel,
+for
+
+65
+00:05:16,340 --> 00:05:21,410
+which I am setting up the background
+as a dark indigo color.
+
+66
+00:05:21,410 --> 00:05:26,670
+This is the same color that I'm using for
+my nav bar, the highlighted
+
+67
+00:05:26,670 --> 00:05:31,530
+part of the nav bar, there,
+just to match the color schemes.
+
+68
+00:05:31,530 --> 00:05:35,150
+So, I'm using the same color for
+the colors of background.
+
+69
+00:05:35,150 --> 00:05:40,050
+Now that inside the carousel's
+individual items I have set up
+
+70
+00:05:40,050 --> 00:05:42,220
+their height to be 300 pixels.
+
+71
+00:05:42,220 --> 00:05:45,650
+So my carousel's height will now be fixed.
+
+72
+00:05:45,650 --> 00:05:51,160
+And the item's image that I include
+in the carousel, I am specifying
+
+73
+00:05:51,160 --> 00:05:56,970
+its position as absolute, with the top
+left corners being set to 0, 0.
+
+74
+00:05:56,970 --> 00:06:02,410
+So, this image that I include there
+will be stuck on the left edge of this
+
+75
+00:06:02,410 --> 00:06:09,030
+carousel slide, with the top and
+left at point 0, 0.
+
+76
+00:06:09,030 --> 00:06:13,970
+So the top corner and the left corner of
+the image aligned with the top zero and
+
+77
+00:06:13,970 --> 00:06:18,100
+left zero corner of the slide.
+
+78
+00:06:18,100 --> 00:06:21,970
+And I have specified the image's
+minimum height to be 300 pixels.
+
+79
+00:06:21,970 --> 00:06:24,300
+So no matter what kind of
+a range I put in there,
+
+80
+00:06:24,300 --> 00:06:29,060
+the height will be appropriately
+at least given to 300 pixels.
+
+81
+00:06:29,060 --> 00:06:33,780
+If you include a larger image then
+obviously the cursor will stretch to
+
+82
+00:06:33,780 --> 00:06:39,791
+include the larger image Now,
+with these changes, let's go and
+
+83
+00:06:39,791 --> 00:06:46,320
+take a look at the web page and understand
+how the carousel behaves on our web page.
+
+84
+00:06:46,320 --> 00:06:47,780
+Returning to our web page,
+
+85
+00:06:47,780 --> 00:06:52,680
+you can now see the carousel in place
+in the web page in its own room.
+
+86
+00:06:54,030 --> 00:06:58,420
+Now, I have put my mouse cursor on the
+carousel, so the carousel is now stuck.
+
+87
+00:06:58,420 --> 00:07:03,510
+So, if I remove the mouse cursor from
+the carousel it will start sliding left
+
+88
+00:07:05,630 --> 00:07:08,190
+after a certain delay.
+
+89
+00:07:08,190 --> 00:07:11,000
+The default delay here is three seconds.
+
+90
+00:07:11,000 --> 00:07:15,370
+So every three seconds,
+the slide will move to the left.
+
+91
+00:07:15,370 --> 00:07:17,796
+So this is the behavior of the carousel.
+
+92
+00:07:26,462 --> 00:07:31,420
+Now, I'm gonna introduce two
+new controls in to the close.
+
+93
+00:07:31,420 --> 00:07:34,950
+The first control will show three dots
+
+94
+00:07:36,760 --> 00:07:41,690
+towards the bottom of the carousel, which
+will help me to select whichever slide
+
+95
+00:07:41,690 --> 00:07:46,440
+item from the carousel that
+is displayed on the screen.
+
+96
+00:07:46,440 --> 00:07:51,750
+The second control that I will
+introduce is a left and a right button
+
+97
+00:07:51,750 --> 00:07:55,810
+on the left edge and the right edge of
+the carousel, so that I can click them and
+
+98
+00:07:55,810 --> 00:08:01,650
+then manually make the carousel
+go left and right.
+
+99
+00:08:01,650 --> 00:08:05,590
+So, first let me introduce
+the carousel indicators here.
+
+100
+00:08:06,780 --> 00:08:11,530
+So, within the carousel I
+am using an ol class here.
+
+101
+00:08:11,530 --> 00:08:17,570
+With the class set as carousel-indicators,
+
+102
+00:08:17,570 --> 00:08:22,460
+and then inside here, I have specified
+three list items, each of these
+
+103
+00:08:22,460 --> 00:08:27,240
+with the data-target set to mycarousel,
+which is the ID of the carousel.
+
+104
+00:08:27,240 --> 00:08:31,940
+And then also the second attribute
+that I have here is data slide two and
+
+105
+00:08:31,940 --> 00:08:36,280
+then specifies which particular slide
+I should go to zero, one, or two.
+
+106
+00:08:36,280 --> 00:08:39,460
+In this example we have three slides
+that I have already introduced so
+
+107
+00:08:39,460 --> 00:08:42,850
+that's why we can have indicators there.
+
+108
+00:08:42,850 --> 00:08:47,020
+Show which slide I would be able to go to.
+
+109
+00:08:49,960 --> 00:08:54,490
+The next controls that I am
+introducing into my carousel is that
+
+110
+00:08:56,060 --> 00:09:01,190
+two edges of the carousel,
+two buttons on the left and
+
+111
+00:09:01,190 --> 00:09:04,010
+the right edge of the carousel,
+which when clicked,
+
+112
+00:09:04,010 --> 00:09:07,650
+will allow me to change the slides
+manually within the carousel.
+
+113
+00:09:07,650 --> 00:09:12,535
+So to implement that on
+the left side I am introducing
+
+114
+00:09:12,535 --> 00:09:16,955
+an a tag acting as a button.
+
+115
+00:09:16,955 --> 00:09:22,205
+The width of the class is left and
+carousel-control.
+
+116
+00:09:22,205 --> 00:09:28,190
+And then the href pointing to
+the mycarousel, the ID of this carousel,
+
+117
+00:09:28,190 --> 00:09:31,990
+and the inside where I am using
+a glyphicon the left chevron for
+
+118
+00:09:31,990 --> 00:09:36,380
+this and the other one is
+the right carousel control.
+
+119
+00:09:37,725 --> 00:09:41,355
+And also using the right
+chevron glyphicon.
+
+120
+00:09:41,355 --> 00:09:43,899
+Now with these changes, let's go and
+
+121
+00:09:43,899 --> 00:09:47,805
+have a look at our web page to
+understand how it looks like.
+
+122
+00:09:50,117 --> 00:09:51,487
+Going to your webpage,
+
+123
+00:09:51,487 --> 00:09:56,187
+you can now see that at the bottom
+you have now three dots here.
+
+124
+00:09:56,187 --> 00:10:02,893
+One of them filled dot and
+the remaining two are unfilled dots.
+
+125
+00:10:02,893 --> 00:10:05,803
+These allow me to select
+which slide I want to view.
+
+126
+00:10:05,803 --> 00:10:09,293
+So, for example, if I want to go to the
+third slide, I can just click on that, and
+
+127
+00:10:09,293 --> 00:10:13,943
+then it'll show me the third slide,
+or the second slide, and so on.
+
+128
+00:10:13,943 --> 00:10:17,639
+So these indicators allow
+me to navigate through
+
+129
+00:10:17,639 --> 00:10:20,891
+the slides inside the carousel manually.
+
+130
+00:10:22,101 --> 00:10:26,351
+Also, you can see that on the left
+edge and the right edge, you have
+
+131
+00:10:26,351 --> 00:10:31,850
+the chevrons displayed here, so these
+are the left and right controls patterns,
+
+132
+00:10:31,850 --> 00:10:37,120
+so I can click on this to go to
+the next slide on the right side.
+
+133
+00:10:37,120 --> 00:10:40,990
+Similarly, I can click on this to go
+to the previous slide on the left side.
+
+134
+00:10:40,990 --> 00:10:46,070
+So this manually allows you to page
+
+135
+00:10:46,070 --> 00:10:50,830
+through the various slides
+with your carousel.
+
+136
+00:10:50,830 --> 00:10:52,920
+But this is an interesting component,
+
+137
+00:10:52,920 --> 00:10:58,140
+and has a little more
+dynamism to your picture.

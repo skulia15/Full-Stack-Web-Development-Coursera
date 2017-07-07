@@ -1,0 +1,98 @@
+Okay, next exercise. We're going to examine images in media,
+and how we can include them into our webpages. First step, download the image dubbed
+zip file that we have provided for you. Move the zip file to the confusion folder,
+unzip it. You'll be left with a folder named
+img in the confusion folder. This img folder contains all the images that we're gonna
+make use of in this exercise. Next, let's open our
+project in brackets and then have a look at the current
+state of the webpage. In particular,
+we'll be updating the index for our HTML page by adding some images and
+media objects into this pitch. So looking at the current state of the
+webpage, you'll see that there is hardly any images on this webpage,
+and it looks fairly bland. Well of course we had to wait until
+we learned about images in media before we could add these to our webpage. So in this exercise we
+are going to add images and media to make the webpage a little
+more exciting to look at. As our first step in adding
+images to this webpage, we are going to add the restaurant's
+logo to this webpage. Now you see that there is some space to
+the right hand side in this jumbotron. We are going to the put the restaurant's
+logo in that location in the jumbotron. In addition, you recall that in
+the nav bar we had used the brand, link there, and we'll use just text there
+to represent the name of the restaurant. We're gonna replace that with
+the logo of this restaurant. Going to our index.html page,
+we first scroll down to the jumbotron. In the jumbotron,
+I'm going to replace the second column that we have there
+by the restaurant's logo. So we're going to use an image for the
+restaurant's logo and then replace that div class, or
+include the image into the div class. And then update the div
+class appropriately. So let's do that. And then we'll come back and
+examine the code. So here I have replaced the div class. Now, I have reduced the size of
+the div class to two column widths. So I updated column sm to column sm 2
+rather than column sm 4 which was earlier. Now I'm going to use
+the remaining two columns for some other purpose in the assignment,
+so we're gonna leave that as such. Inside this div, now you see that I have included
+the image of the restaurant's logo there. So I'm using image, and the class that I'm
+using for this image is img-responsive. What this means is that this
+image will automatically adapt to the size of the containing parent
+element which is the div class. So, as the div class's size
+changes from different screen widths, the restaurant logo
+image will automatically adapt. This is part of Bootstrap's class
+support for sponsored images. While we are at it,
+we will as well update the navbar. In the navbar you'll see that we have
+the a tag with the navbar brand class. We're going to replace that
+navbar brand inside of the text. We're gonna replace it with
+the image of our restaurant's logo. And then I will size
+the image appropriately, so that it can be nicely
+placed in the navbar. After updating the code inside the a tag,
+you can now see that I have replaced the text with an image which
+is the logo of our restaurant. I am using the height and width attributes
+of this image to control the size of the logo that is
+displayed in the nav bar. After making these changes, let's go and have a look at
+the current state of our webpage. Going back to our webpage, you can now see that the restaurant's
+logo is included in the jumbotron. In addition,
+in the nav bar you can see that the restaurant's name has been replaced
+with the logo of the restaurant. Now if you click on the logo, you're
+going to be taken back to the home page. Go ahead and apply the same changes
+to both the jumbotron and the navbar. In contactus.html file and
+also the aboutus.html file. Remember that all these
+should have uniform design of the jumbotron and the navbar. So, go ahead and make those changes
+to the remaining two HTML files also. And then we'll go to the next step. After updating the remaining
+two HTML pages, you will see that when you navigate to those pages,
+you will see the logo in the navbar. And also in the jumbotron. Our next step is to use
+the media object class in Bootstrap to update the descriptions that we have in the rows
+of our index.html page. So now you see that in the first row we
+have the description of our dish there, and in the third row we have
+information about our master chef. So we're going to use the media
+object classes to update these two to include both images as
+well as the content as such. I'm not going to update
+the content in the second row. That will be left as an exercise for
+you in the second assignment. Getting back to the index.html page,
+we are now going to replace this description that we have for
+our dish there with a media object. I am going to include an image that we
+already provide for you in the img folder. And also, update the remaining
+contents there to make use of the media object to
+display the description. You can now see that I have
+used the media class applied to a div and inside of the div,
+I am using the media left and the media middle class
+applied to an inner div. Which includes the images of the dish. Also, the description itself,
+what was earlier in the div, now I have moved into a media-body div
+in there, the description as it exists. The h2 tag that is showing
+the name of the dish. I am using the media heading class for
+the h2 tag there. Also, while I'm at it,
+I also updated the a class that contains the mode link there,
+to turn it into a button. Moving to the third rule that contains
+the information about our executive chef. I have also updated
+the using the media object. So I am including an image of the chef. And also shifted the description
+into the media body class in there. Finally in the second row, I am just updating the mole link
+there to turn it into a button. With this we complete all
+the updates to the index.html page. Let's save it and then go and have a look at the final
+version of the index.html page. Returning to our webpage,
+you will now see that in the webpage the description of our dish has
+been replaced by a media object. You can notice that we
+have included an image. I'm using the image to the image there and then the description on
+the right-hand side. Notice how the More link has been
+updated into a button there. In the second row also,
+you see there are more data to a button. And in the last row, again,
+you see the description of the Executive Chef updated, with
+a picture of the Executive Chef in place. This completes this exercise. In this exercise we used the image classes and the media object
+class available within Bootstrap to include images onto our web page.

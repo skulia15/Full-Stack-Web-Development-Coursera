@@ -1,0 +1,335 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h1 level="1">
+  Exercise (Instructions): Accordion, Scrollspy and Affix
+ </h1>
+ <h3 level="3">
+  Objectives and Outcomes
+ </h3>
+ <p>
+  In this exercise we explore the use of the collapse Javascript plugin together with panel component and panel group classes to create an accordion to show/hide content in a web page. We also leverage the nav pills class to create a side navigation menu. We use the scrollspy plugin to highlight the scroll position within this nav component. In addition we use the Affix plugin to enable the nav to scroll with the page initially, but get fixed shortly thereafter. At the end of this exercise, you will be able to:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Design an accordion using the collapse plugin together with the panel component and panel-group class
+   </p>
+  </li>
+  <li>
+   <p>
+    Use a scrollspy to highlight the current scroll position in a nav
+   </p>
+  </li>
+  <li>
+   <p>
+    Use the affix plugin together with the scrollspy on the side nav component
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Adjusting the Content Rows
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    For the first row of the content, adjust the column classes for the first column to
+    <em>
+     col-xs-12 col-sm-6 col-lg-8
+    </em>
+    . Then adjust the column classes for the second column to
+    <em>
+     col-xs-12 col-sm-6 col-lg-4
+    </em>
+    .
+   </p>
+  </li>
+  <li>
+   <p>
+    For the remaining two rows, delete the second columns and adjust the column classes for the first column of content to
+    <em>
+     col-xs-12
+    </em>
+    so that it occupies the entire 12 columns.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Converting Tabs to Accordion
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    First delete the &lt;ul&gt; class that was introduced for the tabbed navigation.
+   </p>
+  </li>
+  <li>
+   <p>
+    Then the turn the
+    <em>
+     tab-content
+    </em>
+    div into a
+    <em>
+     panel-group
+    </em>
+    div. Use the code structure as shown below:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div class="panel-group" id="accordion"
+                      role="tablist" aria-multiselectable="true"&gt;
+                   . . .
+                &lt;/div&gt;</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Then, replace the first tab-pane into a panel such that the name appears as a panel heading, and the &lt;p&gt; will be in the panel body. Use the structure of the code as shown below:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                    &lt;div class="panel panel-default"&gt;
+                        &lt;div class="panel-heading" role="tab" id="headingPeter"&gt;
+                            &lt;h3 class="panel-title"&gt;
+                                &lt;a role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#peter"
+                                     aria-expanded="true" aria-controls="peter"&gt;
+                                    Peter Pan &lt;small&gt;Chief Epicurious Officer&lt;/small&gt;&lt;/a&gt;
+                            &lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div role="tabpanel" class="panel-collapse collapse in"
+                             id="peter"    aria-labelledby="headingPeter"&gt;
+                            &lt;div class="panel-body"&gt;
+                                &lt;p&gt; . . . &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    For the remaining three leaders, use the same structure as above, with the appropriate ids set up for the panels, as shown in the code structure below:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                    &lt;div class="panel panel-default"&gt;
+                        &lt;div class="panel-heading" role="tab" id="headingDanny"&gt;
+                            &lt;h3 class="panel-title"&gt;
+                                &lt;a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#danny"
+                                     aria-expanded="false" aria-controls="danny"&gt;
+                                    Dhanasekaran Witherspoon &lt;small&gt;Chief Food Officer&lt;/small&gt;&lt;/a&gt;
+                            &lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div role="tabpanel" class="panel-collapse collapse"
+                             id="danny"    aria-labelledby="headingDanny"&gt;
+                            &lt;div class="panel-body"&gt;
+                                &lt;p&gt; . . . &lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel panel-default"&gt;
+                        &lt;div class="panel-heading" role="tab" id="headingAgumbe"&gt;
+                            &lt;h3 class="panel-title"&gt;
+                                &lt;a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#agumbe"
+                                     aria-expanded="false" aria-controls="agumbe"&gt;
+                                    Agumbe Tang &lt;small&gt;Chief Taste Officer&lt;/small&gt;&lt;/a&gt;
+                            &lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div role="tabpanel" class="panel-collapse collapse"
+                             id="agumbe"    aria-labelledby="headingAgumbe"&gt;
+                            &lt;div class="panel-body"&gt;
+                                &lt;p&gt; . . . &lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel panel-default"&gt;
+                        &lt;div class="panel-heading" role="tab" id="headingAlberto"&gt;
+                            &lt;h3 class="panel-title"&gt;
+                                &lt;a class="collapsed" role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#alberto"
+                                     aria-expanded="false" aria-controls="alberto"&gt;
+                                    Alberto Somayya &lt;small&gt;Executive Chef&lt;/small&gt;&lt;/a&gt;
+                            &lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div role="tabpanel" class="panel-collapse collapse"
+                             id="alberto"    aria-labelledby="headingAlberto"&gt;
+                            &lt;div class="panel-body"&gt;
+                                &lt;p&gt; . . . &lt;/em&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    After completing the update, check the behavior of the accordion on the web page.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Adding Scrollspy with Affix
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    First we will adjust the content so that we create some space on the right side of the page to accommodate the nav component for the scrollspy behavior. To do this, we will nest the entire content of the web page into a row first, and move the existing content into a column with a column class of col-sm-10. The remaining two columns will be left for the nav. To do this, add the following code right after the container div:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">       &lt;div class="row"&gt;
+       &lt;div class="col-xs-12 col-sm-10"&gt;
+          . . .
+       &lt;/div&gt;
+       &lt;/div&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    To introduce the scrollspy, we first apply some data-* attributes to the body of the page as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">&lt;body data-spy="scroll" data-target="#myScrollspy" data-offset="200"&gt;
+</pre>
+ <p>
+  This prepares the body to activate the scrollspy using the
+  <em>
+   data-spy="scroll"
+  </em>
+  attribute. The target of this is set using
+  <em>
+   data-target="#myScrollspy"
+  </em>
+  thus specifying that the element with the id
+  <em>
+   myScrollspy
+  </em>
+  will act as the scrollspy.
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    To introduce the scrollspy with the affix plugin, add the following code to the end of the container, inside the outer row:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">        &lt;nav class="hidden-xs col-sm-2" id="myScrollspy"&gt;
+            &lt;ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400"&gt;
+                &lt;li&gt;&lt;a href="#history"&gt;Our History&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#corporate"&gt;Corporate&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#facts"&gt;Facts&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+
+</pre>
+ <p>
+  This nav element is introduced with the classes
+  <em>
+   hidden-xs
+  </em>
+  to indicate that this element will be hidden for extra small screen sizes. It will occupy the remaining two columns (specified through the
+  <em>
+   col-sm-2
+  </em>
+  class) for the small to large screen sizes. We see that the
+  <em>
+   nav-pills
+  </em>
+  is applied to the
+  <em>
+   &lt;ul&gt;
+  </em>
+  along with
+  <em>
+   nav-stacked
+  </em>
+  to create a vertically stacked nav component. Also the affix plugin is applied to this nav component. The list items use the ids of the three rows. We need to apply the ids to the three rows.
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Apply the appropriate ids for the three content rows as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">        &lt;div id="history" class="row row-content"&gt; ... &lt;/div&gt;
+        &lt;div id="corporate" class="row row-content"&gt; ... &lt;/div&gt;
+        &lt;div id="facts" class="row row-content"&gt; ... &lt;/div&gt;
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Finally, add the following CSS styles to the mystyles.css file to support the affix:
+   </p>
+  </li>
+ </ul>
+ <pre language="css">.affix {
+    top:100px;
+}</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Now that all updates are complete, you can now view the web page to see the scrollspy and affix in action.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Conclusions
+ </h3>
+ <p>
+  In this exercise we constructed the accordion using the collapse plugin together with the panel components. We also explored the use of scrollspy and affix plugins.
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

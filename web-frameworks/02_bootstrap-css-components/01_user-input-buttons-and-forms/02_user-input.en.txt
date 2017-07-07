@@ -1,0 +1,52 @@
+Let's now talk about user input. Gone are the days when websites purely
+delivered information to the user through the browser. And at most they would have
+hyperlinks that you could click to move to other pages in the website. Most websites these days
+provide many different ways for the user to interact with the website. Say in the form of buttons or
+fonts that the user can fill out information and
+submit to the server and so on. So let's look at some of
+these in more detail. To help us understand the various
+ways a website can provide for users to interact, let's just quickly
+pay a visit to your course website. Now here you see a lot of
+buttons on the screen so you can see a button that you can click. You can see a search box where
+you can type in information and then press this button in
+order to initiate a search. You might have other buttons
+that you can click to be able to cause some actions to be taken. You could even have
+hyperlinks on the website. So hyperlinks still do exist on websites
+that will take you to other parts of your website. All the user inputs to your website
+boils down to three different tags that can be used for this purpose. We have the <a> tag, which was
+originally designed for hyperlinks. So you have the h ref attribute for the
+a tag through which you can specify what should be done when the user
+clicks on the hyperlink. Then we have buttons. Buttons typically,
+the moment you put a button, you are automatically prompting
+the user to click the button. So that's how users would
+interact with buttons. Button was added to the HTML
+specification later on to provide a separate way from hyperlinks
+to enable user interaction. Then of course we have forms. Forms provide for
+more detailed interaction from the user. User can submit information
+by typing in things into the various boxes that you provide,
+and then click a button in order to submit the information
+that you entered into the form. Buttons themselves are a very straightforward way of providing
+interaction to the user. Once you put a button, you're expecting
+the user to click on that button. Button behavior can vary depending on where the button
+is positioned within your website. If a button is included inside a form, the
+general expectation is that when you click on the button the form
+information will be submitted. Buttons outside the form may
+take on many other roles. So clicking on a button may open or
+hide parts of information in your webpage. Maybe open a model on the screen that allows you to view other information. So we will see some of these uses
+of buttons in the next module. The <a> tag itself has
+many times been hijacked and transformed into a button
+through the use of CSS. Indeed even Bootstrap itself you
+can easily turn an a tag into a button-like form very easily. Which is something that we will see
+in the later lectures and exercise. Forms, of course, are the grandaddy
+of information submission. They provide you with many different
+fields that you can fill in, input fields that allow you to
+specify different kinds of inputs. And then we have text areas
+which are much larger boxes which allow you to fill
+in more detailed information. You could have buttons of course,
+within a form that allows the triggering of the submission of the
+information that you enter into the form. Then you have select. And select allows you to select from
+a predetermined set of choices, then you have checkboxes,
+then you have radio buttons. So all of these combinations allow forms to be very versatile in
+seeking information from the user. So in the next set of lectures we're
+gonna review Bootstrap Button Classes and then subsequently we'll look at
+Bootstrap Classes to style forms.

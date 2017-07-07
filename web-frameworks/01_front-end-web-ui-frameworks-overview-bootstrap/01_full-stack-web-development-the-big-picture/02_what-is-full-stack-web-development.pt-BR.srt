@@ -1,0 +1,319 @@
+1
+00:00:02,230 --> 00:00:05,170
+O que é Desenvolvimento Web Full Stack?
+
+2
+00:00:05,170 --> 00:00:07,740
+Deixe-me começar esclarecendo
+alguns termos, então
+
+3
+00:00:07,740 --> 00:00:12,650
+começaremos com um entendimento
+comum sobre essa área.
+
+4
+00:00:12,650 --> 00:00:17,110
+Primeiro, nós ouvimos pessoas falando
+sobre Front end e Back end, ou
+
+5
+00:00:17,110 --> 00:00:20,200
+às vezes o Lado do Cliente e
+o Lado do Servidor.
+
+6
+00:00:20,200 --> 00:00:23,530
+Agora, quando falamos sobre Front end
+estamos primeiramente falando sobre
+
+7
+00:00:23,530 --> 00:00:25,790
+apresentar dados para os usuários.
+
+8
+00:00:25,790 --> 00:00:30,610
+Isso é onde os usuários acessam a rede
+através do navegador.
+
+9
+00:00:30,610 --> 00:00:34,630
+E estaríamos usando tecnologias como
+HTML, CSS e
+
+10
+00:00:34,630 --> 00:00:38,189
+JavaScript para atingir os usuários finais.
+
+11
+00:00:39,350 --> 00:00:44,460
+O Back end é mais relacionado a lógica do
+ negócio e os aspectos de dados da nossa
+
+12
+00:00:45,500 --> 00:00:50,759
+aplicação web, então isso poderia ser
+implementado em um entre muitas linguagens.
+
+13
+00:00:53,220 --> 00:00:57,490
+Nós normalmente escutamos pessoas
+falarem sobre a Arquitetura Três Camadas para
+
+14
+00:00:57,490 --> 00:01:00,460
+desenvolvimento web e implementação.
+
+15
+00:01:00,460 --> 00:01:05,640
+Agora nesta abordagem, que é um padrão
+comum de arquitetura de software cliente-servidor,
+
+16
+00:01:05,640 --> 00:01:10,930
+o desenvolvimento completo 
+é dividido em três camadas.
+
+17
+00:01:10,930 --> 00:01:16,080
+A camada de Apresentação, que é relacionada 
+às questões de interface  de usuário e
+
+18
+00:01:16,080 --> 00:01:19,060
+como apresentar os dados para o usuário final.
+
+19
+00:01:19,060 --> 00:01:23,650
+Então nós temos a camada de Lógica 
+de Negócios que é mais relacionada com
+
+20
+00:01:24,820 --> 00:01:30,270
+a validação de dados e processamento
+de dados
+
+21
+00:01:30,270 --> 00:01:34,940
+a fim de gerar informação para os usuários.
+
+22
+00:01:34,940 --> 00:01:39,660
+E temos a camada de acesso a dados,
+
+23
+00:01:39,660 --> 00:01:44,060
+que lida com persistência de dados e
+
+24
+00:01:44,060 --> 00:01:49,680
+armazenamento de dados nos bastidores, 
+por exemplo, em um banco de dados
+
+25
+00:01:51,700 --> 00:01:56,730
+Explorando isso mais pra frente,
+vamos ver o que é
+
+26
+00:01:56,730 --> 00:02:00,790
+implementado em cada uma dessas 
+três camadas em mais detalhes.
+
+27
+00:02:00,790 --> 00:02:05,940
+Agora, a camada de lógica de negócios é 
+tipicamente implementada, tradicionalmente,
+
+28
+00:02:05,940 --> 00:02:12,566
+em um servidor, onde nós usamos
+linguagens como Ruby, Python,
+
+29
+00:02:12,566 --> 00:02:18,600
+C++, Java, ASP.net, para implementar um servidor.
+
+30
+00:02:18,600 --> 00:02:24,320
+Este servidor por sua vez, está falando com um 
+sistema Back end de gerenciamento de banco de dados
+
+31
+00:02:24,320 --> 00:02:29,780
+para transferir dados e 
+que por sua vez, estarão gerando
+
+32
+00:02:30,850 --> 00:02:35,130
+a visualização Front end de 
+dados para o usuário
+
+33
+00:02:36,570 --> 00:02:42,900
+pela renderização, no lado do Servidor,
+do HTML, CSS e JavaScript.
+
+34
+00:02:42,900 --> 00:02:46,060
+Essa tem sido a abordagem tradicional que
+
+35
+00:02:46,060 --> 00:02:50,360
+vem sendo usada com sucesso
+no desenvolvimento.
+
+36
+00:02:50,360 --> 00:02:56,085
+Nesta abordagem, nós precisamos de
+especialistas em cada uma dessas três camadas.
+
+37
+00:02:56,085 --> 00:03:01,010
+Você tem um especialista Fron end, que teria 
+um bom conhecimento em HTML, CSS,
+
+38
+00:03:01,010 --> 00:03:02,320
+e JavaScript.
+
+39
+00:03:02,320 --> 00:03:04,710
+E então você tem os especialistas Back end,
+
+40
+00:03:04,710 --> 00:03:09,600
+que tem bons conhecimento em
+implementações do lado do Servidor, quer dizer,
+
+41
+00:03:09,600 --> 00:03:13,540
+por exemplo, em uma das linguagens usadas
+para implementação do lado do Servidor.
+
+42
+00:03:13,540 --> 00:03:18,710
+E então você teria um especialista de dados
+que seria muitas vezes relacionado com
+
+43
+00:03:18,710 --> 00:03:24,830
+os bancos de dados e o elemento de persistência
+ de dados do nosso desenvolvimento web.
+
+44
+00:03:27,700 --> 00:03:33,350
+Existe uma tendência crescente relativa ao 
+Desenvolvimento Web Full Stack onde
+
+45
+00:03:33,350 --> 00:03:38,920
+uma única linguagem é usada para 
+implementação através da pilha toda.
+
+46
+00:03:38,920 --> 00:03:44,210
+Você poderia ter o front implementado 
+como uma aplicação de página única,
+
+47
+00:03:44,210 --> 00:03:48,900
+usando um dos frameworks 
+JavaScript como AngularJS.
+
+48
+00:03:48,900 --> 00:03:53,880
+Então o lado do Servidor poderia ser implementado 
+usando tecnologias como NodeJS e
+
+49
+00:03:53,880 --> 00:03:57,180
+módulos  NodeJS, que novamente,
+dependem de JavaScript.
+
+50
+00:03:57,180 --> 00:04:03,410
+E o Acesso de Dados ou a parte do 
+armazenamento de dados implementados usando
+
+51
+00:04:03,410 --> 00:04:10,800
+tecnologias como MongoDB, que trabalha
+baseado no armazenamento de dados JSON,
+
+52
+00:04:10,800 --> 00:04:17,100
+e fornecendo informação no
+ formato de dados JSON.
+
+53
+00:04:17,100 --> 00:04:20,560
+Agora, JSON se tornou o formato padrão para
+
+54
+00:04:20,560 --> 00:04:24,030
+intercâmbio de dados entre as três camadas.
+
+55
+00:04:24,030 --> 00:04:30,060
+Lado do Servidor está cada vez mais
+entregando uma API REST,
+
+56
+00:04:30,060 --> 00:04:34,680
+assim você pode atingir múltiplas
+plataformas através da API REST.
+
+57
+00:04:34,680 --> 00:04:39,240
+Essencialmente, o servidor está
+fornecendo dados na forma de JSON,
+
+58
+00:04:39,240 --> 00:04:45,310
+que podem ser renderizados tanto no
+padrão do navegador web, ou
+
+59
+00:04:45,310 --> 00:04:51,070
+no dispositivo móvel usando uma
+entre múltiplas formas,
+
+60
+00:04:51,070 --> 00:04:54,850
+ambientes de desenvolvimento 
+de aplicativos móveis híbridos.
+
+61
+00:04:56,150 --> 00:05:03,500
+Então, nesta especialização em particular,
+estamos atingindo a pilha inteira.
+
+62
+00:05:03,500 --> 00:05:06,740
+Veremos sobre HTML, CSS e JavaScript e
+
+63
+00:05:06,740 --> 00:05:12,100
+vamos analisar o desenvolvimento de
+interface web usando Bootstrap.
+
+64
+00:05:12,100 --> 00:05:18,030
+Então, veremos os frameworks Front end
+JavaScript como AngularJS.
+
+65
+00:05:18,030 --> 00:05:21,480
+Veremos sobre NodeJS e
+módulos NodeJS, e
+
+66
+00:05:21,480 --> 00:05:27,430
+também revisaremos Back end como
+um serviço, e também revisaremos
+
+67
+00:05:27,430 --> 00:05:30,920
+suporte de dados através de
+MongoDB no lado do Servidor.

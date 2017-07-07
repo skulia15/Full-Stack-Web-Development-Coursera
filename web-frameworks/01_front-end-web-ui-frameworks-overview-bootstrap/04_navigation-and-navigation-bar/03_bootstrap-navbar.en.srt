@@ -1,0 +1,826 @@
+1
+00:00:02,530 --> 00:00:08,120
+Let us now talk about Bootstraps
+own support for navigation.
+
+2
+00:00:08,120 --> 00:00:13,380
+In particular, in this lecture,
+we will talk about the Bootstrap's Navbar.
+
+3
+00:00:14,780 --> 00:00:17,240
+Navbar is a very easy
+
+4
+00:00:17,240 --> 00:00:21,780
+way of providing navigational
+information within your website.
+
+5
+00:00:21,780 --> 00:00:23,661
+Let's look at the details next.
+
+6
+00:00:26,240 --> 00:00:28,314
+As I already mentioned,
+
+7
+00:00:28,314 --> 00:00:34,060
+the Navbar is a way of easily
+providing navigation for your website.
+
+8
+00:00:34,060 --> 00:00:38,330
+The Navbar typically appears
+at the top of the page or
+
+9
+00:00:38,330 --> 00:00:43,280
+the bottom of the page depending
+upon the design of your website.
+
+10
+00:00:43,280 --> 00:00:47,070
+Now, Navbars can also
+support responsive features,
+
+11
+00:00:47,070 --> 00:00:52,140
+meaning that when you're viewing
+the website on a extra small screen.
+
+12
+00:00:52,140 --> 00:00:55,010
+Maybe you may wish to
+collapse the Navbar and
+
+13
+00:00:55,010 --> 00:00:59,330
+only display content by toggling
+the information appropriately.
+
+14
+00:01:00,760 --> 00:01:02,260
+For larger screen sizes,
+
+15
+00:01:02,260 --> 00:01:07,788
+it is probably more easier to accommodate
+a full fledged navigation bar.
+
+16
+00:01:07,788 --> 00:01:13,230
+So we will look at bootstrap support for
+both situations in more detail next.
+
+17
+00:01:15,350 --> 00:01:20,650
+Let's talk in particular, about a simple
+navigation bar that can be provided
+
+18
+00:01:20,650 --> 00:01:24,780
+within bootstrap and
+how we go about configuring it.
+
+19
+00:01:24,780 --> 00:01:30,210
+So here I have an example of
+a simple navigation bar and
+
+20
+00:01:30,210 --> 00:01:37,360
+the corresponding code that is used in
+Bootstrap to design this navigation bar.
+
+21
+00:01:37,360 --> 00:01:44,470
+Now I am leveraging the Nav HTML
+element to design my navigation bar.
+
+22
+00:01:44,470 --> 00:01:47,670
+To this nav HTML element, I am using
+
+23
+00:01:47,670 --> 00:01:53,390
+the Navbar classes that
+are available as part of Bootstrap.
+
+24
+00:01:53,390 --> 00:02:01,260
+The Navbar, which turns that HTML element
+into a Navbar and the Navbar default.
+
+25
+00:02:01,260 --> 00:02:05,976
+So this is the default structuring of
+the navigation bar in Bootstrap or
+
+26
+00:02:05,976 --> 00:02:08,106
+the default coloring and so on.
+
+27
+00:02:08,106 --> 00:02:12,439
+Also notice that I am declaring
+that this Navbar takes
+
+28
+00:02:12,439 --> 00:02:17,810
+on the role of providing
+navigation within this website.
+
+29
+00:02:17,810 --> 00:02:21,500
+Now let's look at the example
+Navbar on the screen and
+
+30
+00:02:21,500 --> 00:02:27,040
+then see how this is actually constructed
+by using the HTML code below there.
+
+31
+00:02:29,390 --> 00:02:34,380
+In particular, you see that the list
+of items being displayed in
+
+32
+00:02:34,380 --> 00:02:39,130
+the Navbar is declared in
+the code as an unsorted list
+
+33
+00:02:40,390 --> 00:02:44,850
+with the class nav navbar-nav.
+
+34
+00:02:44,850 --> 00:02:50,400
+And within these each list
+item is displayed using li and
+
+35
+00:02:50,400 --> 00:02:56,650
+then you provide the href through
+the normal HTML links there.
+
+36
+00:02:57,800 --> 00:03:02,776
+One particular list item has been
+identified as the active list item there.
+
+37
+00:03:02,776 --> 00:03:09,490
+So for this example, I have identified
+the Home as the active list item.
+
+38
+00:03:09,490 --> 00:03:15,820
+What this means is that in the Bootstrap's
+Navbar, this Home item is highlighted
+
+39
+00:03:15,820 --> 00:03:21,660
+with a darker color for the default
+Navbar as you can see on the screen.
+
+40
+00:03:21,660 --> 00:03:29,220
+I am now extending the Navbar
+into Into adding more features.
+
+41
+00:03:29,220 --> 00:03:35,180
+One, is that I am adding in what
+we call as a brand to the navbar.
+
+42
+00:03:35,180 --> 00:03:38,230
+So within the Navbar on the left side,
+
+43
+00:03:38,230 --> 00:03:42,830
+you can see the name of
+the website being displayed there.
+
+44
+00:03:42,830 --> 00:03:46,830
+That name will form part
+of the Navbar header.
+
+45
+00:03:46,830 --> 00:03:51,280
+And inside the navbar header,
+which is a separate div there,
+
+46
+00:03:51,280 --> 00:03:56,370
+I am declaring a class called
+navbar-brand to a link and
+
+47
+00:03:56,370 --> 00:03:59,980
+then I am providing that link there.
+
+48
+00:03:59,980 --> 00:04:05,220
+Now you can replace the text
+within that link by
+
+49
+00:04:05,220 --> 00:04:09,970
+an actual image which might
+be the logo of your website.
+
+50
+00:04:09,970 --> 00:04:15,855
+So that's another way of providing
+navigation within the navbar,
+
+51
+00:04:15,855 --> 00:04:19,090
+specifically using the logo navigation.
+
+52
+00:04:19,090 --> 00:04:24,300
+Typically, when you put the logo into the
+navbar, users expect that when they click
+
+53
+00:04:24,300 --> 00:04:29,640
+on that logo, they are going to be taken
+back to the home page of the navbar.
+
+54
+00:04:29,640 --> 00:04:33,280
+So when you specify the href for
+
+55
+00:04:33,280 --> 00:04:38,360
+that class there, you should make sure
+that it is identifying your home page.
+
+56
+00:04:40,290 --> 00:04:45,180
+We can also similarly put
+items to the right side,
+
+57
+00:04:45,180 --> 00:04:48,020
+right into the screen within the navbar.
+
+58
+00:04:48,020 --> 00:04:53,260
+To do that,
+we are going to use the nav navbar-nav for
+
+59
+00:04:53,260 --> 00:04:56,060
+the unsorted list that we've seen already.
+
+60
+00:04:56,060 --> 00:05:00,950
+In addition, we're going to supply
+another attribute called navbar-right.
+
+61
+00:05:00,950 --> 00:05:02,719
+When you specify that,
+
+62
+00:05:02,719 --> 00:05:08,130
+there are list items that are gonna be
+put on the right edge of the navbar.
+
+63
+00:05:08,130 --> 00:05:12,224
+For left edge you, would say navbar-left,
+for right edge you would say navbar-right.
+
+64
+00:05:14,460 --> 00:05:17,830
+We can make the navbar also responsive.
+
+65
+00:05:17,830 --> 00:05:23,490
+Meaning that when you are viewing
+the website on an extra small screen or
+
+66
+00:05:23,490 --> 00:05:26,230
+any chosen size of the screen.
+
+67
+00:05:26,230 --> 00:05:31,920
+You can collapse the navbar and
+hide the items within the navbar.
+
+68
+00:05:31,920 --> 00:05:37,740
+And instead replace it with a toggle
+button as you see in the picture here.
+
+69
+00:05:37,740 --> 00:05:42,800
+When the user clicks on the toggle button,
+then you will expand the navigation
+
+70
+00:05:42,800 --> 00:05:47,800
+bar to show the link items, like so.
+
+71
+00:05:47,800 --> 00:05:50,370
+When the user again clicks
+on the toggle button,
+
+72
+00:05:50,370 --> 00:05:53,178
+you're going to hide
+those navigation items.
+
+73
+00:05:53,178 --> 00:05:58,493
+So this behavior can easily
+be supported within Bootstrap
+
+74
+00:05:58,493 --> 00:06:03,916
+using the toggle button that
+can be included in the header,
+
+75
+00:06:03,916 --> 00:06:07,750
+nav-navbar header of your Bootstrap.
+
+76
+00:06:07,750 --> 00:06:11,240
+We will see how that is
+done in the next slide.
+
+77
+00:06:11,240 --> 00:06:15,900
+Now we are going to examine how
+to design this responsive navbar.
+
+78
+00:06:17,030 --> 00:06:21,400
+First, we need a toggle
+button within the navbar.
+
+79
+00:06:21,400 --> 00:06:27,740
+So this is usually included in the
+navbar-header as shown by the code here.
+
+80
+00:06:27,740 --> 00:06:31,110
+So in here, I am declaring a button type.
+
+81
+00:06:31,110 --> 00:06:39,550
+And the class I am using is navbar-toggle
+and also specified as collapsed.
+
+82
+00:06:39,550 --> 00:06:46,310
+Meaning that the items that this Button is
+referring to will be in the collapsed mode
+
+83
+00:06:46,310 --> 00:06:52,440
+when you are viewing this page
+on an extra small device.
+
+84
+00:06:54,480 --> 00:07:01,070
+When the user clicks on this button,
+then the further
+
+85
+00:07:01,070 --> 00:07:07,110
+details are the extended navbar will
+be toggled and shown on the screen.
+
+86
+00:07:07,110 --> 00:07:12,890
+Now this is implemented
+by enclosing the items
+
+87
+00:07:12,890 --> 00:07:18,150
+within the list inside a div and
+giving it an id.
+
+88
+00:07:18,150 --> 00:07:23,670
+This id in this example,
+the id given is navbar and
+
+89
+00:07:23,670 --> 00:07:28,840
+that id is used as a data target for
+the button.
+
+90
+00:07:28,840 --> 00:07:31,805
+What exactly is a data target and
+how is it used?
+
+91
+00:07:31,805 --> 00:07:34,175
+For that,
+we need to understand that JavaScript
+
+92
+00:07:35,495 --> 00:07:39,235
+modules that were
+implemented in Bootstrap.
+
+93
+00:07:39,235 --> 00:07:44,592
+So I'm going to come back to refer
+to this one more time in the module
+
+94
+00:07:44,592 --> 00:07:48,628
+where we look at JavaScript
+within Bootstrap.
+
+95
+00:07:48,628 --> 00:07:54,242
+But here, let's understand that
+
+96
+00:07:54,242 --> 00:07:59,682
+this id is also used to specify
+the data target for the button.
+
+97
+00:07:59,682 --> 00:08:02,562
+Meaning that that button
+is going to toggle on and
+
+98
+00:08:02,562 --> 00:08:07,410
+off, whatever is inside
+this div on the screen.
+
+99
+00:08:07,410 --> 00:08:09,520
+Now for this div in addition,
+
+100
+00:08:09,520 --> 00:08:14,408
+I'm going to give the class as
+navbar collapse and collapse.
+
+101
+00:08:14,408 --> 00:08:18,600
+Meaning that initially
+when you are viewing this
+
+102
+00:08:18,600 --> 00:08:22,640
+page on an extra small screen,
+the navbar will start out collapsed.
+
+103
+00:08:22,640 --> 00:08:29,410
+When the user clicks on the button, then
+the navbar will be toggled and vice versa.
+
+104
+00:08:30,780 --> 00:08:34,270
+Some additional configurations
+that you can give for navbars,
+
+105
+00:08:34,270 --> 00:08:39,230
+include specifying that the navbar
+should be fixed to the top of the page.
+
+106
+00:08:40,500 --> 00:08:46,300
+Meaning that the navbar is always visible
+and will be fixed at the top of the page.
+
+107
+00:08:46,300 --> 00:08:50,230
+The content will scroll, but the navbar
+will remain fixed in that location.
+
+108
+00:08:50,230 --> 00:08:53,990
+You can also similarly fix
+the navbar at the bottom.
+
+109
+00:08:53,990 --> 00:08:56,168
+The corresponding classes
+are indicated here.
+
+110
+00:08:56,168 --> 00:09:00,200
+.Navbar-fixed-top and
+.navbar-fixed-bottom.
+
+111
+00:09:00,200 --> 00:09:04,941
+There are other specification that
+you can give is to specify the navbar
+
+112
+00:09:04,941 --> 00:09:07,380
+as navbar-static-top.
+
+113
+00:09:07,380 --> 00:09:10,550
+Meaning that this navbar will
+be at the top of the page, but
+
+114
+00:09:10,550 --> 00:09:12,488
+will scroll when you scroll the page.
+
+115
+00:09:12,488 --> 00:09:16,940
+So the navbar will disappear from
+the screen when you scroll the page up.
+
+116
+00:09:19,510 --> 00:09:24,220
+In Bootstrap, earlier we saw that we
+declared the navbar as navbar default.
+
+117
+00:09:24,220 --> 00:09:29,300
+The default navbar for bootstrap
+is a light colored navigation bar.
+
+118
+00:09:29,300 --> 00:09:34,500
+You can also have a dark colored
+navigation bar in bootstrap by providing
+
+119
+00:09:34,500 --> 00:09:39,830
+the class as navbar-inverse
+instead of navbar-default.
+
+120
+00:09:39,830 --> 00:09:44,840
+So in the navbar-inverse, the background
+of the navbar will be dark in color but
+
+121
+00:09:44,840 --> 00:09:47,880
+the text will be lighter in color.
+
+122
+00:09:49,210 --> 00:09:54,500
+One last addition to
+the navbar that is often used,
+
+123
+00:09:54,500 --> 00:09:56,580
+is what we refer to as a dropdown.
+
+124
+00:09:57,600 --> 00:09:59,000
+When we talk about a dropdown,
+
+125
+00:10:00,250 --> 00:10:04,050
+any item within the navbar can
+be turned into a dropdown.
+
+126
+00:10:04,050 --> 00:10:08,315
+So that when the user clicks on the item,
+then you would display
+
+127
+00:10:08,315 --> 00:10:13,270
+a list of dropdown
+
+128
+00:10:13,270 --> 00:10:19,100
+items to the user and then allow them
+to select one of those dropdown items.
+
+129
+00:10:19,100 --> 00:10:23,070
+Similarly, when you click
+on the item in the navbar,
+
+130
+00:10:23,070 --> 00:10:25,950
+then we will hide this dropdown, right?
+
+131
+00:10:25,950 --> 00:10:31,000
+So this toggling of this
+dropdown list of items is done
+
+132
+00:10:31,000 --> 00:10:35,460
+by clicking on the item inside the navbar.
+
+133
+00:10:35,460 --> 00:10:40,542
+In this example, if you click
+on the Menu item in the navbar,
+
+134
+00:10:40,542 --> 00:10:44,040
+it will display the detailed list there.
+
+135
+00:10:44,040 --> 00:10:49,521
+If you click on it again,
+then that detail list will disappear.
+
+136
+00:10:49,521 --> 00:10:54,140
+So this is the use of dropdowns in navbar.
+
+137
+00:10:54,140 --> 00:10:55,170
+How do we implement it?
+
+138
+00:10:56,790 --> 00:10:58,110
+We'll examine that next.
+
+139
+00:10:59,720 --> 00:11:07,330
+So to implement the dropdown,
+we need to Declared the drop down
+
+140
+00:11:07,330 --> 00:11:12,800
+as a list item within
+the unsorted list that we used
+
+141
+00:11:12,800 --> 00:11:18,785
+to construct the navbar links there.
+
+142
+00:11:18,785 --> 00:11:24,665
+Now one of the items will be declared
+as a list item of the type dropdown.
+
+143
+00:11:24,665 --> 00:11:27,995
+The code on the left side indicates
+
+144
+00:11:27,995 --> 00:11:31,720
+how you would declare
+the list item as a dropdown.
+
+145
+00:11:31,720 --> 00:11:36,700
+And in addition, you specify the class
+
+146
+00:11:36,700 --> 00:11:41,100
+as dropdown-toggle and
+
+147
+00:11:41,100 --> 00:11:46,740
+the data would be specified at dropdown,
+data-toggle as dropdown.
+
+148
+00:11:46,740 --> 00:11:50,150
+And some additional rows there and
+
+149
+00:11:50,150 --> 00:11:55,240
+in particular, notice that
+declaration of the span class caret.
+
+150
+00:11:55,240 --> 00:11:59,860
+Now this is used to show
+these inverted triangle
+
+151
+00:11:59,860 --> 00:12:05,325
+next to the item within the bar.
+
+152
+00:12:05,325 --> 00:12:08,280
+To indicate that when
+the user clicks on that item,
+
+153
+00:12:08,280 --> 00:12:11,575
+we're ging to show a dropdown list there.
+
+154
+00:12:11,575 --> 00:12:15,325
+Now how do we declare the items
+within the dropdown list?
+
+155
+00:12:15,325 --> 00:12:21,672
+That will be included as another
+unsorted list inside this list item.
+
+156
+00:12:21,672 --> 00:12:28,742
+And this unsorted list shown on the right
+side has the class dropdown menu.
+
+157
+00:12:28,742 --> 00:12:32,940
+And individual list items
+listed there will be shown in
+
+158
+00:12:34,990 --> 00:12:37,450
+the list of items in the dropdown menu.
+
+159
+00:12:37,450 --> 00:12:41,040
+So you can see that these list
+items correspond with Appetizers,
+
+160
+00:12:41,040 --> 00:12:42,860
+Main Courses and so on.
+
+161
+00:12:42,860 --> 00:12:47,980
+You can also include a separator by
+declaring the role as a separator and
+
+162
+00:12:47,980 --> 00:12:51,610
+the class as a divider for
+one of the list items.
+
+163
+00:12:51,610 --> 00:12:54,200
+You can also have a header there
+
+164
+00:12:54,200 --> 00:12:58,920
+by declaring a list item with
+a class dropdown-header.
+
+165
+00:12:58,920 --> 00:13:04,510
+So that that will not be treated as
+a link, instead it will be treated as
+
+166
+00:13:04,510 --> 00:13:08,440
+just a header for
+the items displayed below.
+
+167
+00:13:08,440 --> 00:13:14,370
+So this is yet another feature that
+we will use within the navbar.
+
+168
+00:13:15,720 --> 00:13:19,980
+This completes our discussion
+on Bootstrap Navbar.
+
+169
+00:13:19,980 --> 00:13:25,440
+In the exercise that follows, we are going
+to design a navbar for our webpage.
+
+170
+00:13:27,210 --> 00:13:33,835
+At the end of the exercise, you will
+see our webpage having a fixed top
+
+171
+00:13:33,835 --> 00:13:40,330
+navbar as shown in
+the website details here.
+
+172
+00:13:40,330 --> 00:13:48,210
+And this navbar is colored
+appropriately for our website.
+
+173
+00:13:48,210 --> 00:13:54,078
+We'll see how we can do that
+using the CSS class and
+
+174
+00:13:54,078 --> 00:13:59,549
+we also see a dropdown
+item within the navbar.

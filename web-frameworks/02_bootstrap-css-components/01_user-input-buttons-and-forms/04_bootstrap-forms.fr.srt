@@ -1,0 +1,263 @@
+1
+00:00:02,350 --> 00:00:06,830
+Parlons maintenant de l'aide de Bootstrap pour les formulaires. 
+
+2
+00:00:06,830 --> 00:00:08,090
+En particulier,
+
+3
+00:00:08,090 --> 00:00:12,870
+les différentes classes que Boostrap met à notre
+disposition pour la mise en forme des formulaires.
+
+4
+00:00:12,870 --> 00:00:18,160
+Nous avons déjà vu en détail les formulaires
+dans le cours précédent.
+
+5
+00:00:18,160 --> 00:00:23,464
+Donc dans ce cour, je vais
+principalement parler des classes
+
+6
+00:00:23,464 --> 00:00:27,940
+que Bootstrap met à notre disposition
+pour la mise en forme des formulaires.
+
+7
+00:00:30,275 --> 00:00:34,580
+Dans Bootstrap, les formulaires sont créés
+en utilisant les balises des formulaires.
+
+8
+00:00:34,580 --> 00:00:40,140
+Donc tous les éléments de mise en forme
+sont inclus dans les balises du formulaire.
+
+9
+00:00:41,450 --> 00:00:45,490
+Si aucune classe n'est spécifiée,
+alors c'est la présentation standard
+
+10
+00:00:45,490 --> 00:00:47,090
+du formulaire qui est utilisée.
+
+11
+00:00:48,360 --> 00:00:53,341
+Nous pouvons préciser que la classe du
+formulaire est "form-horizontal".
+
+12
+00:00:53,341 --> 00:00:58,649
+En faisant cela, nous pouvons
+obtenir que les "labels"
+
+13
+00:00:58,649 --> 00:01:05,790
+seront affichés à gauche des champs
+pour la saisie des données.
+
+14
+00:01:05,790 --> 00:01:11,760
+Donc comme vous pouvez le voir
+dans cet exemple, en spécifiant
+
+15
+00:01:11,760 --> 00:01:18,370
+ensemble un label et un
+champ de saisie
+
+16
+00:01:18,370 --> 00:01:22,370
+nous pouvons les regrouper en
+utilisant la classe "form-group".
+
+17
+00:01:22,370 --> 00:01:28,090
+Donc ici, je spécifie le label
+comme étant le prénom (firstname)
+
+18
+00:01:28,090 --> 00:01:33,780
+et qui est affiché du coté gauche 
+dans le formulaire.
+
+19
+00:01:33,780 --> 00:01:38,020
+Le champ de saisie est affiché
+
+20
+00:01:38,020 --> 00:01:44,150
+sur la même ligne, du coté droit.
+
+21
+00:01:44,150 --> 00:01:47,880
+Maintenant, la classe "form-group" de Bootstrap
+
+22
+00:01:47,880 --> 00:01:53,030
+prend en charge la classe "row".
+
+23
+00:01:53,030 --> 00:01:57,550
+À l'intérieur d'une balise utilisant "form-group"
+vous pouvez utiliser les classes "col-*"
+
+24
+00:01:57,550 --> 00:02:02,220
+afin de réaliser la mise en place
+des éléments.
+
+25
+00:02:02,220 --> 00:02:08,687
+Ici, vous pouvez voir que j'utilise
+les classes de colonnes, aussi bien
+
+26
+00:02:08,687 --> 00:02:12,690
+pour le label que pour la zone de saisie.
+
+27
+00:02:12,690 --> 00:02:15,400
+Nous pouvons définir des formulaires
+comme étant "inline".
+
+28
+00:02:15,400 --> 00:02:20,210
+Les formulaires "inline" sont
+affichés sur une unique ligne.
+
+29
+00:02:20,210 --> 00:02:22,440
+Ceci peut être très utile,
+par exemple si vous souhaitez
+
+30
+00:02:22,440 --> 00:02:27,700
+ajouter dans votre barre de
+navigation, la possibilité pour
+
+31
+00:02:27,700 --> 00:02:33,560
+l'utilisateur de saisir son nom et son 
+mot de passe pour se connecter au site.
+
+32
+00:02:33,560 --> 00:02:37,840
+Donc les formulaires en ligne
+utilisent la classe "form-inline"
+
+33
+00:02:37,840 --> 00:02:41,720
+et à l'intérieur vous pouvez
+indiquer des groupes.
+
+34
+00:02:41,720 --> 00:02:45,760
+En particulier dans cet exemple,
+vous voyez que pour le label
+
+35
+00:02:47,630 --> 00:02:51,470
+j'indique l'utilisation de la classe "sr-only"
+(Screen Readers only).
+
+36
+00:02:51,470 --> 00:02:57,100
+ce qui veut dire que ces labels ne sont
+valides que pour la lecture sur écran.
+
+37
+00:02:57,100 --> 00:03:01,870
+Ainsi, pour un affichage normal,
+ces labels seront cachés.
+
+38
+00:03:03,220 --> 00:03:08,530
+À la place, nous allons utiliser l'attribut "placeholder"
+directement dans l'élément du formulaire
+
+39
+00:03:08,530 --> 00:03:14,070
+pour indiquer ce que l'utilisateur est
+supposé écrire dans ce champ.
+
+40
+00:03:14,070 --> 00:03:19,292
+Une autre classe prise en charge par Bootstrap
+est appelée comme un "input-group".
+
+41
+00:03:19,292 --> 00:03:23,820
+Un "input-group" vous permet de
+regrouper un ensemble d'éléments.
+
+42
+00:03:23,820 --> 00:03:28,642
+Maintenant, pour tout champ de saisie que
+vous avez dans votre formulaire,
+
+43
+00:03:28,642 --> 00:03:32,259
+vous pouvez utiliser "input-group-addon", 
+ce qui vous permet ainsi d'ajouter
+
+44
+00:03:32,259 --> 00:03:37,381
+ des éléments à gauche et à droite de votre groupe.
+
+45
+00:03:37,381 --> 00:03:41,825
+Ainsi dans cet exemple, vous voyez
+que j'ai ajouté des parenthèses gauche et droite
+
+46
+00:03:41,825 --> 00:03:48,390
+autour du champ où je permets à 
+l'utilisateur de saisir son code.
+
+47
+00:03:48,390 --> 00:03:51,570
+Par exemple pour un numéro de téléphone.
+
+48
+00:03:51,570 --> 00:03:57,477
+Ici j'utilise deux "input-group-addon"
+pour joindre à ce groupe
+
+49
+00:03:57,477 --> 00:04:02,545
+la parenthèse gauche et la parenthèse droite.
+
+50
+00:04:02,545 --> 00:04:07,505
+J'utilise les "group-addon" dans des balises div 
+
+51
+00:04:07,505 --> 00:04:12,075
+pour les regrouper avec le champ de saisie.
+
+52
+00:04:12,075 --> 00:04:14,265
+Nous allons maintenant passer à l'exercice suivant,
+
+53
+00:04:14,265 --> 00:04:17,085
+où nous allons continuer à 
+travailler sur notre site.
+
+54
+00:04:17,085 --> 00:04:21,498
+Nous allons ajouter des boutons sur le site web,
+
+55
+00:04:21,498 --> 00:04:26,262
+nous allons également utiliser divers éléments
+afin de créer un formulaire de commentaires
+
+56
+00:04:26,262 --> 00:04:30,345
+des utilisateurs pour notre restaurant.

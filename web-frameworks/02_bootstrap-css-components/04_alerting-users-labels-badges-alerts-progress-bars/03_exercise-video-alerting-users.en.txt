@@ -1,0 +1,30 @@
+Our next exercise, which is going
+to be a very short exercise, is going to look at various
+ways of alerting users. We have already seen that we have labels,
+badges, alerts and progress bars to inform the user. In this exercise,
+we're going to examine labels and badges. Alerts will be explored further
+in the assignment that follows. Progress bars are a bit difficult
+to illustrate at this moment because we don't have any dynamic
+behavior on our website yet. That requires some server-side support. So we'll come back to
+examine progress bars in more detail in some
+of the later courses. Getting back to our webpage,
+in the index.html page we see that we are displaying a dish on the page here. Now, I'm going to add a label and
+a badge to this dish name. Thereby, explore the use of labels and
+badges. Moving to our HTML code. Right next to the name of the dish,
+I'm going to add a label. So I have added the label
+using the span tag. With the class label, label-danger and label-xs with the letters
+Hot inside the span. So this should display a label
+right next to the name of the dish with Hot in there,
+in red color. Going back to the webpage, you can now notice that there is a label
+right next to the name of the dish. In the next step, I'm going to add
+a badge, right next to the label. Here I am using the span with the class,
+badge. And then I am adding a price of the dish,
+right next to the label there. So you can see in the code how I
+have added the badge into place. Now looking at the result of adding
+this you will notice on the website that right next to the label you now have the
+price of the dish being displayed there. Now I have leveraged the badge class in order to display
+the price of the dish here. Now the badge class is a lot
+more versatile than that. We'll explore more about using badges when
+we have dynamic behavior on our website. This completes this exercise. In this short exercise we
+examined labels and badges. We'll look at alerts and
+progress bars later.

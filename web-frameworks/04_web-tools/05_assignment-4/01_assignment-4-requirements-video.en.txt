@@ -1,0 +1,14 @@
+In this assignment,
+you're gonna explore the use of the JavaScript methods in
+order to control the models. Earlier when we implemented the models,
+we used the data attributes in order to trigger the showing and
+hiding of the model. We can replace that with
+JavaScript methods for the model that enables us to show and
+hide their models. Going to the web page, now,
+when you click on the Log in button, you're gonna see the Log in model
+being displayed on the screen. Similarly, when you click
+on the Result button, you'll still see the Reserve Table
+model being shown on the screen there. Now, both of these now are triggered
+using the JavaScript methods rather than using the data attributes. So in this assignment, you're gonna
+remove the data attributes that you were using to trigger the models, and instead,
+replace them with JavaScript methods

@@ -1,0 +1,167 @@
+In this exercise, we're going to
+explore Bower in a lot of detail. Now, we're going to, first,
+install Bower on our computer. Then, we will use Bower to go and
+fetch bootstrap and find awesome for us automatically. Then, finally, we are going to
+make use of the components that Bower has already fetched,
+in our web page. Now, you're gonna ask,
+we already have the Fantasm files, we already have the Bootstrap files,
+why do you need to do it all over again? The primary reason for doing is exercise, is to learn
+how Bower automates this process. Of course, as we go through the next
+few courses it becomes increasingly clear to you why these tools are very, very essential to get
+your workflow organized. When we install Bower,
+we need to install Bower as a global node competent or global node module. So to do that we have to type
+on the command line, we'll say npm install -g for global. And then, we'll say bower. Now, again, remember,
+if you are doing this on a Mac or a Linux machine, then you should
+precede this with the sudo command. So since I am working on a Mac, I'm gonna add the sudo to this. And then, when you hit the return [BLANK AUDIO] and sit back and wait until note goes in Fetches Bower and
+installs it as a global module. Once the installation is completed
+then Bower is ready for you to use. We saw that MPM was making use of this
+manifest file called package.json. Similarly, Bower uses a file
+called bower.json which keeps track of all the components that you
+are making use in your current project. So we will build the bower.json file. So to do that, you could simply look
+at an existing bower.json file and then copy it in. Now, the way I would show you
+to build a bower.json file, is to use the Bower Init command. So when you type bower init on
+the command prompt, it'll ask you a bunch of questions and then initialize
+the bower.adjacent file for you. So let's go through that process next. For the name I'm just gonna
+use the name confusion. That's the web project that
+we have been building so far. And version number, I'll say 1. For the author name, you can type in your own name, it doesn't
+matter, whatever you want to type. Once you have typed in all the answers
+to the questions that Bower asks, we will have a bower.json file created for
+you. Now this bower.json file
+is in the confusion folder. Let's now examine the contents
+of the bower.json file. That we just created. So inside this file I have
+opened it in brackets here. So we can see that it contains all
+the information that we typed in. This file is stored in the JSON format. So it's always a keyword and
+the value there. Inside this file you can notice that the
+name has been given as confusion, version, description, what we just typed
+in when we typed power in it and answered the questions. So we have all this
+information captured here. And now, we are going to install some components that we need in
+order to build this webpage. Let's now see how we can make use
+of Bower to install bootstrap. To do that, at the command line type, bower install bootstrap with a -S. Now, the -S is used to save this
+information into my bower.json file. Now, after I finish these, we are gonna examine the bower.json file
+to understand how it has been updated. So let's hit the return and watch Bower
+go and fetch bootstrap files for us. Now, when Bower fetches the bootstrap
+files from the git depository, it realizes that Bower depends on jquery. So Bower will automatically go and
+fetch jquery and then solve it for us. The next thing that we
+need is font-awesome. So to fetch font-awesome, we'll type bower install font-awesome -S, at the prompt. [BLANK AUDIO] Sit back and wait for Bower to go and
+fetch the font-awesome files. There you go. We have everything that we need
+to go ahead with our project now. In order to understand what Bower did,
+let's go to our confusion folder and then you will notice that
+in the conFusion folder there is a folder there
+named bower_components, so let's go into the bower_components
+folder and see what it contains. Going into the bower_components folder, you'll notice that is
+has three folders there. Bootstrap, font-awesome and jquery. Let's navigate into bootstrap to see
+what is there inside the folder. Inside the bootstrap folder, you can see
+that it contains a whole lot of files. You can also notice that there
+is a package.json file there. Something that we are familiar with
+there is power of adjacent file there. In particular what is of interest
+to me is this folder called dist. That is the distribution folder
+that contains bootstrap files, that can be directly used in our webpage. So navigating to the distribution folder,
+you see the three folders there, css, fonts, and js. Remember when we first fetched
+bootstrap as a ZIP file, this is what was contained
+in that Bootstrap ZIP file. So going into the css folder,
+you can see all the bootstrap files there. Similarly, the JavaScript and
+the fonts folders. Going back up we can now see, inside
+the font-awesome folder, you again see all the font-awesome files that we fetched
+earlier from downloading the ZIP file. They're already here for us. Bower did all the work behind the scenes
+for us and fetched all the files. Similarly, as I mentioned to you, bower realizes that bootstrap
+is dependent on jQuery. So bower will automatically go and
+fetch jQuery for us, and install it into the bower
+competence folder. So now you see the jquery folder there. And inside the jquery folder,
+you have the distribution folder, which contains the jquery
+JavaScript files there. Now, getting back to the conFusion folder,
+we are now going to go and examine the contents of the bower.json
+file that we had seen earlier. Getting back to the bower.json file,
+if you scroll down, you'll notice that bower has installed some additional
+information into the bower.json file. Here, this information is stored
+under the keyboard dependencies. Inside there it has noted that bootstrap 3.3.5, that is version 3.3.5, and font-awesome version 4.4.0. Now, bower has already noted in
+the bower adjacent file that this particular project depends upon
+Bootstrap and Font-Awesome. And so that's what is noted
+in the dependencies there. You're gonna ask me,
+what is the use of this bower.json file? Let me show that to you in a minute. Let's now go back to our conFusion folder
+and then go inside the bower_components. I'm going to select all these folders and
+then delete them. And then, we will make bower go and
+fetch all these for us. [BLANK AUDIO] Now, we have cleaned
+out the bower_components folder. Now, if we want bower to install all this,
+we can go at the command line. We just type bower install, and
+the bower will automatically go and fetch all the packages for you, and
+install them in the bower_complex folder. So now if I type bower
+install [BLANK AUDIO] and hit the Return, bower will take care
+of installing all the files for us. How does bower know where
+to find the information about the packages that
+it needs to install? That is where the bower.json
+file comes to our rescue. Recall that in the bower.json file, we
+have the dependencies already noted there. So when you say bower install, bower is
+going to consult the bower.json file, and then sees that this particular project is
+dependent on Bootstrap and Font-Awesome. So it's gonna go and
+fetch all those components for us. Now, when we go back to our
+bower_components folder, you again see all those files reappear. Now, you must be wondering,
+what's the use of all this? If you are working on large projects, very often you will have a team of
+people working on this project. And these files have to
+be version controlled, so you might use a git repository, or a some form of version control system
+where you'll be checking in these files. Now, when you check in the files,
+all these bootstrap, font-awesome, and jquery files do not need to be
+stored in your version control system, because they are not dependent,
+you are not changing them in any way. So the only things that you install
+in your version control system are the HTML and JavaScript and
+CSS files that you created. In addition, you're gonna install
+your bower.json file also. In your version control system. So somebody else,
+who wants to recreate that project folder structure on their own
+computer, can simply go to the VCS, the version control system, and
+then fetch all the files to their machine. And then, once they get that, since
+they already have the bower.json file, they can simply type bower install
+at the command prompt, and then bower will take care of
+fetching all the files for you. The same thing applies even for
+node packages that you use. If you are using node packages
+that are stored locally, remember that we had created a packaged or
+adjacent file earlier. If you type nvm install,
+nvm will consult your package or adjacent file and go and fetch all
+the node components that you need. And then, or node modules that you need,
+and then install them. That's where the power
+comes to our rescue. Sorry, that was not a pun intended. Now, when we go back
+to examine our folder, using either brackets of any text editor, you would notice that the bower_components
+folder has appeared there. So we can simply go in there and
+then in the distribution folder, we already see the css,
+fonts and js fonts there. So in our index.html page where
+we were using the CSS and the JavaScript files
+that we fetched earlier, we can simply replace those
+referring to the files in the distribution folder of
+the bower_components folder. So I'm going to replace each
+one of them by the files in the distribution folders there. Now, what's the advantage of this? Again, as I've said, if you check and somebody else downloads them,
+they can simply do bower install. They don't need to go and
+manually fetch any of those bootstrap or font-awesome files. Instead, all this will be taken
+care of by bower for you. Now, of course,
+this is not exactly the way we use bower, but bower helps us to
+fetch all these files. Later on you will see
+the other tools coming in. They will help to build your webpage and
+then create a distribution of your own project, at which you can then
+install on your web server. Hold off on that until we
+come to the next course. But now, let's go in and make use of
+the files that bower has fetched for us. Returning to these links, I'm gonna replace them with the files
+that Bower has fetched for me. So going in there I will
+type in bower_components and I will say bower- components bootstrap and then dist, and then enter Return. That's it. So instead of using the css files in
+the project css folder I am instead using Competence files that
+have been fetched for me. Same thing I'm gonna do with
+the bootstrap theme and the font-awesome, css files, too. So with these changes,
+I have now made our index.html page use the ccss files
+that Bower has fetched for me and stored in the bower_components. Going to the bottom of the page I'm
+going to replace all the JavaScript files also to make use of the files
+that bower has fetched for me. So going in here,
+I'm going to replace this jquery part by saying bower_components. And jquery and then dist, and you notice that jquery
+min.js already exists there. So that's the jquery file that
+I'm going to make use of. Similarly, for the bootstrap.min
+I will say bower_components. Bootstrap, distribution,
+js, and bootstrap. But these updates, now, our index.html page is using the files
+that bower has fetched for us. Interim of the files that
+we downloaded earlier. We should do the same updates
+to the AboutUs.html page and also to the ContactUs.html page. After making these changes,
+if we go back and look at our webpage,
+you won't find any difference. The only difference now is that your web
+project is using the files that Bower fetched, of the files that
+we downloaded earlier. So by making use of Bower,
+you can save yourself a lot of time, and let Bower do the work for you. So again, having a look at the webpage,
+it's still exactly the same as before. Nothing changed, except that we
+are using files that power fetch. So this completes this exercise
+where we learned how to make use of power to
+fetch the packages and the assets that we need for
+our web project automatically. We're gonna explore the remaining
+tools in the next course.

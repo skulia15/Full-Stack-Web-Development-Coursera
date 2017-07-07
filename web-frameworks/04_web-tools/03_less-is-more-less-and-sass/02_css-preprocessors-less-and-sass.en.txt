@@ -1,0 +1,134 @@
+Let us now learn a little
+bit about CSS preprocessors, in particular about Less and Sass. When you go to the Bootstrap website, you will notice that they mention
+that Bootstrap is built using Less. And they also have a Sass port. And, at that point,
+you must be wondering, what is this Less? What is Sass? And how do they play a role in
+defining the bootstraps CSS classes? Let's learn a little bit about
+these CSS preprocessors, now. You have learned a lot about
+CSS in the previous course. Now, CSS is wonderful for styling and defining various properties of HTML LMX. But when you look at CSS,
+CSS is rather limited when it comes to being like
+a typical programming language. CSS doesn't support things like variables,
+nesting, expressions, or even functions. Now, adding all these
+things in place would definitely benefit people
+who write CSS code. And also, without the availability
+of these features, the maintainability of CSS suffers a lot. For people who are very well used
+to programming, you can't live without things like variables,
+functions, expressions and so on. And that is where the downside of
+CSS begins to show up very quickly. This is where CSS Preprocessors
+come to your rescue. If you would like to write CSS more in
+the programming style that you're used to then go no further than looking
+at the CSS preprocessors. There are three popular CSS
+preprocessors that are out there. Less, Sass, and Stylus. We're gonna examine Less and
+Sass in some detail in this lecture. But there is a lot more to these
+preprocessors than what I can explain in a short duration. I will give you links to go and
+explore these preprocessors further. Now, when you write code using one of
+these preprocessors the expectation is that they will be automatically
+transformed into the equivalent CSS code. Now this is where either compilers or transformation tools that are available,
+come to your rescue. In particular, we'll examine one
+such tool for compiling Less code. Bootstrap itself was
+originally designed in Less. Now they do have a Sass port available. The typical CSS preprocessor features
+that are supported include variables, nesting of selectors, then mixins,
+and functions and expressions. We'll examine some of these in
+more detail through some examples. And in the exercise we'll see
+how we can write Less code, and automatically compile it
+into the corresponding CSS. I am presenting these features for
+both Less and Sass side by side, so that you can
+see the similarities between the two. At the same time, minor differences in the syntax between
+the two different preprocessors. Variables can be defined both in Less and
+Sass. In Less, you usually precede
+the variable name with an @ sign In Sass,
+you precede the variable label with a $. Within the code, you can use the variables
+just by specifying the name, including the @, in case of Less,
+or including the $ in case of Sass. So in this example you can see that I have
+defined a color and a height variable. And then I am using them inside my CSS
+classes by specifying for example, the background with the color variable and
+a height with the height variable. Variables also have scopes
+both in Less and Sass. So if you define a variable
+inside the scope, then the applicability of the variable
+is limited to that scope. So if you are used to programming
+you understand scopes very well. The advantage of using
+the preprocessors is nesting. When we write CSS code,
+you realize that you might be having certain classes that
+are dependent upon other classes. So for example, you might have a carousel
+class and then inside a carousel class, you might have an item class. Now when you write that CSS code,
+you will write .carousal and then you will have another one for
+.carousel dot item, and so on. Nesting allows you to nest the classes. So that you have a parent class and then the subclasses going
+inside that parent classes. In this this example I have
+shown you both Less and Sass's way of defining nesting. They pretty much are similar in
+nature when they define nesting. So here, I am having a carousel class. And inside the carousel class,
+I have an item class. And inside that height class,
+I have an image class. So the properties that I defined
+to the image class are applicable only to the images that are inside
+a carousel item element. Very often, you might have certain CSS
+classes, and then you might define other CSS classes that share similar properties
+with the previous CSS classes. Now, if you go with standard CSS,
+you will have to define them separately. With mixins, what happens is that
+if you have a group of properties, CSS properties that you want
+to apply to several classes, then you can define a mixin. Like, for example, in this example you can see that I have
+defined a mixin called the zero margin, which contains margins as zero pixels,
+and then some other properties. Summed up together,
+they can be used inside other CSS classes. So they're in Less, for example, if I
+define the zero margin I can use that zero margin inside another CSS class by
+including the name as shown here. Same thing with Sass. In Sass, when you define a mixin, you
+precede the name of the mixin with @mixin. And when you use a mixin
+inside in another class, you will see @ include and
+then specify name of the mixin. The advantage of using mixin's is, mixin's can hold multiple
+CSS definitions together. Unlike variables, which are inapplicable
+to a single CSS definition. Mixins can also take parameter values. So in this example, both in Less and
+Sass, you can see that for my mixin, I have two parameter values. The padding value for
+the up and down padding, and another padding value for
+left and right padding. So, when I use that class
+inside other classes, I can specify the parameters for
+the mixin. So, in Less, for example,
+I am using the zero margin mixin that I've defined, class that I've
+defined with two parameters. And then I can use that zero margin class
+inside, for example, the row header class. If I don't give any parameters the default
+values specified will be used. Instead, if I give specific parameter
+values, as you see for the row content. I specify the up and
+down padding as 50 pixels, and left and right padding as zero pixels. Then automatically this will be
+compiled into the appropriate CSS class with the light
+padded values defined. Sass has a slightly different syntax for
+defining this. So again, it's basically the same way. So you can see the similarity
+between Less and Sass here too. In here, when you use the mixin, as you see you are going to precede
+the mixin name with the @ include. And then in brackets,
+you specify the parameter values. You can also do a lot of mathematical
+operations on the values or variables that you use inside Mixins. So here, for example,
+I defined a variable as carousel height. In some of the classes I am using
+the carousel height, as are these. In other classes maybe I may want
+to do a mathematical operation. So for example, I can define a smaller class with
+one quarter of the parameter size. A larger class would double the parameter,
+the variable value, and so on. So, those can also be
+defined in Bootstrap. So mathematical operations
+give you a lot of flexibility in the way you write the Less or
+the Sass code. Besides these, there are many other
+features that are supported by both Less and Sass. And even stylus for that matter. You have functions. So these functions allow you to
+do mathematical operations, list, string operations. Even color operations. So, for example, you can take a color
+value and darken the color value. For example, if you're defining
+a value for a hover color. You can take the standard color and
+then automatically process it and define a darker color to be applied
+when you are hovering over that element. All this are flexibility that
+pre-processing language bring for us. You can also import existing Less are Sass classes into other Less and
+Sass classes. Of course, Less classes can be
+imported into other Less files, and Sass files can be imported into
+other Sass files correspondingly. Let's pay a quick visit to
+the Bootstrap site to see how Less and Sass are actually used within Bootstrap. If you go to the Bootstrap site,
+under CSS. You can click on this
+link called Using Less. This is where the detailed
+description of the less values and variables and mixins that are used in
+Bootstrap are defined in great detail. You can actually get hold of
+Bootstrap in less format and then modify things and compile your own
+version of Bootstrap if you prefer to. So, all these are available for
+you to define. So you can see how bootstrap is
+defining the different color values using bootstrap variables, and
+links, and typography and so on. These are all specified as
+variables inside Bootstrap. Similarly, Bootstrap
+also has a Sass version. So they have an official
+Sass port now available for you, which is maintained as
+a separate GitHub repository. So you can get the Sass
+version of Bootstrap if that is what you are going
+to use within your project. In the next set of courses we're
+going to explore more on taking Bootstrap or other CSS files in the pre-processor format and
+automatically generating the CSS code. Now, we will move on to the exercise. The next exercise,
+we will explore the use of Less. So we will see how we can define the Less variables and mixins and nesting, and then construct a CSS file
+by compiling the Less code. To do this,
+we are going to make use of the nodes support through that Less C compiler, that is a node module that can
+be installed on your system.

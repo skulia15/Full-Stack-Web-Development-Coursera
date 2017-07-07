@@ -1,0 +1,430 @@
+1
+00:00:01,890 --> 00:00:05,135
+We will now talk about the use of tabs,
+pills and
+
+2
+00:00:05,135 --> 00:00:10,100
+tabbed navigation to enable
+presentation of content to the user.
+
+3
+00:00:11,950 --> 00:00:16,930
+Obviously on any website there is a lot of
+content that can be presented to the user.
+
+4
+00:00:16,930 --> 00:00:21,580
+But if we organize it in a way that
+is easy to navigate the content,
+
+5
+00:00:21,580 --> 00:00:28,440
+then the visitors may find it more easy
+to find the information that they want.
+
+6
+00:00:28,440 --> 00:00:32,990
+So, tabs and pills allow us to
+organize the content appropriately.
+
+7
+00:00:32,990 --> 00:00:36,940
+Now, tabs and pills provide
+the navigational elements for us.
+
+8
+00:00:36,940 --> 00:00:40,720
+And then the content itself
+is enclosed in tabbed pills,
+
+9
+00:00:40,720 --> 00:00:44,370
+as we will see when we
+go through this lesson.
+
+10
+00:00:46,470 --> 00:00:50,125
+Let's take a look at a simple
+example of how we can use tabs and
+
+11
+00:00:50,125 --> 00:00:53,040
+tabbed navigation to organize content.
+
+12
+00:00:53,040 --> 00:00:57,920
+So in this case we are looking at the
+information about the corporate leadership
+
+13
+00:00:57,920 --> 00:00:59,930
+of our restaurant.
+
+14
+00:00:59,930 --> 00:01:06,185
+Now the content which was listed all
+together has been organized into tabs
+
+15
+00:01:06,185 --> 00:01:11,785
+indexed by the name of
+the corresponding leader here.
+
+16
+00:01:11,785 --> 00:01:16,287
+So using the tabbed navigation
+we can easily move between
+
+17
+00:01:16,287 --> 00:01:20,791
+the various descriptions of
+the different leaders using
+
+18
+00:01:20,791 --> 00:01:24,470
+the tabbed navigation provided for
+us there.
+
+19
+00:01:25,730 --> 00:01:31,220
+This enables the visitors not to be
+overwhelmed with a lot of content but
+
+20
+00:01:31,220 --> 00:01:35,470
+instead see the content presented
+in an organized manner.
+
+21
+00:01:37,390 --> 00:01:43,780
+So as we see, the tab and pills provide
+us with the navigation elements
+
+22
+00:01:43,780 --> 00:01:48,840
+to be able to navigate the content that
+is already organized into multiple panes.
+
+23
+00:01:50,700 --> 00:01:55,515
+Let's now look at a simple example to
+understand how we go about implementing
+
+24
+00:01:55,515 --> 00:01:58,500
+tabbed navigation on our page.
+
+25
+00:01:59,730 --> 00:02:07,030
+To implement tabbed navigation we're gonna
+use a UL with the classes nav nav-tabs.
+
+26
+00:02:07,030 --> 00:02:10,170
+So this is a nav element, as we see.
+
+27
+00:02:10,170 --> 00:02:12,220
+So that's why we use the nav class.
+
+28
+00:02:12,220 --> 00:02:17,320
+And then the other qualifier
+is the nav-tabs class there.
+
+29
+00:02:17,320 --> 00:02:21,880
+Now within that,
+each list item will be presented as a tab.
+
+30
+00:02:21,880 --> 00:02:27,080
+So you can see in this code here
+the different list items presented
+
+31
+00:02:27,080 --> 00:02:33,400
+are laid out on the screen as
+tabs seeing the example above.
+
+32
+00:02:35,420 --> 00:02:40,390
+Each of these tab elements carries a a tag
+
+33
+00:02:40,390 --> 00:02:44,740
+with an href which we can
+use to defer to the tab pane
+
+34
+00:02:44,740 --> 00:02:48,850
+that we're going to include next
+with the actual content of the tab.
+
+35
+00:02:50,130 --> 00:02:54,680
+Also, one of the list items
+will be marked as active.
+
+36
+00:02:54,680 --> 00:02:59,190
+This means that that particular
+tab will be opened by default when
+
+37
+00:02:59,190 --> 00:03:03,080
+the user navigates to this
+location on the page.
+
+38
+00:03:04,580 --> 00:03:09,990
+Instead of using the nav tabs class,
+we can use the nav pills class.
+
+39
+00:03:09,990 --> 00:03:16,360
+The nav pills class turns the navigational
+elements into a list of items
+
+40
+00:03:16,360 --> 00:03:22,120
+and the item marked as active will be
+
+41
+00:03:22,120 --> 00:03:27,270
+clearly highlighted on the page there.
+
+42
+00:03:27,270 --> 00:03:31,247
+So you can see that since I applied
+the active class to the first element,
+
+43
+00:03:31,247 --> 00:03:36,570
+the corresponding a tag has been
+
+44
+00:03:36,570 --> 00:03:39,970
+clearly marked out as
+a pill on the script.
+
+45
+00:03:40,990 --> 00:03:46,180
+But both nav tabs and nav pills provide
+exactly the same functionality.
+
+46
+00:03:46,180 --> 00:03:50,200
+Depending on how you want to design your
+user interface, you may choose one or
+
+47
+00:03:50,200 --> 00:03:55,750
+the other as the approach for
+designing your navigational elements.
+
+48
+00:03:57,990 --> 00:04:02,337
+To the navigational elements,
+we can also apply the nav-justified class.
+
+49
+00:04:02,337 --> 00:04:07,381
+When you do that the nav
+elements will stretch
+
+50
+00:04:07,381 --> 00:04:12,692
+the entire width of
+the parent element there and
+
+51
+00:04:12,692 --> 00:04:16,941
+will occupy a proportional portion of
+
+52
+00:04:16,941 --> 00:04:22,122
+the screen width for these nav elements.
+
+53
+00:04:22,122 --> 00:04:26,463
+Now elements within the nav
+class can be disabled by using
+
+54
+00:04:26,463 --> 00:04:30,812
+the disabled class applied
+to that particular element.
+
+55
+00:04:32,512 --> 00:04:34,162
+Pills, in addition,
+
+56
+00:04:34,162 --> 00:04:38,932
+provide you with a way of stacking them
+vertically rather than horizontally.
+
+57
+00:04:38,932 --> 00:04:44,050
+Nav tabs are always presented
+in a horizontal arrangement.
+
+58
+00:04:44,050 --> 00:04:49,000
+Nav-pills, on the other hand,
+can be either presented horizontally, or
+
+59
+00:04:49,000 --> 00:04:53,927
+if you use the nav-stacked
+class together with nav-pills
+
+60
+00:04:53,927 --> 00:04:58,220
+then the items will be stacked
+vertically on the screen.
+
+61
+00:04:58,220 --> 00:05:02,490
+We will see the use of nav
+pills in the next lesson.
+
+62
+00:05:04,050 --> 00:05:06,250
+The actual content that
+
+63
+00:05:07,480 --> 00:05:12,360
+forms the part of the tab will
+be enclosed inside a tab pane.
+
+64
+00:05:12,360 --> 00:05:16,530
+So you will have a div with
+the class tab-pane and
+
+65
+00:05:16,530 --> 00:05:19,000
+inside that the content will be presented.
+
+66
+00:05:19,000 --> 00:05:23,768
+Now these tab panes are grouped
+together inside an outer
+
+67
+00:05:23,768 --> 00:05:26,720
+div with the class tab-content.
+
+68
+00:05:27,720 --> 00:05:32,800
+And one of those tab panes will be
+designated as the active tab pane,
+
+69
+00:05:32,800 --> 00:05:38,130
+which means that the content from that
+tab pane will be visible on the screen
+
+70
+00:05:38,130 --> 00:05:42,480
+when you first reach that tab item there.
+
+71
+00:05:44,240 --> 00:05:47,045
+Going back to our example
+that we presented earlier,
+
+72
+00:05:47,045 --> 00:05:52,370
+let's look at the actual code used for
+constructing those nav tabs.
+
+73
+00:05:52,370 --> 00:05:58,460
+So here I present the UL class that
+enables me to construct the nav tabs.
+
+74
+00:05:58,460 --> 00:06:05,630
+And also the tab content itself is
+enclosed inside a tab pane there, and
+
+75
+00:06:06,700 --> 00:06:12,835
+these tab panes are enclosed inside
+an outer div with the class tab-content.
+
+76
+00:06:14,730 --> 00:06:19,131
+One more point to note is that
+we need to connect the tabbed
+
+77
+00:06:19,131 --> 00:06:24,550
+navigational elements to the content page.
+
+78
+00:06:24,550 --> 00:06:29,780
+To do that for each of the tabbed
+panes we will give an ID, and
+
+79
+00:06:29,780 --> 00:06:36,530
+the same ID will be used in
+the list item in the UL class
+
+80
+00:06:36,530 --> 00:06:42,360
+to refer to this particular tab there.
+
+81
+00:06:42,360 --> 00:06:48,220
+So in this example you can see that I have
+used the IDS Peter for this tab pane,
+
+82
+00:06:48,220 --> 00:06:56,380
+and there comes warning list item in
+the UL class uses the href to Peter there.
+
+83
+00:06:56,380 --> 00:07:01,210
+In addition, for the tabbed navigation
+elements to work correctly,
+
+84
+00:07:01,210 --> 00:07:06,530
+they should be given the data attribute
+data toggle equal to tab there.
+
+85
+00:07:08,080 --> 00:07:12,520
+Now we will move on to our next
+exercise where we will actually
+
+86
+00:07:12,520 --> 00:07:16,660
+construct the tabs example
+that you saw earlier.
+
+87
+00:07:16,660 --> 00:07:20,196
+So we're going to go into
+the aboutus.html page,
+
+88
+00:07:20,196 --> 00:07:25,955
+we're gonna use tabbed navigation to build
+the tab navigational elements there,
+
+89
+00:07:25,955 --> 00:07:30,727
+and then we're gonna organize
+the content inside tabbed panes, and
+
+90
+00:07:30,727 --> 00:07:33,711
+enclose that with a tab content div there.

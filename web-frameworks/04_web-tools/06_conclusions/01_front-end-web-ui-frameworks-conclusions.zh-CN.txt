@@ -1,0 +1,5 @@
+终于 我们来到了总结的部分 我希望你是非常开心地学完这门课的 我也希望你已经对 Bootstrap 有了一定的了解 那么 在这门课里 我们学习了非常多
+Bootstrap 的技术 我们学习了响应式网页设计 学习了如何使用 Bootstrap 的网格系统 我们还学习了 Bootstrap 的 CSS
+和 JavaScript 组件 最后 我们还学习了如何使用一些 web 工具 比如说 Node.js 和 NPM, Bower 现在 在我们学完了这门课后 我们接下来要学习的就是
+基于 JavaScript 的框架 AngularJS 希望能在下门课中看到你
+【翻译 - Carefree0910】

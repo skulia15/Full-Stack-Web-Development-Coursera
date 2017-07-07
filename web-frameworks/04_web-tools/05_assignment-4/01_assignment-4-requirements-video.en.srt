@@ -1,0 +1,68 @@
+1
+00:00:02,830 --> 00:00:06,320
+In this assignment,
+you're gonna explore the use of
+
+2
+00:00:06,320 --> 00:00:10,650
+the JavaScript methods in
+order to control the models.
+
+3
+00:00:10,650 --> 00:00:14,867
+Earlier when we implemented the models,
+we used the data attributes in
+
+4
+00:00:14,867 --> 00:00:18,042
+order to trigger the showing and
+hiding of the model.
+
+5
+00:00:18,042 --> 00:00:21,673
+We can replace that with
+JavaScript methods for
+
+6
+00:00:21,673 --> 00:00:25,950
+the model that enables us to show and
+hide their models.
+
+7
+00:00:28,560 --> 00:00:32,860
+Going to the web page, now,
+when you click on the Log in button,
+
+8
+00:00:32,860 --> 00:00:36,480
+you're gonna see the Log in model
+being displayed on the screen.
+
+9
+00:00:36,480 --> 00:00:40,313
+Similarly, when you click
+on the Result button,
+
+10
+00:00:40,313 --> 00:00:46,070
+you'll still see the Reserve Table
+model being shown on the screen there.
+
+11
+00:00:46,070 --> 00:00:50,615
+Now, both of these now are triggered
+using the JavaScript methods
+
+12
+00:00:50,615 --> 00:00:53,386
+rather than using the data attributes.
+
+13
+00:00:53,386 --> 00:00:57,829
+So in this assignment, you're gonna
+remove the data attributes that you were
+
+14
+00:00:57,829 --> 00:01:02,490
+using to trigger the models, and instead,
+replace them with JavaScript methods

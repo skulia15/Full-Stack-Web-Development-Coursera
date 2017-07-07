@@ -1,0 +1,445 @@
+1
+00:00:02,240 --> 00:00:05,870
+Let me now give you quick
+overview of icon fonts,
+
+2
+00:00:05,870 --> 00:00:09,710
+what are they,
+how are they used on websites, and
+
+3
+00:00:09,710 --> 00:00:14,879
+what advantages do they bring when
+you use them within your websites.
+
+4
+00:00:16,850 --> 00:00:21,600
+Icon fonts are a set of icons and cliffs.
+
+5
+00:00:21,600 --> 00:00:25,130
+They can be used just like
+regular font on your website so
+
+6
+00:00:25,130 --> 00:00:29,560
+just like you use your standard
+alphabets on your website,
+
+7
+00:00:29,560 --> 00:00:35,340
+you can use icon fonts in any
+location on your website.
+
+8
+00:00:36,940 --> 00:00:43,460
+The advantages that icon fonts bring is
+that they can be easily styled using CSS.
+
+9
+00:00:43,460 --> 00:00:48,300
+Which means you can control the color,
+size and background and
+
+10
+00:00:48,300 --> 00:00:52,540
+many other features of
+icon fonts using CSS.
+
+11
+00:00:52,540 --> 00:00:59,880
+Icon fonts are a very light weight
+replacement for graphics on your webpages.
+
+12
+00:00:59,880 --> 00:01:04,400
+So if you have simple graphics,
+instead of using images,
+
+13
+00:01:04,400 --> 00:01:08,970
+you can use icon fonts as
+an easy replacement for them.
+
+14
+00:01:08,970 --> 00:01:12,230
+Now when your web site
+includes icon fonts,
+
+15
+00:01:12,230 --> 00:01:17,280
+they are downloaded
+without needing additional
+
+16
+00:01:18,920 --> 00:01:22,390
+requests being sent to your web site
+in order to download the images.
+
+17
+00:01:22,390 --> 00:01:27,660
+So that's one of the advantages why icon
+fonts have gained a lot of popularity
+
+18
+00:01:27,660 --> 00:01:30,480
+in usage on websites.
+
+19
+00:01:30,480 --> 00:01:38,150
+Many different icon fonts are available
+that are used by website designers.
+
+20
+00:01:38,150 --> 00:01:42,030
+To help us understand how icon
+fonts are used in websites,
+
+21
+00:01:42,030 --> 00:01:45,830
+let's quickly visit your
+course web page itself.
+
+22
+00:01:45,830 --> 00:01:48,650
+Now, on the left side in the side bar,
+
+23
+00:01:48,650 --> 00:01:53,090
+you can see that we have
+a list of links there.
+
+24
+00:01:53,090 --> 00:01:55,770
+In addition to the links,
+to the left side of the links,
+
+25
+00:01:55,770 --> 00:02:02,180
+we also have small graphical
+icons included in the web page.
+
+26
+00:02:02,180 --> 00:02:05,850
+All these icons have been
+created using icon fonts.
+
+27
+00:02:05,850 --> 00:02:11,130
+Let's take a look at few example
+icon fonts that are used.
+
+28
+00:02:11,130 --> 00:02:15,320
+In particular, in this course,
+I'm gonna make you use of the Glyphicons.
+
+29
+00:02:15,320 --> 00:02:19,870
+Glyphicons are already included as
+part of the Bootstrap framework.
+
+30
+00:02:21,540 --> 00:02:22,080
+In addition,
+
+31
+00:02:22,080 --> 00:02:26,810
+I'm going to make use of Font Awesome,
+which is another popular icon font.
+
+32
+00:02:28,540 --> 00:02:32,480
+As I mentioned, Glyphicons
+are already included in Bootstrap.
+
+33
+00:02:32,480 --> 00:02:40,490
+To make use of Glyphicons, on any location
+in your webpage, you use the span tag.
+
+34
+00:02:40,490 --> 00:02:47,340
+To the span tag you will give
+a class as glyphicon and
+
+35
+00:02:47,340 --> 00:02:53,280
+then the specific class for the icon
+that you are using at the location.
+
+36
+00:02:53,280 --> 00:03:00,260
+So in this example you see me using the
+Glyphicon home as the second class there.
+
+37
+00:03:00,260 --> 00:03:06,360
+Glyphicon home corresponds to
+the home icon in the glyphicon set.
+
+38
+00:03:07,800 --> 00:03:13,130
+Glyphicons included in Bootstrap
+are about 250 in number.
+
+39
+00:03:14,630 --> 00:03:17,760
+Another popular icon
+font that I mentioned,
+
+40
+00:03:17,760 --> 00:03:21,680
+that we will make use of in this course,
+is Font Awesome.
+
+41
+00:03:21,680 --> 00:03:25,590
+Now Font Awesome includes
+a large set of icons.
+
+42
+00:03:25,590 --> 00:03:30,180
+And provide you with a large variety of
+icons that you can use on your website.
+
+43
+00:03:30,180 --> 00:03:34,020
+Now once you take a look at Font Awesome
+you're gonna say, awesome man.
+
+44
+00:03:36,300 --> 00:03:37,600
+Okay, okay, okay.
+
+45
+00:03:37,600 --> 00:03:39,780
+You can laugh as much as you want.
+
+46
+00:03:39,780 --> 00:03:43,563
+I am definitely not going to
+pretend to be a teenager.
+
+47
+00:03:45,049 --> 00:03:47,570
+Okay coming back to icon fonts.
+
+48
+00:03:47,570 --> 00:03:52,380
+They way you use icon fonts on
+your website, Is to use the i tag.
+
+49
+00:03:52,380 --> 00:03:57,290
+To the i tag, you would give
+a class as fa and then fa hyphen
+
+50
+00:03:57,290 --> 00:04:02,190
+the specific icon that you're
+using at that location.
+
+51
+00:04:02,190 --> 00:04:07,153
+So in this example, you see me using
+fa fa phone, meaning the phone icon
+
+52
+00:04:07,153 --> 00:04:11,810
+will be substituted in that
+particular location on your webpage.
+
+53
+00:04:12,850 --> 00:04:17,010
+How do you make use of
+Font Awesome in your web project?
+
+54
+00:04:17,010 --> 00:04:23,150
+You need to download the Font Awesome
+distribution files, and then you
+
+55
+00:04:23,150 --> 00:04:29,430
+should include the CSS files that are part
+of Font Awesome, into your web project.
+
+56
+00:04:29,430 --> 00:04:33,950
+And the fonts will automatically be used.
+
+57
+00:04:33,950 --> 00:04:37,970
+Now one way that I use
+Font Awesome in my web projects
+
+58
+00:04:37,970 --> 00:04:42,620
+is after they download
+the Font Awesome distribution files,
+
+59
+00:04:42,620 --> 00:04:48,180
+then I will copy the CSS files from
+the CSS folder of the Font Awesome
+
+60
+00:04:48,180 --> 00:04:54,290
+folder into the CSS
+folder of my web project.
+
+61
+00:04:54,290 --> 00:04:59,570
+And also I will copy the fonts
+from the Font Awesome folder into
+
+62
+00:04:59,570 --> 00:05:02,470
+the fonts folder of my web project.
+
+63
+00:05:02,470 --> 00:05:03,850
+That's how I have been using.
+
+64
+00:05:05,020 --> 00:05:09,795
+You can include these Font Awesome files
+in any other way that you choose to.
+
+65
+00:05:09,795 --> 00:05:14,910
+Another CSS class that I am going
+to make use of in the exercise
+
+66
+00:05:14,910 --> 00:05:19,566
+that follows this lecture
+is Bootstrap-social.
+
+67
+00:05:19,566 --> 00:05:24,450
+Bootstrap-social is a CSS
+class that is available to
+
+68
+00:05:25,600 --> 00:05:30,500
+style some buttons for social web sites.
+
+69
+00:05:30,500 --> 00:05:37,410
+Bootstrap-social makes use of
+Font Awesome's icon fonts that
+
+70
+00:05:37,410 --> 00:05:43,158
+are representing the logos for
+the various social websites.
+
+71
+00:05:43,158 --> 00:05:50,650
+Now, Bootstrap-social adds additional
+features to those Font Awesome icons.
+
+72
+00:05:50,650 --> 00:05:56,113
+So for example,
+it takes the Font Awesome icon and
+
+73
+00:05:56,113 --> 00:06:03,030
+then turns it into a button for
+the various social media sites.
+
+74
+00:06:03,030 --> 00:06:05,145
+How do you make use of Bootstrap-social?
+
+75
+00:06:05,145 --> 00:06:11,120
+You download Bootstrap-social.CSS file and
+then include it into your webpage.
+
+76
+00:06:12,240 --> 00:06:18,070
+Then wherever you need to
+include a button to a social
+
+77
+00:06:18,070 --> 00:06:24,440
+website then you will include a A tag and
+give it a class as button.
+
+78
+00:06:24,440 --> 00:06:28,590
+Button, of course, buttons which we
+will examine in the next module.
+
+79
+00:06:28,590 --> 00:06:32,450
+Then you specify buttons social icon,
+
+80
+00:06:32,450 --> 00:06:36,840
+and button for
+the specific social website.
+
+81
+00:06:36,840 --> 00:06:41,680
+So, in this example, you will see me
+referring to button Facebook, and
+
+82
+00:06:41,680 --> 00:06:45,430
+then In addition, you would be including
+
+83
+00:06:45,430 --> 00:06:51,340
+the Font Awesome icon for
+that particular social media site.
+
+84
+00:06:51,340 --> 00:06:58,398
+So that's why you see me using there
+the i class, fa, and the fa-facebook
+
+85
+00:06:58,398 --> 00:07:04,150
+to use the Facebook icon that is included
+as part of the Font Awesome set.
+
+86
+00:07:04,150 --> 00:07:07,830
+Now we will move on to our
+next hands on exercise.
+
+87
+00:07:07,830 --> 00:07:14,679
+We will, in this exercise, go back to
+the website what we have been designing so
+
+88
+00:07:14,679 --> 00:07:19,570
+far and then include the nav
+bar into our web page.
+
+89
+00:07:19,570 --> 00:07:22,640
+In addition,
+we'll make use of both Glyphicons and
+
+90
+00:07:22,640 --> 00:07:27,890
+then Font Awesome icons in various
+locations on our web page.
+
+91
+00:07:27,890 --> 00:07:32,310
+We'll also use Bootstrap-social
+to include some social
+
+92
+00:07:32,310 --> 00:07:36,310
+website buttons in
+the footer of our webpage.

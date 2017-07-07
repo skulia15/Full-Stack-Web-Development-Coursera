@@ -1,0 +1,400 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h1 level="1">
+  Exercise: Navbar
+ </h1>
+ <h3 level="3">
+  Objectives and Outcomes
+ </h3>
+ <p>
+  In this exercise, we will examine the navigation support that we can build into a web page using the Navbar in Bootstrap. We will also learn the basic use of icons in web page design using the built-in glyphicons that are part of Bootstrap, the Font Awesome icons, and bootstrap-social icons. At the end of this exercise, you will be able to:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Create a navigation structure for your website using the Navbar
+   </p>
+  </li>
+  <li>
+   <p>
+    Use icons within your website to represent various entities making use of the glyphicons, font-awesome icons and bootstrap-social icons
+   </p>
+  </li>
+  <li>
+   <p>
+    Include additional CSS classes into your project
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Create a basic navigation bar
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    We will now add a simple navigation bar to the web page so that it provides links to the other pages on the website. Start by adding the following code to the body just above the header jumbotron.
+   </p>
+  </li>
+ </ul>
+ <pre language="html">        &lt;nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"&gt;
+            &lt;div class="container"&gt;
+                &lt;ul class="nav navbar-nav"&gt;
+                    &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;         </pre>
+ <p>
+  In the above code, we can see the use of the nav element to specify the navigation information for the website. This nav element is styled by the
+  <em>
+   navbar
+  </em>
+  that declares it as a navigation bar, and the
+  <em>
+   navbar-inverse
+  </em>
+  class to specify that the page should use the dark navigation bar. In addition the inner
+  <em>
+   ul
+  </em>
+  is used to specify the items to be put in the navigation bar. This
+  <em>
+   ul
+  </em>
+  is styled with
+  <em>
+   nav
+  </em>
+  and
+  <em>
+   navbar-nav
+  </em>
+  classes to specify that the items should be displayed inline inside the navigation bar. We also use the container class inside the navigation bar. This navigation bar does not use responsive design at the moment.
+ </p>
+ <h3 level="3">
+  Creating a responsive navigation bar
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    We would like the navigation bar elements to collapse for shorter screens, to be replaced by a toggle button so that the items can be toggled on or off when required on smaller screens. This can be achieved by adding the following code to the navigation bar, just below the container div
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div class="navbar-header"&gt;
+                    &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"&gt;
+                        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;a class="navbar-brand" href="#"&gt;Ristorante Con Fusion&lt;/a&gt;
+                &lt;/div&gt;
+
+</pre>
+ <p>
+  You will now notice the addition of a link to the left of the Home link with the name of the restaurant. This is the brand name for the website. You can replace this with the logo for the website. This is created by the
+  <em>
+   &lt;a class="navbar-brand"&gt;
+  </em>
+  tag. The other part is the creation of a button with three horizontal lines. For larger screens, this button is hidden. For smaller screens, this button becomes visible. This button will act as the toggle for the navbar items on small screens. At the moment you still see the items being displayed in the navigation bar even for smaller screens. We will fix this in the next step.
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    To hide the items from the navigation bar for smaller screens, we need to enclose the
+    <em>
+     ul
+    </em>
+    within another navigation bar as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div id="navbar" class="navbar-collapse collapse"&gt;
+                    &lt;ul class="nav navbar-nav"&gt; ... &lt;/ul&gt;
+                &lt;/div&gt;
+
+</pre>
+ <p>
+  By doing this, we are specifying that this
+  <em>
+   navbar
+  </em>
+  with the id
+  <em>
+   navbar
+  </em>
+  will be collapsed on smaller screens, but can be toggled on or off when the toggle button is clicked. Note the use of
+  <em>
+   data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+  </em>
+  within the button. This specifies that the menu items are collapsed on smaller screens when the toggle button is visible. They can be displayed or hidden by clicking the toggle button.
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Note that the navbar scrolls when the web page in the browser is scrolled. If we wish to keep the navigation bar always visible at the top of the page when the page is scrolled, then we should change the navbar-static-top to navbar-fixed-top. Let us do this now. Note that after the change, the navigation bar remains visible at the top of the page even when the page is scrolled.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Adding a Dropdown Menu to the Navigation Bar
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    The next modification adds a Dropdown menu to the navigation bar. Let us target the "Menu" item in the navigation bar and turn it into a dropdown menu item. When this item is clicked, a dropdown menu will be displayed. To do this, modify the list item for the "Menu" item in the navigation bar by replacing it with the following code:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                    &lt;li class="dropdown"&gt;
+                        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false"&gt;
+                         Menu &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class="dropdown-menu"&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Appetizers&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Main Courses&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Desserts&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Drinks&lt;/a&gt;&lt;/li&gt;
+                            &lt;li role="separator" class="divider"&gt;&lt;/li&gt;
+                            &lt;li class="dropdown-header"&gt;Specials&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Lunch Buffet&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Weekend Brunch&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/li&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    In this modification, the "Menu" list item is now replaced with a dropdown-toggle, which when pressed will show the selection menu below the navigation bar. The structure of this code has similarities with the toggle button that we used above for showing and hiding the navbar items for small screens.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Modifications to the CSS styles
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    We would like to have the navigation bar displayed in darker blue color, instead of black. In addition, we would like the navigation bar to indicate the current page by highlighting the item with a darker background in the navbar. In addition, when we use the fixed navigation bar, we should give the body of the page an upper margin of 50px, so that the top 50px of the page does not get hidden under the navigation bar. We accomplish these by adding these CSS customisations to the
+    <em>
+     mystyles.css
+    </em>
+    file
+   </p>
+  </li>
+ </ul>
+ <pre language="css">body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     background: #303F9F;
+}
+
+.navbar-inverse .navbar-nav &gt; .active &gt; a,
+.navbar-inverse .navbar-nav &gt; .active &gt; a:hover,
+.navbar-inverse .navbar-nav &gt; .active &gt; a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav &gt; .open &gt; a,
+ .navbar-inverse .navbar-nav &gt; .open &gt; a:hover,
+ .navbar-inverse .navbar-nav &gt; .open &gt; a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu&gt; li&gt; a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #303F9F;
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu&gt; li&gt; a:hover {
+    color:#000000;
+}
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    We are already beginning to see the page format close to the final format for this module.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Using Icon Fonts and Other CSS classes
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    The last part of the exercise is to make use of the glyphicons that are provided as part of Bootstrap. In addition we will also use two additional popular font icons.
+   </p>
+  </li>
+  <li>
+   <p>
+    One of the most popular iconic font toolkit is Font Awesome. Go to its website
+    <a href="https://fortawesome.github.io/Font-Awesome/">
+     https://fortawesome.github.io/Font-Awesome/
+    </a>
+    and download the zip file and move it to the
+    <em>
+     conFusion
+    </em>
+    folder and unzip it. You will find the
+    <em>
+     font-awesome-4.4.0
+    </em>
+    folder being created. Go into this folder and move the contents of the
+    <em>
+     css
+    </em>
+    folder to
+    <em>
+     conFusion/css
+    </em>
+    and the contents of the
+    <em>
+     fonts
+    </em>
+    folder to
+    <em>
+     conFusion/fonts
+    </em>
+    folder. Then you can delete the
+    <em>
+     font-awesome-4.4.0
+    </em>
+    folder.
+   </p>
+  </li>
+  <li>
+   <p>
+    Download the
+    <em>
+     <a href="https://d396qusza40orc.cloudfront.net/phoenixassets/web-frameworks/bootstrap-social.css">
+      bootstrap-social.css
+     </a>
+    </em>
+    file to
+    <em>
+     conFusion/css
+    </em>
+    folder. This is a modified version of the bootstrap-social available on the
+    <a href="http://lipis.github.io/bootstrap-social/.">
+     http://lipis.github.io/bootstrap-social/.
+    </a>
+    We added in support for G+ and YouTube buttons.
+   </p>
+  </li>
+  <li>
+   <p>
+    We now need to include the css files for font awesome and bootstrap-social in the index.html file. Add the following code to the head of the file after the links for importing Bootstrap CSS classes:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">    &lt;link href="css/font-awesome.min.css" rel="stylesheet"&gt;
+    &lt;link href="css/bootstrap-social.css" rel="stylesheet"&gt;</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Let us now use some font icons in our web page and decorate it. First use the glyphicons that is part of Bootstrap to add a home icon to the Home link on the navigation bar. Update the home list item as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                    &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;span class="glyphicon glyphicon-home"
+                         aria-hidden="true"&gt;&lt;/span&gt; Home&lt;/a&gt;&lt;/li&gt;</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Next, go down to the address in the footer of the page and replace the "Tel.", "Fax" and "Email" with the corresponding font awesome based icons as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">		          &lt;i class="fa fa-phone"&gt;&lt;/i&gt;: +852 1234 5678&lt;br&gt;
+		          &lt;i class="fa fa-fax"&gt;&lt;/i&gt;: +852 8765 4321&lt;br&gt;
+		          &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;: 
+                                 &lt;a href="mailto:confusion@food.net"&gt;confusion@food.net&lt;/a&gt;
+
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Finally, let us use the bootstrap-social CSS classes to create the social buttons in the footer by replacing the social sites' links with the following code:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                    &lt;div class="nav navbar-nav" style="padding: 40px 10px;"&gt;
+                        &lt;a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="btn btn-social-icon" href="mailto:"&gt;&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+</pre>
+ <h3 level="3">
+  Conclusions
+ </h3>
+ <p>
+  We have learnt how to add navigation support into a web page using the navigation bar. We also learnt about using other CSS class and other icon fonts in a web project.
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

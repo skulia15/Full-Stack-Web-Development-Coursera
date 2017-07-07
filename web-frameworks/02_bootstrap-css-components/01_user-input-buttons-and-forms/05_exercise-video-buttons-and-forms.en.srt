@@ -1,0 +1,917 @@
+1
+00:00:02,070 --> 00:00:08,080
+In this exercise, we're gonna learn
+more about buttons and forms.
+
+2
+00:00:08,080 --> 00:00:11,550
+We're going to learn how to
+add buttons to your website,
+
+3
+00:00:11,550 --> 00:00:16,260
+how to style them using the button
+classes that are available in.
+
+4
+00:00:16,260 --> 00:00:23,302
+We'll also learn about and
+how we create and style the elements.
+
+5
+00:00:23,302 --> 00:00:26,229
+Using classes.
+
+6
+00:00:26,229 --> 00:00:32,089
+To get started download the contactus.html
+file that we have provided for
+
+7
+00:00:32,089 --> 00:00:35,915
+you and
+then move it to the Con Fusion folder.
+
+8
+00:00:35,915 --> 00:00:40,815
+Now this file we are going to
+integrate it into our website.
+
+9
+00:00:40,815 --> 00:00:46,555
+So when you open the webpage in a browser,
+
+10
+00:00:46,555 --> 00:00:49,565
+this is what it is going to look like,
+in the browser.
+
+11
+00:00:52,445 --> 00:00:58,680
+So you can see that on the webpage we have
+
+12
+00:00:58,680 --> 00:01:06,330
+the web page already partially
+styled by us, with some information.
+
+13
+00:01:06,330 --> 00:01:10,710
+Now within this web page,
+you're going to add some buttons, and
+
+14
+00:01:10,710 --> 00:01:15,448
+also add in a form for
+the user to submit feedback
+
+15
+00:01:15,448 --> 00:01:20,090
+to their restaurant.
+
+16
+00:01:20,090 --> 00:01:23,040
+Before we get started adding forms and
+
+17
+00:01:23,040 --> 00:01:27,610
+buttons, let's first integrate
+this web page into our website.
+
+18
+00:01:27,610 --> 00:01:32,840
+So this means that we have to go into
+the nav bar and then set up all the links
+
+19
+00:01:32,840 --> 00:01:37,670
+correctly in the nav bar,
+not only for contactus.html page, but
+
+20
+00:01:37,670 --> 00:01:43,140
+also the previous two pages,
+index.html and aboutus.html.
+
+21
+00:01:43,140 --> 00:01:50,770
+So you all know how to do this, so go and
+edit the nav bars on these three pages.
+
+22
+00:01:50,770 --> 00:01:54,850
+And update the links there, so
+that you can move from any page to
+
+23
+00:01:54,850 --> 00:01:58,870
+any other page by just clicking
+the links on the nav bars.
+
+24
+00:01:58,870 --> 00:02:04,600
+In addition, while you are at it,
+add two new glyphicons,
+
+25
+00:02:04,600 --> 00:02:11,730
+and icon to the Nav bar.
+
+26
+00:02:11,730 --> 00:02:18,820
+One for the Menu item and
+one for the Contact Us item.
+
+27
+00:02:18,820 --> 00:02:24,185
+So we'll be using a glyph icon for
+the Menu item and will use another
+
+28
+00:02:24,185 --> 00:02:29,493
+Font Awesome icon for
+the contact link in our nav bar.
+
+29
+00:02:29,493 --> 00:02:32,686
+So as specified in the instructions,
+
+30
+00:02:32,686 --> 00:02:38,188
+let's update these nav bars and
+come back and look at the result.
+
+31
+00:02:38,188 --> 00:02:41,925
+Taking a look at the contactus.html page,
+
+32
+00:02:41,925 --> 00:02:47,278
+let me quickly review how I added
+the two icons into the navbar.
+
+33
+00:02:47,278 --> 00:02:48,768
+For the menu item,
+
+34
+00:02:48,768 --> 00:02:54,181
+you can see that I am using
+a glyphicon-list-alt for the menu item.
+
+35
+00:02:54,181 --> 00:03:00,651
+And for the contact item,
+I am using a Font Awesome,
+
+36
+00:03:00,651 --> 00:03:08,170
+Font Awesome envelope icon for
+the contact links there.
+
+37
+00:03:08,170 --> 00:03:15,170
+Our next step is to add a button
+bar to the contactus.html page.
+
+38
+00:03:15,170 --> 00:03:19,040
+Now when you go into the page,
+you will see that we have identified
+
+39
+00:03:19,040 --> 00:03:22,480
+the location where the button
+group is going to be added.
+
+40
+00:03:22,480 --> 00:03:28,110
+So go into that location and
+then we'll replace this
+
+41
+00:03:28,110 --> 00:03:31,680
+line there with the code for
+the button groups.
+
+42
+00:03:33,150 --> 00:03:38,870
+After replacing the code, let's quickly
+review what this new code does here.
+
+43
+00:03:38,870 --> 00:03:42,290
+So you can see that in this new code,
+
+44
+00:03:42,290 --> 00:03:45,930
+I have defined a div with
+a class called btn-group.
+
+45
+00:03:45,930 --> 00:03:48,750
+So this contains a group of buttons.
+
+46
+00:03:51,600 --> 00:03:57,480
+I have three buttons in here, and I am
+using the a tag to define the button so
+
+47
+00:03:57,480 --> 00:04:00,300
+I am saying a type button, and for
+
+48
+00:04:00,300 --> 00:04:06,220
+the class I am using button button
+primary for one of the buttons.
+
+49
+00:04:06,220 --> 00:04:12,730
+This button is a button to make
+a phone call to the restaurant.
+
+50
+00:04:12,730 --> 00:04:17,390
+So, that's why for the H graph I am
+specifying it as it telephone and
+
+51
+00:04:17,390 --> 00:04:22,700
+the phone number of the restaurant.
+
+52
+00:04:22,700 --> 00:04:25,440
+The second button is for Skype.
+
+53
+00:04:25,440 --> 00:04:30,610
+So I have included,
+again, Skype button here,
+
+54
+00:04:30,610 --> 00:04:34,890
+and also included a Font Awesome icon for
+Skype there.
+
+55
+00:04:34,890 --> 00:04:39,050
+The third button is for sending emails.
+
+56
+00:04:39,050 --> 00:04:46,530
+So I have updated the A tag, with
+the btn btn-success, and then the href,
+
+57
+00:04:46,530 --> 00:04:52,430
+I am setting it to the mail
+ID of the restaurant.
+
+58
+00:04:52,430 --> 00:04:54,990
+Of course,
+remember that this is a fake mail ID, so
+
+59
+00:04:54,990 --> 00:04:56,726
+don't try to send mail to that ID.
+
+60
+00:04:59,512 --> 00:05:07,720
+And also,
+I added an envelope icon to the email.
+
+61
+00:05:07,720 --> 00:05:12,411
+So after making this changes,
+let's go and review our webpage.
+
+62
+00:05:12,411 --> 00:05:17,205
+Returning to our webpage,
+you would notice that now the,
+
+63
+00:05:20,108 --> 00:05:26,010
+Nav bar has been updated with icons for
+all the links in the nav bar.
+
+64
+00:05:27,580 --> 00:05:32,470
+Second point to note is
+the addition of the three
+
+65
+00:05:33,670 --> 00:05:39,360
+buttons, in a button bar,
+to the contents of the website.
+
+66
+00:05:39,360 --> 00:05:44,150
+So now you can see that I have three
+buttons here, call, Skype, and email.
+
+67
+00:05:44,150 --> 00:05:49,560
+Now, this blue outline here is
+because I am using brackets.
+
+68
+00:05:49,560 --> 00:05:51,720
+So whenever I am editing
+any code in brackets,
+
+69
+00:05:51,720 --> 00:05:53,340
+you will see the blue line appear there.
+
+70
+00:05:53,340 --> 00:05:57,220
+So let me just turn that off so
+that's it's more clear to you.
+
+71
+00:05:57,220 --> 00:05:59,800
+So let's take a look at the button bar.
+
+72
+00:05:59,800 --> 00:06:04,675
+So you can see that in the button
+bar now I have three buttons here.
+
+73
+00:06:04,675 --> 00:06:08,355
+The Call button, the Skype button,
+and the Email button.
+
+74
+00:06:08,355 --> 00:06:16,942
+So if we click on any one of these then
+the appropriate function will be started.
+
+75
+00:06:16,942 --> 00:06:20,952
+In our next set of step,
+we're going to add the form
+
+76
+00:06:20,952 --> 00:06:25,762
+element to the contactus.html webpage.
+
+77
+00:06:25,762 --> 00:06:33,232
+So here where it says form goes here,
+I'm going to create a feedback form
+
+78
+00:06:33,232 --> 00:06:39,010
+that the visitors can used to
+send feedback to the restaurant.
+
+79
+00:06:39,010 --> 00:06:42,730
+Of course at the end of this exercise this
+form will not work at the moment because
+
+80
+00:06:42,730 --> 00:06:47,650
+we don't have the server side setup to
+receive the information from the form, but
+
+81
+00:06:47,650 --> 00:06:52,810
+in the later courses
+they will activate this
+
+82
+00:06:52,810 --> 00:06:57,760
+form to be able to submit
+information to the restaurant.
+
+83
+00:06:59,930 --> 00:07:01,900
+Returning to our web page.
+
+84
+00:07:01,900 --> 00:07:07,270
+In brackets, I'm going to
+replace this form goes here with
+
+85
+00:07:09,050 --> 00:07:14,660
+a set of code in order
+to create a simple form.
+
+86
+00:07:16,110 --> 00:07:19,840
+I have now substituted
+the form code in place.
+
+87
+00:07:19,840 --> 00:07:26,180
+In the HTML code let's quickly review
+the new code that we have added,
+
+88
+00:07:26,180 --> 00:07:31,280
+so you can see that I have
+added a form tag here, and
+
+89
+00:07:31,280 --> 00:07:37,740
+with a class horizontal, which means that
+there are items in this form will be layed
+
+90
+00:07:37,740 --> 00:07:43,490
+out in the horizontal manner, so we have
+already seen the form horizontal class for
+
+91
+00:07:43,490 --> 00:07:48,510
+our bootstrap,
+when we debuted forms in bootstrap.
+
+92
+00:07:49,800 --> 00:07:53,548
+Inside that form class,
+I have two form-groups here.
+
+93
+00:07:53,548 --> 00:08:02,370
+The first form-group is used to
+create the entry for the first name.
+
+94
+00:08:02,370 --> 00:08:10,150
+The second form group is to create
+the entry point for the last name here.
+
+95
+00:08:10,150 --> 00:08:13,955
+So after making these changes let's go and
+look at the result.
+
+96
+00:08:15,725 --> 00:08:20,745
+So you can now notice that on
+the webpage we now have two fields
+
+97
+00:08:20,745 --> 00:08:25,990
+that have been created for entering the
+first name and the last name of the users.
+
+98
+00:08:27,090 --> 00:08:32,430
+Pertaining to the HTML code, let me just
+remind you again that the form group
+
+99
+00:08:32,430 --> 00:08:38,130
+class automatically adds
+the row features to that diff.
+
+100
+00:08:38,130 --> 00:08:40,680
+So inside that, whatever contents we have,
+
+101
+00:08:40,680 --> 00:08:43,280
+we can now apply column
+classes to that content.
+
+102
+00:08:43,280 --> 00:08:48,385
+So that's why you see me applying
+col-sm-2 to the label and
+
+103
+00:08:48,385 --> 00:08:50,900
+col-sm-10 to the div in here.
+
+104
+00:08:50,900 --> 00:08:56,510
+So this is a nested set of columns for
+this row.
+
+105
+00:08:56,510 --> 00:09:03,560
+This is nested inside another column
+which is in the webpage itself.
+
+106
+00:09:05,800 --> 00:09:10,100
+Our next iteration to the HTML code for
+the farm is to create
+
+107
+00:09:10,100 --> 00:09:17,170
+the input group for
+entering the telephone number.
+
+108
+00:09:17,170 --> 00:09:20,630
+Now when I clear the info group for
+the telephone number.
+
+109
+00:09:20,630 --> 00:09:27,540
+You would see that I'm
+using the form group.
+
+110
+00:09:27,540 --> 00:09:33,888
+Now, inside the form group I'm using
+an input-group here in the code.
+
+111
+00:09:33,888 --> 00:09:39,600
+This input-group contains an input
+
+112
+00:09:39,600 --> 00:09:44,460
+group add on which allows me
+to add the left parentheses,
+
+113
+00:09:44,460 --> 00:09:49,120
+and another input group add on that
+allows me to add the right parenthesis
+
+114
+00:09:49,120 --> 00:09:52,320
+to that particular input element there.
+
+115
+00:09:52,320 --> 00:09:57,940
+So this input element I am using it to
+allow the user to enter the area code.
+
+116
+00:09:57,940 --> 00:10:01,415
+So if you're familiar with the US
+phone number representations
+
+117
+00:10:01,415 --> 00:10:05,291
+you will see that the area code is
+always enclosed inside parentheses.
+
+118
+00:10:05,291 --> 00:10:10,377
+So this allows me to add add ons
+
+119
+00:10:10,377 --> 00:10:15,473
+to the input elements there.
+
+120
+00:10:15,473 --> 00:10:19,022
+Now in addition I have
+added in one more field for
+
+121
+00:10:19,022 --> 00:10:22,050
+allowing the user to enter their email.
+
+122
+00:10:22,050 --> 00:10:27,390
+So if this is the email ID field here,
+the label, and the input there.
+
+123
+00:10:27,390 --> 00:10:32,244
+So after making these changes,
+let's go and have a look at the page.
+
+124
+00:10:32,244 --> 00:10:37,820
+Now in the webpage, you see that
+we now have the contact telephone
+
+125
+00:10:37,820 --> 00:10:42,350
+number, which can be specified
+as an area code within
+
+126
+00:10:44,770 --> 00:10:49,190
+parenthesis, and
+the telephone number next to it.
+
+127
+00:10:49,190 --> 00:10:51,675
+The email can be entered
+in the email field.
+
+128
+00:10:53,355 --> 00:10:56,715
+Our next addition to
+the font is a check box,
+
+129
+00:10:58,015 --> 00:11:02,965
+which allows the user to specify whether
+they want to be contacted or not.
+
+130
+00:11:04,885 --> 00:11:09,535
+In addition, I am using a select
+element in order to let the users
+
+131
+00:11:09,535 --> 00:11:14,520
+specify whether they want to be
+contacted by telephone or by email.
+
+132
+00:11:14,520 --> 00:11:15,549
+So, adding these two.
+
+133
+00:11:15,549 --> 00:11:20,579
+Looking at the code, you see that I have
+a form-group here which encloses that.
+
+134
+00:11:20,579 --> 00:11:24,949
+And inside of that I am defining
+a div with a check box in here.
+
+135
+00:11:24,949 --> 00:11:29,848
+And I have an input type
+check box in there.
+
+136
+00:11:29,848 --> 00:11:32,719
+And then correspondingly,
+
+137
+00:11:32,719 --> 00:11:37,920
+the message there saying,
+may we contact you?
+
+138
+00:11:37,920 --> 00:11:38,470
+Question mark.
+
+139
+00:11:38,470 --> 00:11:40,943
+So if the user checks the check box,
+
+140
+00:11:40,943 --> 00:11:45,840
+then the user is indicating
+that they could be contacted.
+
+141
+00:11:45,840 --> 00:11:50,930
+So that is enclosed inside
+this check box in here.
+
+142
+00:11:50,930 --> 00:11:54,930
+Now below that,
+I have a select element there.
+
+143
+00:11:54,930 --> 00:11:57,630
+For the select element I have two options.
+
+144
+00:11:57,630 --> 00:11:59,110
+Telephone and email.
+
+145
+00:12:00,340 --> 00:12:06,140
+After making these changes,
+let's go back and look at our webpage.
+
+146
+00:12:06,140 --> 00:12:12,450
+Now before we go, let me show you how
+we have styled these elements here,
+
+147
+00:12:12,450 --> 00:12:17,980
+and how we have specified
+the column classes.
+
+148
+00:12:17,980 --> 00:12:23,390
+Now, as you recall, the form group
+already provides the row class for us.
+
+149
+00:12:23,390 --> 00:12:26,350
+So inside there, the checkbox div,
+
+150
+00:12:26,350 --> 00:12:31,650
+I have given it appropriate
+column specification there.
+
+151
+00:12:31,650 --> 00:12:37,300
+And then also, the select
+
+152
+00:12:37,300 --> 00:12:40,530
+element I have given the appropriate
+column specification there.
+
+153
+00:12:40,530 --> 00:12:47,890
+So I want you to make specific note
+of this information in the coach.
+
+154
+00:12:47,890 --> 00:12:50,320
+Now let's go and look at the page.
+
+155
+00:12:50,320 --> 00:12:52,380
+Now you see that in the web page,
+
+156
+00:12:52,380 --> 00:12:57,100
+we now have a check box which
+we can check on or off.
+
+157
+00:12:57,100 --> 00:13:03,010
+And then the message there, and also
+this selector element which allows us to
+
+158
+00:13:05,320 --> 00:13:09,170
+specify whether we want to be
+contacted by telephone or email.
+
+159
+00:13:10,600 --> 00:13:15,150
+The next element what we are adding
+to the form is a textarea.
+
+160
+00:13:15,150 --> 00:13:17,830
+This is the place where
+the user can type in.
+
+161
+00:13:18,850 --> 00:13:20,460
+They're comics.
+
+162
+00:13:20,460 --> 00:13:23,840
+So here I am using another form-group for
+that.
+
+163
+00:13:23,840 --> 00:13:28,340
+And inside that form-group,
+I have a label to specify the information.
+
+164
+00:13:28,340 --> 00:13:33,749
+And then I am using another dev,
+which in close text area
+
+165
+00:13:33,749 --> 00:13:38,790
+whose values are set
+to be 12 rows there so
+
+166
+00:13:38,790 --> 00:13:45,760
+the text area will allow the user
+to input 12 rows of text in there.
+
+167
+00:13:45,760 --> 00:13:49,300
+So with these changes,
+again going back to our webpage,
+
+168
+00:13:49,300 --> 00:13:52,670
+this is the next result of adding
+the text area to our webpage.
+
+169
+00:13:52,670 --> 00:13:57,554
+So now you see that your feedback page is
+
+170
+00:13:57,554 --> 00:14:02,010
+already taking very well.
+
+171
+00:14:02,010 --> 00:14:07,650
+Our last addition to the form
+is the submit button.
+
+172
+00:14:07,650 --> 00:14:12,710
+So here I am creating a submit
+button by using the button and
+
+173
+00:14:12,710 --> 00:14:14,860
+specifying its type as submit.
+
+174
+00:14:18,770 --> 00:14:24,670
+I specify the classes btn btn-primary and
+then specify that
+
+175
+00:14:24,670 --> 00:14:30,610
+the contents inside the button that should
+be displayed the text inside the button.
+
+176
+00:14:30,610 --> 00:14:33,980
+And also, I specified for the dev.
+
+177
+00:14:33,980 --> 00:14:41,180
+I used the classes to appropriately
+position the button in the.
+
+178
+00:14:41,180 --> 00:14:44,980
+With these changes, let's go and
+have one final look at our webpage.
+
+179
+00:14:46,010 --> 00:14:51,940
+Going back to our webpage,
+we now see that the form is now complete.
+
+180
+00:14:51,940 --> 00:14:55,770
+So you can see that you have all
+the various fields in the form.
+
+181
+00:14:56,880 --> 00:15:02,020
+And also we have specified the button
+
+182
+00:15:02,020 --> 00:15:06,570
+which the user clicks in order
+to submit the form information.
+
+183
+00:15:08,610 --> 00:15:14,430
+Now, taking one final look at
+our web page, in this exercise
+
+184
+00:15:14,430 --> 00:15:19,730
+we have added a new page called
+contact us to HTML to our website.
+
+185
+00:15:19,730 --> 00:15:23,040
+We styled the nav bar
+
+186
+00:15:24,150 --> 00:15:29,140
+specifying icons for
+all the links in the nav bar.
+
+187
+00:15:30,530 --> 00:15:36,064
+Then we added the button
+bar here that allows users
+
+188
+00:15:36,064 --> 00:15:41,450
+to either call, Skype or
+email the company.
+
+189
+00:15:41,450 --> 00:15:46,370
+And finally we added a form for
+
+190
+00:15:46,370 --> 00:15:51,760
+the users to send back
+comments to the restaurant.
+
+191
+00:15:51,760 --> 00:15:57,260
+And we used various form elements,
+and Bootstrap's classes,
+
+192
+00:15:57,260 --> 00:16:00,110
+in order to style the form appropriately.
+
+193
+00:16:01,860 --> 00:16:04,540
+This completes this exercise.

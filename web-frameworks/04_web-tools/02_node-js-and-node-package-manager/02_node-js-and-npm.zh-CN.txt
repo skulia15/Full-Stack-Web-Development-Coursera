@@ -1,0 +1,16 @@
+最近 Node.js 吸引了很多人的眼球 接下来让我们来看看 Node.js 到底是什么 以及 NPM 在和 Node.js 搭配使用时 担当的是怎样的一个角色 什么是 Node.js ? Node.js 是一个 JavaScript 运行环境 它基于 Chrome V8 JavaScript 引擎 Chrome V8 JavaScript 引擎在一开始是 Chrome 浏览器支持运行 JavaScript 的一个引擎 而现在 当你把这个引擎从浏览器里分离出来 并让它在你的机器上运行时 你的机器就能运行 JavaScript 程序了 这带来了许多有意思的功能 而 Node 环境则使用了事件驱动的
+非阻塞的 IO 模型 这使它能轻量级地 有效率地处理 主要是数据驱动的网站 我们将在后续的课程中回过头来看这一些方面 而现在 我们关心的主要是
+Node 作为 JavaScript 运行环境时的表现 这是一个 Node 的框架图 在底部有我们之前提到过 作为 Node 核心的 Google Chrome V8 引擎 位于同一层的还有 libuv 
+它允许你和更底层的计算机系统和设备 进行一些交互 而在其上 也就是第二层 
+是完全用 C++ 写的 Node Bindings 库 至于第一层就是 Node 核心 或说标准库 它是完全用 JavaScript 实现的 而这一层也正是我们在使用 Node 运行环境时 要应用的一层 通常 Node 的 JavaScript 运行环境有两种用法 其一 很多人用 JavaScript 写了一系列
+有趣的 web 开发工具 这些工具能在 Node 上运行
+并适用于多种多样的 web 开发用例 比如著名的 Bower, Grunt, Gulp 等等 这些工具都是用 JavaScript 写的 我们将会在后续课程中着重探索其中的几个 其次 Node 同时也将 JavaScript 带到了服务端 之前我在介绍 web 开发时曾提到过
+传统上，开发服务器端时 需另外使用 ruby, Python, Java ASP.Net, PHP 
+等等 (与 JS) 不同的后端开发语言 来实现服务端 而有了 Node 之后 你就可以完全使用 JavaScript 来实现服务端了 这样的话 你就可以只用 JavaScript 这一门语言 来同时实现前端和后端 这就是 Node 在后端开发上带给你的灵活性 我们会在这个专项课程中的另一门 完全不同的课程中学习这部分内容 当你听到人们讨论 Node 的时候 你会经常听到人们谈起 Node 的包管理器
+简称 NPM NPM 是 Node 模块 (以及包) 生态的管理器 已经有很多人写了很多 用于 Node 的实用类库 你可以下载这些模块形式的包到你的系统中 并在你自己的 Node 开发中 灵活应用它们 我们会在这门课程中稍微学习一点这方面的知识 不过你将会更多的在服务端 Node 应用案例中
+看到这方面的应用 简单地说, Node 包是一些 JavaScript 文件的集合 它们实现了一些库以及一个叫 
+package.json 的文件 这个文件如同包裹的内容说明 我们将会在接下来的某几节课中 看到 package.json 的一些栗子并学习
+如何设置并使用它 接下来我们将会进行一系列的练习
+来熟悉 Node 的使用 我们将会先学习如何设置好 Node 和 NPM
+然后我们将通过一些简单的例子 来更好地理解 Node 模块
+【翻译 - Carefree0910 校对 - Qiansen1386】

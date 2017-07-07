@@ -1,0 +1,478 @@
+1
+00:00:01,810 --> 00:00:06,500
+Many a times, you may wish to draw
+the attention of visitors to your website,
+
+2
+00:00:06,500 --> 00:00:08,585
+to certain parts of your website.
+
+3
+00:00:08,585 --> 00:00:11,650
+Or maybe you may want to
+deliver a message to users.
+
+4
+00:00:11,650 --> 00:00:15,350
+This is where the radius, available
+
+5
+00:00:15,350 --> 00:00:20,560
+mechanisms to deliver alerts to users,
+becomes very, very valuable.
+
+6
+00:00:20,560 --> 00:00:26,610
+So in this lecture we will examine
+bootstrapped support for alerting users.
+
+7
+00:00:26,610 --> 00:00:33,970
+We have labels, we have badges,
+we have alerts and progress bars.
+
+8
+00:00:36,770 --> 00:00:42,090
+For simple updates to users labels and
+badges may be more than sufficient.
+
+9
+00:00:42,090 --> 00:00:46,510
+They just display a small piece of
+information within the website.
+
+10
+00:00:46,510 --> 00:00:50,950
+Say, for example,
+display the number of unread e-mails.
+
+11
+00:00:50,950 --> 00:00:57,710
+Or maybe an item that is new or
+updated at this moment.
+
+12
+00:00:57,710 --> 00:01:03,230
+These kind of things can easily be
+delivered using labels and badges.
+
+13
+00:01:03,230 --> 00:01:07,420
+Alerts or error or warning messages
+can easily be delivered to users by
+
+14
+00:01:07,420 --> 00:01:14,160
+highlighting the messages on the website
+by surrounding it with appropriate
+
+15
+00:01:15,860 --> 00:01:20,480
+background so
+that it's clearly visible to the users.
+
+16
+00:01:20,480 --> 00:01:26,530
+Progress bars are a way of indicating
+progress of any activity that is going on
+
+17
+00:01:26,530 --> 00:01:32,420
+on your website, like uploading or
+downloading a file for example.
+
+18
+00:01:32,420 --> 00:01:37,800
+Here is an example of the use of
+labels and badges on your website.
+
+19
+00:01:37,800 --> 00:01:43,950
+Now, to use a label in bootstrap
+we will use the span tag and
+
+20
+00:01:43,950 --> 00:01:49,160
+then apply the class label and
+depending on the color
+
+21
+00:01:49,160 --> 00:01:54,970
+that you want your label to be, you would
+use label primary info danger and so on.
+
+22
+00:01:54,970 --> 00:01:57,510
+And you can also specify
+the size of the label.
+
+23
+00:01:58,870 --> 00:02:02,890
+Similarly, badges also use this span tag
+
+24
+00:02:02,890 --> 00:02:05,590
+with the class badge
+applied to the span tag.
+
+25
+00:02:06,590 --> 00:02:09,800
+So as we have already seen Labels.
+
+26
+00:02:09,800 --> 00:02:14,160
+Use the class's label and label-color of
+
+27
+00:02:14,160 --> 00:02:18,850
+the label that you want to use,
+and also the size.
+
+28
+00:02:20,320 --> 00:02:22,580
+Badges are fairly straightforward.
+
+29
+00:02:22,580 --> 00:02:26,690
+There's a single class called badge
+that you apply to the span tag, and
+
+30
+00:02:26,690 --> 00:02:31,600
+then whatever is the contents inside the
+span tags will be displayed as a badge.
+
+31
+00:02:32,970 --> 00:02:36,080
+The badge will automatically
+adapt to where it is displayed.
+
+32
+00:02:36,080 --> 00:02:42,060
+So for example if the item for which it
+is included is with a darker background,
+
+33
+00:02:42,060 --> 00:02:47,380
+the badge will be displayed in lighter
+color to match the other lettering
+
+34
+00:02:47,380 --> 00:02:52,630
+within within the parent tech.
+
+35
+00:02:52,630 --> 00:02:57,630
+Badges are interesting in the sense that
+if there is no content within the badge,
+
+36
+00:02:57,630 --> 00:03:00,020
+the badge just will
+automatically collapse.
+
+37
+00:03:00,020 --> 00:03:02,090
+So that it won't be visible on the screen.
+
+38
+00:03:02,090 --> 00:03:06,930
+So that's one easy way of
+using badges on your website.
+
+39
+00:03:08,720 --> 00:03:14,050
+Alerts are another way of
+delivering messages to the user.
+
+40
+00:03:14,050 --> 00:03:19,515
+An alert will be displayed at the location
+indicated within the webpage.
+
+41
+00:03:19,515 --> 00:03:22,385
+That alert will be
+surrounded by a bounding box
+
+42
+00:03:22,385 --> 00:03:27,095
+with a background color that is
+determined by the specification.
+
+43
+00:03:27,095 --> 00:03:30,615
+So in this example,
+you see me saying alert warning.
+
+44
+00:03:30,615 --> 00:03:33,835
+So that's why the background
+color is yellow in color.
+
+45
+00:03:33,835 --> 00:03:38,575
+In addition, within this alert,
+I am including the icon
+
+46
+00:03:38,575 --> 00:03:43,300
+the cross icon there which when
+clicked will dismiss the alert.
+
+47
+00:03:43,300 --> 00:03:47,020
+To make this work, of course,
+I need to include an icon for
+
+48
+00:03:47,020 --> 00:03:49,280
+that I am using the button tag.
+
+49
+00:03:49,280 --> 00:03:53,290
+And inside the button tag I
+am applying the close class.
+
+50
+00:03:53,290 --> 00:03:58,600
+And also the class is
+displayed by using the times
+
+51
+00:04:00,030 --> 00:04:06,830
+icon from HTML and for the alert itself,
+
+52
+00:04:06,830 --> 00:04:11,440
+I need to apply the alert+dismissible
+class for this to work correctly.
+
+53
+00:04:11,440 --> 00:04:17,495
+We can also include links within the
+messages that we displayed in the alerts,
+
+54
+00:04:17,495 --> 00:04:22,925
+so in this example you see me using
+a link being displayed in the alert.
+
+55
+00:04:22,925 --> 00:04:27,555
+So the links are actionable which means
+that the user can click on the link
+
+56
+00:04:28,935 --> 00:04:32,840
+to perform the appropriate
+link action there.
+
+57
+00:04:32,840 --> 00:04:37,460
+As you saw in the example,
+the alert class is applied to the div.
+
+58
+00:04:37,460 --> 00:04:43,620
+And inside there you can specify
+colors and also include links and
+
+59
+00:04:43,620 --> 00:04:48,990
+make the alert dismissible by including
+the cross button in the alert.
+
+60
+00:04:48,990 --> 00:04:53,910
+For the dismissible action to work
+you need the JavaScript plug-in to be
+
+61
+00:04:53,910 --> 00:04:56,710
+installed within your webpage.
+
+62
+00:04:57,890 --> 00:05:00,350
+Finally, we have progress bars.
+
+63
+00:05:00,350 --> 00:05:04,040
+Progress bars as I mentioned is
+a way of indicating progress of
+
+64
+00:05:04,040 --> 00:05:06,960
+any action that is going on on a website.
+
+65
+00:05:06,960 --> 00:05:12,280
+See, uploading a file or
+playing some music,
+
+66
+00:05:12,280 --> 00:05:17,960
+whatever mechanism that you want to
+indicate the progress of the action
+
+67
+00:05:17,960 --> 00:05:24,905
+would be well shown on the webpage,
+using a progress bar.
+
+68
+00:05:24,905 --> 00:05:29,585
+To use a progress bar,
+you would use <div class="progress">.
+
+69
+00:05:29,585 --> 00:05:30,885
+And inside the div,
+
+70
+00:05:30,885 --> 00:05:35,540
+you will have an inner div to which
+you will apply the progress bar class.
+
+71
+00:05:35,540 --> 00:05:39,420
+The progress bar can
+also takes on the color
+
+72
+00:05:39,420 --> 00:05:43,320
+representation using one of
+the standard colors there.
+
+73
+00:05:43,320 --> 00:05:47,510
+So that's why in this example you
+see me using progress bar danger.
+
+74
+00:05:47,510 --> 00:05:52,435
+You can also make the progress bar
+striped so you can apply the class
+
+75
+00:05:52,435 --> 00:05:56,340
+progress-bar-striped to make a striped
+class, if you don't apply that,
+
+76
+00:05:56,340 --> 00:05:57,720
+it'll be a solid color.
+
+77
+00:05:59,030 --> 00:06:03,100
+The width of the progress
+bar is indicated by
+
+78
+00:06:03,100 --> 00:06:07,640
+specifying the style for the progress bar.
+
+79
+00:06:07,640 --> 00:06:11,750
+So in this case I'm specifying
+style="width:80%" so,
+
+80
+00:06:11,750 --> 00:06:16,700
+that's why in the progress bar,
+80% is covered.
+
+81
+00:06:16,700 --> 00:06:20,330
+We can also include a text
+
+82
+00:06:20,330 --> 00:06:22,960
+that can be directly displayed
+inside the progress bar.
+
+83
+00:06:24,260 --> 00:06:29,120
+Now whatever we include in the span
+with the class sr-only Is meant for
+
+84
+00:06:29,120 --> 00:06:30,480
+screen readers.
+
+85
+00:06:30,480 --> 00:06:33,230
+So if screen readers are being used,
+
+86
+00:06:33,230 --> 00:06:38,370
+then that information will
+be read out to the user.
+
+87
+00:06:38,370 --> 00:06:42,440
+We can also include the text directly
+in the progress bar, as you see,
+
+88
+00:06:42,440 --> 00:06:47,390
+using the 80% right in the example there.
+
+89
+00:06:47,390 --> 00:06:53,290
+So, to use progress bars, we apply
+the progress class to an outer div and
+
+90
+00:06:53,290 --> 00:06:56,400
+then inside that we'll have
+an inner div that's a progress bar.
+
+91
+00:06:56,400 --> 00:07:00,980
+Now within the outer progress div you can
+have multiple progress bars, if you want.
+
+92
+00:07:00,980 --> 00:07:05,950
+If you do include multiple progress bars,
+then they will be stacked so
+
+93
+00:07:05,950 --> 00:07:09,120
+you can create stacked
+progress bars if required.
+
+94
+00:07:10,300 --> 00:07:13,980
+And for a progress bar you
+can define the color and
+
+95
+00:07:13,980 --> 00:07:16,410
+also whether it is striped or not.
+
+96
+00:07:16,410 --> 00:07:20,440
+You can even activate
+the animation of the striped
+
+97
+00:07:20,440 --> 00:07:24,440
+display by using the active class for
+the progress bar.
+
+98
+00:07:25,570 --> 00:07:30,370
+This completes our discussion on
+various ways of alerting users.
+
+99
+00:07:31,540 --> 00:07:35,650
+We'll now move on to a short exercise,
+where we will
+
+100
+00:07:35,650 --> 00:07:40,530
+look at the use of both labels and
+badges on our website.

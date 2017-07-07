@@ -1,0 +1,278 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h1 level="1">
+  Exercise (Instructions): Displaying Content: Tables, Panels and Wells
+ </h1>
+ <h3 level="3">
+  Objectives and Outcomes
+ </h3>
+ <p>
+  In this exercise, we will examine tables and Bootstrap classes for styling tables. We will also examine two Bootstrap components: Panels and Wells and their use for displaying content. At the end of this exercise, you will be able to:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Create, style and present tabular data in tables in a web page using the Bootstrap table classes
+   </p>
+  </li>
+  <li>
+   <p>
+    Display content in a web page using Panels and Wells using Bootstrap Panel and Well classes
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Set up for the Exercise
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    In this exercise we will be modifying the
+    <em>
+     aboutus.html
+    </em>
+    page to add a table, a panel with some content and a well with a quotation.
+   </p>
+  </li>
+  <li>
+   <p>
+    Let us get started by opening
+    <em>
+     aboutus.html
+    </em>
+    page in a text editor.
+   </p>
+  </li>
+ </ul>
+ <h3 level="3">
+  Bootstrap Tables
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    In this part, we will add a new row of content after the Corparate Leadership row in the page. We first start by adding a row and columns to the page as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">        &lt;div class="row row-content"&gt;
+            &lt;div class="col-xs-12 col-sm-9"&gt;
+                &lt;h2&gt;Facts &amp;amp; Figures&lt;/h2&gt;
+            &lt;/div&gt;
+             &lt;div class="col-xs-12 col-sm-3"&gt;
+                &lt;p style="padding:20px;"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+       &lt;/div&gt; 
+</pre>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Inside the first column of this row, insert the table as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div class="table-responsive"&gt;
+                &lt;table class="table table-striped"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+                        &lt;th&gt;2013&lt;/th&gt;
+                        &lt;th&gt;2014&lt;/th&gt;
+                        &lt;th&gt;2015&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Employees&lt;/th&gt;
+                        &lt;td&gt;15&lt;/td&gt;
+                        &lt;td&gt;30&lt;/td&gt;
+                        &lt;td&gt;40&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Guests Served&lt;/th&gt;
+                        &lt;td&gt;15000&lt;/td&gt;
+                        &lt;td&gt;45000&lt;/td&gt;
+                        &lt;td&gt;100,000&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Special Events&lt;/th&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;20&lt;/td&gt;
+                        &lt;td&gt;45&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Annual Turnover&lt;/th&gt;
+                        &lt;td&gt;$251,325&lt;/td&gt;
+                        &lt;td&gt;$1,250,375&lt;/td&gt;
+                        &lt;td&gt;~$3,000,000&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+
+</pre>
+ <p>
+  Note the use of
+  <em>
+   table-responsive
+  </em>
+  class to create a responsive table, and the
+  <em>
+   table-striped
+  </em>
+  class for styling the table.
+ </p>
+ <h3 level="3">
+  Bootstrap Panel
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Before we proceed we adjust the column classes for the two columns in the first content row to be
+    <em>
+     col-sm-8
+    </em>
+    and
+    <em>
+     col-sm-4
+    </em>
+    respectively so that the two divs span 8 and 4 columns respectively.
+   </p>
+  </li>
+  <li>
+   <p>
+    Next we add a panel to the second div in the first content row as follows:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div class="panel panel-primary"&gt;
+                    &lt;div class="panel-heading"&gt;
+                        &lt;h3 class="panel-title"&gt;Facts At a Glance&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel-body"&gt;
+                        &lt;dl class="dl-horizontal"&gt;
+                            &lt;dt&gt;Started&lt;/dt&gt;
+                            &lt;dd&gt;3 Feb. 2013&lt;/dd&gt;
+                            &lt;dt&gt;Major Stake Holder&lt;/dt&gt;
+                            &lt;dd&gt;HK Fine Foods Inc.&lt;/dd&gt;
+                            &lt;dt&gt;Last Year's Turnover&lt;/dt&gt;
+                            &lt;dd&gt;$1,250,375&lt;/dd&gt;
+                            &lt;dt&gt;Employees&lt;/dt&gt;
+                            &lt;dd&gt;40&lt;/dd&gt;
+                       &lt;/dl&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+</pre>
+ <p>
+  Note the use of the
+  <em>
+   panel
+  </em>
+  and
+  <em>
+   panel-primary
+  </em>
+  classes to style the panel. The panel contains two divs, one with
+  <em>
+   panel-heading
+  </em>
+  class to host the heading of the panel, and the second with the
+  <em>
+   panel-body
+  </em>
+  class to host the content. Note the use of
+  <em>
+   &lt;dl&gt;
+  </em>
+  tag with the
+  <em>
+   dl-horizontal
+  </em>
+  class to create a horizontal description list.
+ </p>
+ <h3 level="3">
+  Bootstrap Well
+ </h3>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Next, we add a Bootstrap well component and include a quotation in the well using the blockquote typography style:
+   </p>
+  </li>
+ </ul>
+ <pre language="html">                &lt;div class="well"&gt;
+                    &lt;blockquote&gt;
+                        &lt;p&gt;You better cut the pizza in four pieces because
+                            I'm not hungry enough to eat six.&lt;/p&gt;
+                        &lt;footer&gt;Yogi Berra,
+                          &lt;cite&gt;The Wit and Wisdom of Yogi Berra,
+                            P. Pepe, Diversion Books, 2014&lt;/cite&gt;
+                        &lt;/footer&gt;
+                    &lt;/blockquote&gt;
+                &lt;/div&gt;
+
+</pre>
+ <p>
+  Note the use of the
+  <em>
+   &lt;blockquote&gt;
+  </em>
+  tag to create a block quote in the well. We can use a
+  <em>
+   &lt;footer&gt;
+  </em>
+  inside the block quote to specify the attribution of the quote to its origin.
+ </p>
+ <h3 level="3">
+  Conclusions
+ </h3>
+ <p>
+  In this exercise, we constructed a table and styled it with the Bootstrap table classes. Thereafter, we added two components, a panel and a well to the web page. We also saw the use of the description list and the block quote in the content.
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

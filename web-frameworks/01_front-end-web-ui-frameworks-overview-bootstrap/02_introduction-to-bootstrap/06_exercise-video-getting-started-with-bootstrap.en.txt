@@ -1,0 +1,99 @@
+Strap on your boots and let's get started
+with our first hands on exercise. Sorry, just couldn't resist that. Okay, let's get started
+with the first exercise. Where we are going to learn how you would
+set up a web project to use Bootstrap, how you would include Bootstrap CSS and
+JavaScript classes into a webpage. And how to apply the Bootstrap classes
+to various elements in the webpage, to design your webpage. First, go to your convenient
+location on your computer. And create a folder named conFusion. Yes, that's right conFusion. That's the name of the website
+that we're gonna create. So let's do that first. Once you create that folder,
+let's move into that folder and then we'll download Bootstrap files. Next, go to the Bootstrap website,
+www.getbootstrap.com, and then download the zip file containing the
+Bootstrap CSS JavaScript and font classes. Then, move the zip file to the folder that
+we just created, and then unzip the file. This will create a folder
+named bootstrap-3.3.5-dtxt. Move into that folder and
+move the three folders inside there into the conFusion folder. So let's select them and
+then move them to the conFusion folder. Then move back to the conFusion folder and then now you can delete
+the Bootstrap distribution files. Now our folder is setup with the Bootstrap
+files, to get started on our web project. Next, download the index.html
+file that we have provided for you and
+then move it to the conFusion folder. Then, you can open the index.html
+file in your favorite browser, and then have a look at the contents in there. I have already configured this
+html file with some content, which we're going to style
+using the Bootstrap classes. This project creates a website for
+a fictitious restaurant named con Fusion. When you look at the current
+state of the webpage, it is plain and simple,
+with just the content. Looks like a typical computer
+science professor's webpage. At the end of this module,
+we're gonna take this webpage and then use Bootstrap classes to style it,
+and turn this webpage into this webpage. You can see that the content has
+been appropriately styled using various Bootstrap classes,
+to make it a lot more attractive. And fun to look at. So let's get started styling
+this webpage using Bootstrap. I'm going to be using Brackets as the
+editor of choice for this set of courses. You are welcome to use any text id
+term that you are familiar with for editing the files. On the screen, you already see that I have
+opened the conFusion folder in Brackets, and opened the index.html file to
+be displayed in the window there. Now, one reason why I
+chose to use Brackets, is the availability of the live
+preview facility in Brackets. If you go to the right side of the screen, you see this button,
+which looks like a thunderbolt. When you click on that,
+Brackets will automatically open that webpage in a browser. And whenever you make any changes to
+that code, in the webpage in Brackets. It's automatically going to update
+the webpage in the browser. This is an interesting feature
+that makes it easy for us to see the changes
+immediately in a browser. Now because of the restriction of
+the screen, I am not able to show you both the browser and
+of the Brackets window at the same time, simply because it won't be
+very clear in the video. So I have my webpage open in my browser in
+a separate window, which I'm gonna switch to occasionally to show you the changes
+whenever we edit the file in Brackets. Let's go into the index.html file, and then paste this code in
+the head of the html file. Now, this code sets up our
+webpage to be responsive. Now, I'm going to explain the details of
+this code in the next set of lessons. For the moment,
+I want to put that code into place. So that our webpage begins being
+responsive from the start. Next after the title in
+the head of the webpage, I'm going to add in the lines to
+import the Bootstrap CSS files. Finally at the bottom of the page,
+just before the end of the body tag, I am going to add in the code
+to import the jQuery library and Bootstraps JavaScript plugins. After we make these changes, let's go and have a look at our current
+state of the webpage. Now when you switch to our webpage, you will already see that
+the page has changed subtly. Their fonts that are being used in
+the page to render content, has now been updated to use the Bootstraps default
+fonts, which is Helvetica Neue. We are now going to add a container class
+to enclose the content of our webpage. So switching back to the HTML of the page, we will now go into the content and
+to the first div after the header, so you can see that in the body of our
+webpage, we first have the header. I'm going to style the header
+a little bit later. But, we'll move to the first
+div inside the body and then apply the class container to this. After this change, let's go back and
+have a look at our webpage. Switching back to our webpage,
+you already see that the content of a webpage is
+enclosed inside a container here. We'll still have the header and the footer as tied,
+which we're going to do next. Once we upload the container class
+to the content of the webpage. Inside the content, we are going to
+divide the content into multiple rows. So to do that, for the first inner
+div's that we're going to encounter inside the container, we will apply
+the row class to each one of them. So let's go ahead and do that,
+and then come back and have a look at the webpage again. We have a total of three rows
+in the content of our webpage. Switching back to our webpage,
+let's have a quick look at the change. You won't notice much
+change in the webpage. The content has been
+enclosed inside the rows, but we haven't applied any
+other styling to the webpage. We will now move to the header, which is the first section
+of the body of our webpage. So to the header, I am going to
+apply the class of Jumbotron. And the first inner div
+inside that header, I'm going to apply the class container. And the second inner div and
+better apply the class row here. After these changes, let's go back and
+have a look at our webpage. Switching back to our webpage. We now see that our header has
+been styled using a Jumbotron. So, you can see the light grey
+background applied to the Jumbotron. And you can also see how the content has
+been rendered in the head of our webpage. You can already see the webpage
+taking on a good shape. Finally, let's move to the footer of the
+page, and then apply the container class to the first inner div and the row class
+to the second inner div in the footer. After these changes,
+let's have a look at our webpage. Now you can see that our
+footer has also been brought into the center
+part of our webpage. Having one complete look at the webpage
+from the top to the bottom, you can see the Jumbotron at the top, then you see that the content has
+been enclosed inside a container. And the footer content has also been
+enclosed inside another container. This completes this exercise. So we have now understood, how to set up
+our web project to use Bootstrap classes, and we have used some basic classes
+from Bootstrap to style our webpage.

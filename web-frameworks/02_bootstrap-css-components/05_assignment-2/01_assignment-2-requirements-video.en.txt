@@ -1,0 +1,43 @@
+Our second assignment involves various modifications to be done
+to the index.html file that you had at the end of the last
+exercise of this module. To this page,
+you're going to add some fonts, some buttons, and a media object,
+and also a label. The current state of the index.html
+page is as shown here. There are four tasks to be
+completed in this assignment. The first task is to include a form within your nav bar that allow
+the users to input their registration information for
+this website and login into the website. Of course,
+you just include the form at this moment, it will not work at this moment. The contents of this
+form should be like this. So, explore the nav bar forms in more detail on the Bootstrap side to understand
+how you would design something like this. The second task of your assignment is to include a button here. This button should be
+included in its own div here, so notice that this is
+occupying the left over space in this row of this. Now this button, when you click on it,
+it will take you down to a form at the bottom, which the users can use to
+preserve their table on this restaurant. When you click on the button It
+will take you down to a form, which is at the bottom of this page. Now this form is included as another
+row in the content of the webpage here. Now what does this form contain? This form contains information
+that the users need to submit in order to reserve on the website. So here we have a set of radio
+buttons that allow us to select the number of guests, and then we
+have a Date and Time specification here. Now, notice in particular
+inside the Date and Time boxes here, you have the glyphicons for
+the date and time included. Again, read the forms in the Bootstrap documentation to understand how you
+would put glyphicons inside there. And of course you have
+the action button here. Which, when clicked should,
+of course obviously at this stage, this form will not work, but
+you should have all these in place. In the, at the end of this assignment. Now, another part that you will have
+here is an alert being displayed here. This alert in particular has
+a link also embedded in here. And also a cross button embedded in here. Again, study alerts to understand how
+you will design this warning alert. This is part of this column
+that includes the font. Our final task is to apply
+the media object class to the second row of this page. Recall that we applied the media object
+class to the first and the third row, but we left the second row untied, and I mentioned that we will do that
+as part of the second assignment. In here I am using a media object. In particular note that the image
+is displayed to the right after content rather than to
+the left as we did for the other. Also this should include a label here with the word New inside the label. This completes your second assignment. So at the end of this assignment,
+your webpage should look like this. First, it should have a way for
+the user to enter the login information. Second, there should be a button
+here that when clicked, will take the user to a reservation form. Third, there will be
+a reservation form at the bottom, which includes the selection of
+the number of guests and date and time. And also an alert being displayed there. Dismissable alert being displayed there. And then finally, of course, the second row being styled
+properly using a media object. The image here Is already provided for you in the IMG folder that
+you downloaded earlier. This image is called the buffet.png. And the label to be displayed here.

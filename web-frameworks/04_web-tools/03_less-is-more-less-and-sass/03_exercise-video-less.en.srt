@@ -1,0 +1,588 @@
+1
+00:00:00,990 --> 00:00:08,940
+Let's move on to our next exercise where
+we will explore the Less language.
+
+2
+00:00:08,940 --> 00:00:14,170
+I know you are looking at that and saying
+I wish my doctor would say that to me.
+
+3
+00:00:15,340 --> 00:00:20,190
+Tough luck, my friends, in real life,
+you have to exercise most.
+
+4
+00:00:20,190 --> 00:00:23,060
+But let's talk about exercise Less.
+
+5
+00:00:23,060 --> 00:00:25,088
+Now, the pre-processors.
+
+6
+00:00:27,214 --> 00:00:34,095
+Now open your project in brackets or
+the text editor of your choice, and
+
+7
+00:00:34,095 --> 00:00:40,419
+then go to the CSS folder and
+create a file named mystyles.less.
+
+8
+00:00:42,050 --> 00:00:48,860
+After that,
+we'll add some Less code into this file.
+
+9
+00:00:49,910 --> 00:00:55,730
+First, let me define some variables
+that we're gonna use in the coat.
+
+10
+00:00:57,500 --> 00:01:00,670
+You can see that now I have
+added a few variables here.
+
+11
+00:01:00,670 --> 00:01:06,610
+I have defined several colors there and
+then also a height variable there.
+
+12
+00:01:06,610 --> 00:01:11,550
+I'm gonna make use of these in
+defining my Less classes later.
+
+13
+00:01:13,170 --> 00:01:18,680
+Next, I add in a Less class,
+which I am going to use as a mixin.
+
+14
+00:01:18,680 --> 00:01:22,870
+And I'm naming this Less
+class as zero-margin.
+
+15
+00:01:22,870 --> 00:01:28,004
+You have seen this example already
+in the lecture previously.
+
+16
+00:01:28,004 --> 00:01:35,129
+So for this I have given two parameters,
+pad-up-dn and pad-left-right.
+
+17
+00:01:35,129 --> 00:01:42,950
+And I'm using them to define
+the padding for this class here.
+
+18
+00:01:42,950 --> 00:01:46,017
+I'm gonna make use of
+this class as a mixin for
+
+19
+00:01:46,017 --> 00:01:48,700
+defining several of the role classes.
+
+20
+00:01:50,150 --> 00:01:54,811
+Next, using the mixin,
+I am defining several of
+
+21
+00:01:54,811 --> 00:01:59,254
+the row classes that I'm
+using in my project.
+
+22
+00:01:59,254 --> 00:02:03,806
+So here you can see that I am defining
+a row header class with zero margin
+
+23
+00:02:03,806 --> 00:02:04,586
+asterisk.
+
+24
+00:02:04,586 --> 00:02:11,507
+When I have the final row content class
+with zero margin with parameters 50px,
+
+25
+00:02:11,507 --> 00:02:16,245
+0px and then row-footer and the jumbotron.
+
+26
+00:02:16,245 --> 00:02:20,515
+So for each of these,
+the padding values are different, but
+
+27
+00:02:20,515 --> 00:02:24,435
+the margin value is still 0px auto.
+
+28
+00:02:24,435 --> 00:02:28,165
+So I am able to make use
+of the mixin class, and
+
+29
+00:02:28,165 --> 00:02:33,425
+then define these classes using that
+other class that we have defined earlier.
+
+30
+00:02:35,280 --> 00:02:39,310
+Next I define a carousel class.
+
+31
+00:02:39,310 --> 00:02:41,100
+In the carousel class,
+
+32
+00:02:41,100 --> 00:02:45,010
+notice the use of the variables
+that we have defined already.
+
+33
+00:02:45,010 --> 00:02:48,595
+So for the background I'm
+setting it as dark-indigo.
+
+34
+00:02:48,595 --> 00:02:52,115
+For item, I am setting
+the height as carousel-height.
+
+35
+00:02:52,115 --> 00:02:56,705
+And then the image also I am setting
+the height as carousel-height.
+
+36
+00:02:56,705 --> 00:03:03,557
+Note also how I am using nesting in
+order to define these three classes.
+
+37
+00:03:03,557 --> 00:03:06,307
+So the item class is inside
+the carousel class, and
+
+38
+00:03:06,307 --> 00:03:08,677
+the image class is inside the item class.
+
+39
+00:03:08,677 --> 00:03:12,357
+So when it is combined we're going
+to have three different classes.
+
+40
+00:03:12,357 --> 00:03:16,527
+The dark carousel class,
+the dark carousel.item, and
+
+41
+00:03:16,527 --> 00:03:19,757
+then the dark carousel.item and
+image classes.
+
+42
+00:03:21,247 --> 00:03:27,490
+Here is yet another nesting of classes.
+
+43
+00:03:27,490 --> 00:03:30,920
+This is what I use for the navbar inverse.
+
+44
+00:03:30,920 --> 00:03:35,280
+Now, you're beginning to realize
+that I am defining the Less class
+
+45
+00:03:35,280 --> 00:03:38,990
+corresponding to the CSS class
+that we have already constructed.
+
+46
+00:03:38,990 --> 00:03:40,990
+Now the reason for
+
+47
+00:03:40,990 --> 00:03:45,850
+this, is to see how from a Less
+class you can go to a CSS class.
+
+48
+00:03:45,850 --> 00:03:47,980
+So it is more easier for
+
+49
+00:03:47,980 --> 00:03:51,760
+you to understand once you know
+what the CSS class looks like.
+
+50
+00:03:52,850 --> 00:03:55,910
+So that in the future if
+you want to use Less,
+
+51
+00:03:55,910 --> 00:03:59,930
+you will easily know how to make
+use of it from this experience.
+
+52
+00:03:59,930 --> 00:04:04,348
+So here, I am defining
+the .navbar-inverse class, and
+
+53
+00:04:04,348 --> 00:04:10,570
+inside there I am listing other classes
+like the .navbar-nav>.active>a and
+
+54
+00:04:10,570 --> 00:04:13,921
+other classes you can
+see me defining here.
+
+55
+00:04:20,128 --> 00:04:25,262
+Finally, I add in those CSS classes for
+
+56
+00:04:25,262 --> 00:04:33,054
+which I could not use the Less
+features into a large extent.
+
+57
+00:04:33,054 --> 00:04:35,546
+So these are standard CSS classes.
+
+58
+00:04:35,546 --> 00:04:38,200
+They have nothing in common
+with the remaining classes.
+
+59
+00:04:38,200 --> 00:04:42,505
+So I am not able to use either mixins, or
+
+60
+00:04:42,505 --> 00:04:47,337
+to use their nesting for
+these CSS classes.
+
+61
+00:04:47,337 --> 00:04:49,921
+I'm still using the variables
+that I have defined earlier.
+
+62
+00:04:49,921 --> 00:04:54,481
+So you can see that I am using
+some of the color variables
+
+63
+00:04:54,481 --> 00:04:58,960
+that I have defined earlier
+to define these classes.
+
+64
+00:05:01,080 --> 00:05:06,014
+Once you complete this,
+you are now going to save this Less file,
+
+65
+00:05:06,014 --> 00:05:10,963
+and then compile this Less file
+into the corresponding CSS file.
+
+66
+00:05:10,963 --> 00:05:14,505
+Now once we compile this Less file
+into the corresponding CSS file.
+
+67
+00:05:14,505 --> 00:05:20,209
+You will notice that the CSS file is
+the same as the CSS file that we had,
+
+68
+00:05:20,209 --> 00:05:23,120
+had constructed for this project.
+
+69
+00:05:27,230 --> 00:05:32,420
+How do we compile the Less file
+into the corresponding CSS file?
+
+70
+00:05:32,420 --> 00:05:39,030
+Now, this is where I'm going to make
+use of a node module called Less.
+
+71
+00:05:39,030 --> 00:05:42,910
+We are going to install this
+node module as a global module.
+
+72
+00:05:42,910 --> 00:05:47,327
+To do that, on your command
+
+73
+00:05:47,327 --> 00:05:51,936
+prompt you're going to type
+
+74
+00:05:51,936 --> 00:05:56,750
+npm install minus g and Less.
+
+75
+00:05:56,750 --> 00:06:01,540
+The minus g flag is to indicate,
+to any member,
+
+76
+00:06:01,540 --> 00:06:06,720
+that, this module should be
+installed as a global module
+
+77
+00:06:06,720 --> 00:06:11,750
+to be available for
+use in any project that we create.
+
+78
+00:06:11,750 --> 00:06:15,190
+Now, of course the Less compiler
+we will be using in many projects.
+
+79
+00:06:15,190 --> 00:06:19,750
+So that's why I'm installing
+this as a global MPM module.
+
+80
+00:06:21,150 --> 00:06:26,670
+Now if you are doing this on a Mac or
+
+81
+00:06:26,670 --> 00:06:33,220
+on a Linux, you may wish to proceed
+this with the sudo command, S-U-D-O.
+
+82
+00:06:33,220 --> 00:06:36,410
+On a Windows machine, you don't need that.
+
+83
+00:06:36,410 --> 00:06:41,754
+But since I am running this on a Mac, I'm
+gonna proceed thus with a pseudo-command.
+
+84
+00:06:50,963 --> 00:06:54,983
+And then when you hit the return,
+on a Mac or
+
+85
+00:06:54,983 --> 00:07:01,390
+Linux it expects you to type in
+your password to let you install.
+
+86
+00:07:01,390 --> 00:07:06,510
+So this is giving admin privileges so that
+the package can be installed correctly.
+
+87
+00:07:06,510 --> 00:07:08,290
+On a Windows machine,
+this is not required.
+
+88
+00:07:08,290 --> 00:07:11,390
+You just type npm install minus g Less.
+
+89
+00:07:11,390 --> 00:07:16,640
+And then, npm will go and
+fetch the Less module
+
+90
+00:07:16,640 --> 00:07:22,780
+from the global repository
+of the npm modules.
+
+91
+00:07:22,780 --> 00:07:26,820
+Now, this installation
+of the Less module will
+
+92
+00:07:26,820 --> 00:07:31,800
+make available to us
+a compiler called lessc.
+
+93
+00:07:31,800 --> 00:07:35,650
+This compiler will be available
+to us on the command line.
+
+94
+00:07:35,650 --> 00:07:38,770
+So if you want to compile a Less file,
+
+95
+00:07:38,770 --> 00:07:44,870
+then you would just type Less c space and
+the name of the Less file.
+
+96
+00:07:44,870 --> 00:07:47,310
+And then this will
+automatically compile and
+
+97
+00:07:47,310 --> 00:07:52,790
+then output that corresponding CSS file.
+
+98
+00:07:52,790 --> 00:07:53,780
+Let's see that in action.
+
+99
+00:07:54,840 --> 00:07:58,723
+At the prompt I type in lessc
+
+100
+00:07:58,723 --> 00:08:04,170
+mystyles.less and
+
+101
+00:08:04,170 --> 00:08:08,179
+when I hit the return it is going to
+generate the corresponding CSS file.
+
+102
+00:08:09,300 --> 00:08:14,960
+Now, you can see that the CSS file has
+been printed out on the console directly.
+
+103
+00:08:14,960 --> 00:08:20,846
+Now, I wanna capture this
+inside a CSS file here.
+
+104
+00:08:20,846 --> 00:08:23,320
+So to do that.
+
+105
+00:08:23,320 --> 00:08:29,759
+First, I'm going to move my existing
+mystyles.css file into another file so
+
+106
+00:08:29,759 --> 00:08:35,320
+that I will save my existing
+mystyles.css file before overwriting
+
+107
+00:08:35,320 --> 00:08:40,504
+this with the compile file that
+is produced by Less c compiler.
+
+108
+00:08:44,500 --> 00:08:52,087
+If you know how to use the command line,
+you can simply say move mystyles.css.
+
+109
+00:08:55,879 --> 00:08:59,754
+On a Mac or Linux, you can do this.
+
+110
+00:08:59,754 --> 00:09:06,754
+Now on Windows, you can use the rename
+command on the command line.
+
+111
+00:09:06,754 --> 00:09:12,845
+Next, I'm going to type in
+lessc mystyles.less, and
+
+112
+00:09:12,845 --> 00:09:18,340
+then pipe this value
+into mystyles.css file.
+
+113
+00:09:18,340 --> 00:09:23,002
+And then,
+this will save the output from the Less c
+
+114
+00:09:23,002 --> 00:09:26,338
+compiler into the CSS file, here.
+
+115
+00:09:29,671 --> 00:09:34,071
+Now, at the end of this,
+you can open the CSS file and
+
+116
+00:09:34,071 --> 00:09:40,790
+see the compiled corresponding CSS file
+for the Less file that we just created.
+
+117
+00:09:42,730 --> 00:09:45,560
+Having a look at the CSS file
+that has been generated for
+
+118
+00:09:45,560 --> 00:09:49,720
+us we will see that this CSS
+file is pretty much similar
+
+119
+00:09:51,120 --> 00:09:55,560
+to the CSS file we had
+constructed earlier.
+
+120
+00:09:55,560 --> 00:10:00,430
+So now you see the advantage
+of using Less to
+
+121
+00:10:00,430 --> 00:10:05,160
+define your CSS classes
+using the Less syntax.
+
+122
+00:10:05,160 --> 00:10:12,790
+And then automatically generating the CSS
+classes by compiling the Less file.
+
+123
+00:10:12,790 --> 00:10:20,540
+This completes this exercise, where
+we learned how to write Less code and
+
+124
+00:10:20,540 --> 00:10:26,640
+then automatically generating the CSS from
+the Less code using the CSS compiler.

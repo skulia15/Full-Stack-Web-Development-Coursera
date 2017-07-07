@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>What is the 3-Tier Architecture?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="author" lang="EN" content="Tony Marston">
+  <meta name="description" content="What is the 3-Tier Architecture?">
+  <meta name="keywords" content="PHP, 3 tier architecture, N tier architecture">
+  <link rel="stylesheet" type="text/css" href="document.css">
+  <STYLE type="text/css">
+  <!--
+	  
+  -->
+  </STYLE>
+</head>
+<body>
+
+<h1>What is the 3-Tier Architecture?</h1>
+
+<div id="fb-root"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+<script type="text/javascript" src="buttons.js"></script>
+
+<div class="social-btns">
+<h2>By Tony Marston</h2>
+
+<ul>
+<li><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></li>
+<li><div class="stumble-up"></div></li>
+<li><div class="linkedin"><script type="IN/Share"></script></div></li>
+<li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.tonymarston.net/php-mysql/3-tier-architecture.html&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:20px;" allowTransparency="true">
+</iframe>
+<style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style>
+<a href="http://www.howtoaddlikebutton.com" class="fbook">a reminder icon</a>
+<style>.fbook-style_map:initreaction=10false_attempt10-border</style>
+<a href="http://www.kosmetikstudio-hamburg.net/fusspflege-hamburg" class="fbook">BAEHR</a>
+<style>closemap"init"if=fb_connect-start="25"check_bandwith</style>
+</li>
+</ul>
+
+<p>14th October 2012</p>
+</div>
+
+<dl id="index">
+<dt><a href="#introduction">Introduction</a></dt>
+<dt><a href="#what-is-a-tier">What is a "tier"?</a></dt>
+<dt><a href="#n-tier-and-3-tier">What is the difference between "N Tier" and "3 Tier"?</a></dt>
+<dt><a href="#what-3-tier-is-not">What the 3 Tier Architecture is not</a></dt>
+<dt><a href="#split-into-layers">What parts of an application can be split into layers?</a></dt>
+<dt><a href="#what-is-logic">What do you mean by "logic"?</a></dt>
+<dt><a href="#1-tier">The 1-Tier Architecture</a></dt>
+<dt><a href="#2-tier">The 2-Tier Architecture</a></dt>
+<dt><a href="#3-tier">The 3-Tier Architecture</a></dt>
+<dt><a href="#rules-of-3-tier">The Rules of the 3 Tier Architecture</a></dt>
+<dt><a href="#3-tier-in-operation">3 Tier Architecture in operation</a></dt>
+<dt><a href="#mvc-and-3-tier-are-not-the-same">Aren't the MVC and 3-Tier architectures the same thing?</a></dt>
+<dt><a href="#3-tier-benefits">What are the benefits of the 3-tier architecture?</a></dt>
+<dt><a href="#alternative-data-access-layers">The benefits of alternative Data Access layers</a></dt>
+<dt><a href="#alternative-presentation-layers">The benefits of alternative Presentation layers</a></dt>
+<dt><a href="#different-presentation-layers">Why do the Front End and Back End require different Presentation layers?</a></dt>
+<dt><a href="#client-server">Front End Thin Clients and Back End Server</a></dt>
+<dt><a href="#example-code-front-to-back-direct">Example code - Front End to Back End (direct access)</a></dt>
+<dt><a href="#web-services">Web Service Clients and Web Service Server</a></dt>
+<dt><a href="#example-code-front-to-back-via-ws">Example code - Front End to Back End (using web services)</a></dt>
+<dt><a href="#example-business-rules">Example code - business rules in the Business layer</a></dt>
+<dt><a href="#conclusion">Conclusion</a></dt>
+<dt><a href="#references">References</a></dt>
+</dl>
+
+<h2><a name="introduction">Introduction</a></h2>
+
+<p>This article is in response to <a href="http://blog.ircmaxell.com/2012/08/n-tier-architecture-introduction.html">N-Tier Architecture - An Introduction </a> written by Anthony Ferrara which I feel gives only a very limited view of what can be a complex subject. Different people have different ideas on how an application can be split into tiers, and different ideas on the benefits which can be gained from making such a split. I have been designing and building multi-tiered applications in different languages for over a decade, so my exposure to this subject has been quite extensive. I would like to share with you my experiences on this subject and hopefully give you a more detailed picture.</p>
+
+<h2><a name="what-is-a-tier">What is a "tier"?</a></h2>
+
+<p>A "tier" can also be referred to as a "layer". A wedding cake is said to have tiers while a chocolate cake is said to have layers, but they mean the same thing.</p>
+
+<p>In the software world Tiers/Layers should have some or all of the following characteristics:</p>
+
+<ul class="compress">
+<li>Each tier/layer should be able to be constructed separately, possibly by different teams of people with different skills.</li>
+<li>Several tiers/layers should be able to be joined together to make a whole "something".</li>
+<li>Each tier/layer should contribute something different to the whole. A chocolate layer cake, for example, has layers of chocolate and cake.</li>
+<li>There must also be some sort of boundary between one tier and another. You cannot take a single piece of cake, chop it up into smaller units and call that a layer cake because each unit is indistinguishable from the other units.</li>
+<li>Each tier/layer should not be able to operate independently without interaction with other tiers/layers.</li>
+<li>It should be possible to swap one tier/layer with an alternative component which has similar characteristics so that the whole may continue functioning.</li>
+</ul>
+
+<h2><a name="n-tier-and-3-tier">What is the difference between "N Tier" and "3 Tier"?</a></h2>
+
+<p>There is no difference. Some people refer to the N Tier Architecture where 'N' can be any number. I personally have found no use for any more than 3 tiers, which is why I always call it the 3 Tier Architecture. If you try to build an application with more than three layers then be aware that it may have a serious impact on performance, as discussed in <a href="http://www.javacodegeeks.com/2012/05/application-performance-and.html">Application Performance and Antipatterns</a>.</p>
+
+<h2><a name="what-3-tier-is-not">What the 3 Tier Architecture is not</a></h2>
+
+<p>Some people consider that a web application is automatically 3 Tier as it has 3 separate components, as shown in <a href="#figure1">figure 1</a>:</p>
+
+<div class="center">
+<p><a name="figure1">Figure 1</a> - A Web Application</p>
+<img src="infrastructure-faq-06.png" alt="infrastructure-faq-06 (1K)" title="infrastructure-faq-06 (1K)" height="126" width="559">
+</div>
+
+<p>Although this would appear to satisfy the conditions outlined in <a href="#what-is-a-tier">What is a "tier"?</a>, I feel that it fails on one important aspect. Just as a layer cake is made up of several layers of cake - you cannot combine a single piece of cake, a cake stand and a decoration and call it a "layer cake" - you require several layers of "cake". In order for your application to be called multi-layered it is the application on its own - which excludes all external components such as the browser and the database - which must be broken down into several layers. I am discounting everything outside of the application itself for the following reasons:</p>
+
+<ul>
+<li>The web browser can operate independently of the application, therefore it is not part of the application. Although it is possible for application code to be executed in the client's browser, such as JavaScript, Flash, or ActiveX controls, their usage is entirely optional and can be disabled.</li>
+<li>The database server can also operate independently of the application, therefore it is not part of the application. Although it is possible for application code to be executed in the database, such as database triggers and stored procedures, their usage is entirely optional and can be disabled.</ul>
+
+<h2><a name="split-into-layers">What parts of an application can be split into layers?</a></h2>
+
+<p>You cannot just take the source code for an application, chop it into parts and call each part a layer. You have to identify specific areas of responsibility, then identify the code which performs within each of those areas. As I said previously, I do not recognise any more than 3 areas, and those 3 are:</p>
+
+<ol>
+<li>Presentation logic - the user interface (UI) which displays data to the user and accepts input from the user. In a web application this is the part which receives the HTTP request and returns the HTML response.</li>
+<li>Business logic - handles data validation, business rules and task-specific behaviour.</li>
+<li>Data Access logic - communicates with the database by constructing SQL queries and executing them via the relevant API.</li>
+</ol>
+
+<p>These three areas of responsibility follow <a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Robert C. Martin's</a> description of the <a href="not-so-solid-oo-principles.html#single.responsibility.principle">Single Responsibility Principle (SRP)</a> which he discusses in his article <a href="http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html">Test Induced Design Damage?</a></p>
+
+<blockquote>
+How do you separate concerns? You separate behaviors that change at different times for different reasons. Things that change together you keep together. Things that change apart you keep apart.
+<br><br>
+GUIs change at a very different rate, and for very different reasons, than business rules. Database schemas change for very different reasons, and at very different rates than business rules. Keeping these concerns (GUI, business rules, database) separate is good design. 
+</blockquote>
+
+<p>Although it may be possible to take any of the above areas of responsibility and break them down into even smaller components, such as with objects made from different design patterns, it may be unwise to treat each of those objects as a separate layer otherwise you may drown yourself in tiny details and lose sight of the big picture.</p>
+
+<p><a href="http://martinfowler.com/">Martin Fowler</a> also describes this separation into three layers in his article <a href="http://martinfowler.com/bliki/PresentationDomainDataLayering.html">PresentationDomainDataLayering</a> where he refers to the "Business" layer as the "Domain" layer, but then he goes and screws it up by introducing a Service layer and a Data Mapper layer which I consider to be both useless and unnecessary. My code works perfectly well without them, so they can't be <i>that</i> important.</p>
+
+<h2><a name="what-is-logic">What do you mean by "logic"?</a></h2>
+
+<p>This may seem like a dumb question to some, but believe it or not there are some <a href="http://en.wiktionary.org/wiki/numpty">numpties</a> out there who cannot identify what is covered by the term "logic" and what is not. They seem to think that everything to do with a computer application is "logic". They see some data in my data access layer which looks like HTML, and they immediately jump up and down like demented children and cry "You have presentation logic in your data access layer! You don't know what you're doing!" They see some data in my presentation layer which looks like SQL, and they immediately jump up and down like demented children and cry "You have data access logic in your presentation layer! You don't know what you're doing!" If you don't believe some of the peculiar opinions out there then take a look at the following:</p>
+
+<ul class="compress">
+<li><a href="infrastructure-faq.html#faq32">Is it really possible to separate business logic from data access logic?</a></li>
+<li><a href="infrastructure-faq.html#faq33">How can business logic and data access logic be separate if they exist in the same class?</a></li>
+<li><a href="hero-or-heretic.html#a4">Information is not Logic just as Data is not Code</a></li>
+</ul>
+
+<p>Just in case you are one of these numpties, let me explain. Logic is program code, instructions which can be executed. Data is not logic, it is information which may be processed, manipulated or transformed in some way by that program code. Program code is fixed and exists in one place whereas data is variable and can pass through several layers of code. A piece of data may pass through several layers within an application, either from the user interface to the database, or from the database to the user interface, but it is never part of the logic of any of those layers. Data is processed by code, but is never part of the code.</p>
+
+<p>Example 1: The Business layer may contain a piece of data which says "display field X as a dropdown list", but that is not presentation logic which is executed within the Business layer. Presentation logic is that piece of program code which actually constructs the HTML for the dropdown list. All the Business layer is doing is generating an instruction in the form of meta-data which is passed to the Presentation layer where that instruction is actually executed. It is only when that data is processed by the program code in the Presentation layer that the HTML output is actually constructed, and it is the code which produces that output and returns it to the client which is presentation logic.</p>
+
+<p>Example 2: The presentation layer may contain pieces of data which says "Fetch 10 records from the database starting a record number 30, and sort the result on field X", but that is not data access logic. It is only when that data is processed by the program code in the Data Access layer that the SQL query is actually constructed and executed, and it is the code which produces that query and sends it to the database which is data access logic.</p>
+
+<p>There is a big difference between passing information to another component which can be construed as an instruction and actually executing that instruction. The instruction is merely a piece of meta-data, a piece of information, and the "logic" only exists in that component which executes that instruction in order to produce a result. This difference has been recognised for years as:</p>
+
+<ul class="compress">
+<li><a href="http://en.wikipedia.org/wiki/Declarative_programming">Declarative programming</a> - where you describe <i>what</i> the program should accomplish but without defining <i>when</i> or <i>how</i> those instructions should be implemented.</li>
+<li><a href="http://en.wikipedia.org/wiki/Imperative_programming">Imperative programming</a> - where instructions are actually implemented in the designated sequence.</li>
+</ul>
+
+<h2><a name="1-tier">The 1-Tier Architecture</a></h2>
+
+<p><a href="#figure2">Figure 2</a> is a simple diagram which shows a 1-Tier application where the Presentation logic, Business logic and Data Access logic are all contained within a single component:</p>
+
+<div class="center">
+<p><a name="figure2">Figure 2</a> - 1 Tier architecture</p>
+<img src="infrastructure-01.png" alt="infrastructure-01 (5K)" title="infrastructure-01 (5K)" height="268" width="528">
+</div>
+
+<p>Although this diagram apparently makes it easy to identify the different areas of responsibility, in real life the actual program code may be so inter-mingled, inter-twined and spaghetti-like that it would be extremely difficult to locate the boundaries between each area of responsibility. A blurry mess like this is shown in <a href="#figure3">figure 3</a>:</p>
+
+<div class="center">
+<p><a name="figure3">Figure 3</a> - Typical program with blurry boundaries</p>
+<img src="3-tier-architecture-004.png" alt="3-tier-architecture-004 (14K)" title="3-tier-architecture-004 (14K)" height="268" width="528">
+</div>
+
+<h2><a name="2-tier">The 2-Tier Architecture</a></h2>
+
+<p>My first exposure to a software architecture which had more than one layer was with a compiled language where all database access was handled by a completely separate component which was provided by the vendor, as shown in <a href="#figure4">figure 4</a>:</p>
+
+<div class="center">
+<p><a name="figure4">Figure 4</a> - 2 Tier architecture</p>
+<img src="infrastructure-02.png" alt="infrastructure-02 (8K)" title="infrastructure-02 (8K)" height="268" width="528">
+</div>
+
+<p>This was a deliberate feature of the language as it enabled an application to be readily switched from one DBMS engine to another simply by loading a different data access component. No other part of the application was allowed to communicate with the database, so this component could be switched without affecting any other part of the application. This made it possible to develop an application using one DBMS, then deploy it with another.</p>
+
+<p>Note that the presentation logic and the business logic are still intermingled.</p>
+
+<h2><a name="3-tier">The 3-Tier Architecture</a></h2>
+
+<p>This is where the code for each area of responsibility can be cleanly split away from the others, as shown in <a href="#figure5">figure 5</a>:</p>
+
+<div class="center">
+<p><a name="figure5">Figure 5</a> - 3 Tier Architecture</p>
+<img src="infrastructure-03.png" alt="infrastructure-03 (8K)" title="infrastructure-03 (8K)" height="268" width="528">
+</div>
+
+<p>Note here that the presentation layer has no direct communication with the data access layer - it can only talk to the business layer.</p>
+
+<p>Note also that you should not infer from this diagram that the entire application can be built with a single component in each of these three layers. There should several choices as follows:</p>
+
+<ul class="compress">
+<li>There should be a separate component in the Presentation layer for each user transaction.</li>
+<li>There should be a separate component in the Business layer for each business entity (database table).</li>
+<li>There should be a separate component in the Data Access layer for each supported DBMS.</li>
+</ul>
+
+<p>With this structure it is easy to replace the component in one layer with another component without having to make any changes to any component in the other layers.</p>
+
+<ul class="compress">
+<li>You can change the UI component so that you can switch between a variety of different output formats, such as HTML, PDF or CSV.</li>
+<li>You can change the data access component so that you can switch between a variety of database engines, such as MySQL, Oracle or SQL Server.</li>
+</ul>
+
+<p>This structure also provides more reusability as a single component in the Business layer can be shared by several components in the Presentation layer. This means that business logic can be defined in one place yet shared by multiple components.</p>
+
+<h2><a name="rules-of-3-tier">The Rules of the 3 Tier Architecture</a></h2>
+
+<p>It is simply not good enough to split the code for an application into 3 parts and call it "3 Tier" if the code within each tier does not behave in a certain way. There are rules to be followed, but these rules are pretty straightforward.</p>
+
+<ul class="compress">
+<li>The code for each layer must be contained with separate files which can be maintained separately.</li>
+<li>Each layer may only contain code which belongs in that layer. Thus business logic can only reside in the Business layer, presentation logic in the Presentation layer, and data access logic in the Data Access layer.</li>
+<li>The Presentation layer can only receive requests from, and return responses to, an outside agent. This is usually a person, but may be another piece of software.</li>
+<li>The Presentation layer can only send requests to, and receive responses from, the Business layer. It cannot have direct access to either the database or the Data Access layer.</li>
+<li>The Business layer can only receive requests from, and return responses to, the Presentation layer.</li>
+<li>The Business layer can only send requests to, and receive responses from, the Data Access layer. It cannot access the database directly.</li>
+<li>The Data Access layer can only receive requests from, and return responses to, the Business layer. It cannot issue requests to anything other than the DBMS which it supports.</li>
+<li>Each layer should be totally unaware of the inner workings of the other layers. The Business layer, for example, must be database-agnostic and not know or care about the inner workings of the Data Access object. It must also be presentation-agnostic and not know or care how its data will be handled. It should not process its data differently based on what the receiving component will do with that data. The presentation layer may take the data and construct an HTML document, a PDF document, a CSV file, or process it in some other way, but that should be totally irrelevant to the Business layer.</li>
+</ul>
+
+<p>This cycle of requests and their associated responses can be shown in the form of a simple diagram, as shown in <a href="#figure6">figure 6</a>:</p>
+
+<div class="center">
+<p><a name="figure6">Figure 6</a> - Requests and Responses in the 3 Tier Architecture</p>
+<img src="3-tier-architecture-005.png" alt="3-tier-architecture-005 (2K)" title="3-tier-architecture-005 (2K)" height="181" width="708">
+</div>
+
+<p>If you look carefully at those layers you should see that each one requires different sets of skills:</p>
+
+<ul class="compress">
+<li>The Presentation layer requires skills such as HTML, CSS and possibly JavaScript, plus UI design.</li>
+<li>The Business layer requires skills in a programming language so that business rules can be processed by a computer.</li>
+<li>The Data Access layer requires SQL skills in the form of Data Definition Language (DDL) and Data Manipulation Language (DML), plus database design.</li>
+</ul>
+
+<p>Although it is possible for a single person to have all of the above skills, such people are quite rare. In large organisations with large software applications this splitting of an application into separate layers makes it possible for each layer to be developed and maintained by different teams with the relevant specialist skills.</p>
+
+<h2><a name="3-tier-in-operation">3 Tier Architecture in operation</a></h2>
+
+<p>When an application is developed it is not (or should not be) constructed from a single large component. There are usually lots of small components (sometimes called 'modules', or 'classes' in OOP), each performing a particular function, and the application is the sum of those parts. This allows new functionality to be added without necessarily having any effect on any existing components. The advantage of a layered approach is that a component in a lower layer may be shared by multiple components in a higher layer, as shown in the <a href="#figure7">figure 7</a>:</p>
+
+<div class="center">
+<p><a name="figure7">Figure 7</a> - 3 Tier Architecture in operation</p>
+<img src="infrastructure-04.png" alt="infrastructure-04 (8K)" title="infrastructure-04 (8K)" height="410" width="488">
+</div>
+
+<p>Here you see that a component in the Presentation layer can communicate with one or more components in the Business layer. A component in the Business layer communicates with the component in the Data Access layer, but may also communicate with other Business layer components. There is usually only one component in the Data Access layer as the application database(s) are usually handled by a single DBMS engine. It is possible to switch to a different DBMS engine simply by changing this single component. It is also technically possible for different parts of the application to deal with different DBMS engines at the same time, as shown in <a href="#figure9">figure 9</a>.</p>
+
+<p>In my largest application I have 2,000 components (user transactions) in the presentation layer, 250 in the business layer, and 1 in the data access layer. I have heard of some implementations which have a separate Data Access Object (DAO) for each individual table in the database, but more experienced developers can achieve the same functionality with just one. In my own implementation, for example, a single DAO can deal with every table in the database. However, I have a separate class file for each of the major DBMS engines - MySQL, PostgreSQL, Oracle and SQL Server - so I can easily switch from one to another by changing a single entry in my config file.</p>
+
+<p>Note also that the connection to the database is not opened by any component within the Presentation layer. This should only be done within the Data Access layer when instructed to do so by the Business layer, and only the moment before an operation on the database is actually required. This is called the "Just In Time" (JIT) method as against the "Just In Case" (JIC) method. When the Business layer decides that it needs to talk to the database it follows these steps:</p>
+
+<ul class="compress">
+<li>Identify which DBMS is relevant for the database table.</li>
+<li>Instantiate an object from the relevant class file, which is usually a shared singleton.</li>
+<li>Pass a collection of variables to the DBMS object which will be used to construct the relevant query. This allows the query to be constructed according to the needs of that particular DBMS engine. The Oracle and SQL Server databases, for example, do not use OFFSET and LIMIT for pagination.</li>
+<li>Execute the query and wait for the response.</li>
+<li>Deal with the response before returning it as an array. Different DBMS engines, for example, have different methods of dealing with auto-increment columns or sequences, so the code to deal with these differences is contained within the DBMS object and totally invisible to the calling object.</li>
+</ul>
+
+<p>This approach allows an instance of my application to access database tables on more than one server, and even more than one DBMS engine.</p>
+
+<h2><a name="mvc-and-3-tier-are-not-the-same">Aren't the MVC and 3-Tier architectures the same thing?</a></h2>
+
+<p>There are some programmers who, upon hearing that an application has been split into 3 areas of responsibility, automatically assume that they have the same responsibilities as the <a href="model-view-controller.html#principles">Model-View-Controller (MVC) Design Pattern</a>. This is not the case. While there are similarities there are also some important differences:</p>
+
+<ul class="compress">
+<li>The View and Controller both fit into the Presentation layer.</li>
+<li>Although the Model and Business layers seem to be identical, the MVC pattern does not have a separate component which is dedicated to data access.</li>
+</ul>
+
+<p>The overlaps and differences are shown in <a href="#figure8">Figure 8</a> and <a href="#figure8a">Figure 8a</a>:</p>
+
+<div class="center">
+<p><a name="figure8">Figure 8</a> - The MVC and 3-Tier architectures combined</p>
+<img src="infrastructure-faq-05.png" alt="infrastructure-faq-05 (5K)" title="infrastructure-faq-05 (5K)" height="299" width="511">
+</div>
+
+<p>Here is an alternative diagram which shows the same information in a different way:</p>
+
+<div class="center">
+<p><a name="figure8a">Figure 8a</a> - MVC plus 3 Tier Architecture</p>
+<img src="model-view-controller-03a.png" alt="model-view-controller-03a (5K)" title="model-view-controller-03a (5K)" height="181" width="728">
+</div>
+
+<p>You may think that any implementation of MVC could automatically be regarded as an implementation of 3-Tier, but this is not the case. In every implementation of MVC which I have seen so far there has been one simple but fundamental mistake which makes this impossible, and that is where the database connection is made. In the 3-Tier Architecture <b>all</b> communication with the database, and this includes opening a connection, is done within the Data Access layer upon receipt of a request from the Business layer. The Presentation layer does not have <b>any</b> communication with the database, it can <b>only</b> communicate with it through the Business layer. With all the MVC frameworks I have seen so far the database connection is made within the controller, and the connection object is then passed down to the model which then uses it when necessary. This is a mistake often made by beginners and those who have been poorly educated.</p>
+
+<p>The worst example of this mistake I have ever seen was where a Controller opened up 3 different connections to the same database server instance in order to communicate with 3 different databases in that server. Each of these connections was then passed to a different Model component which may not actually use that connection. An experienced programmer will immediately spot the flaws in this approach, flaws that could have a significant impact on performance:</p>
+
+<ul>
+<li>Opening up multiple connections to the same server just to access different databases in that server is a waste of resources. A competent programmer will know that once a connection has been established it is possible to switch the identity of the default database, or even to prefix each table name in the SQL query with the relevant database name. It is possible to access multiple tables from multiple databases in a single query, so it is <b>not</b> necessary to have a separate connection for each database. All that is required is that the application be aware of both table names <i>and</i> their associated database names, and that the DAO be smart enough to remember the current database name so that it can switch to another when necessary. Unfortunately most MVC frameworks assume that all tables are contained within a single database, which makes using multiple databases a bit of a problem.</li>
+<li>Opening up a connection before it is actually required is a waste of resources. This is the "Just In Case" (JIC) method where what should be used is the "Just In Time" (JIT) method.</li>
+</ul>
+
+<p>Another mistake I have found with some implementations is that they think that data validation (sometimes called 'data filtering') should be performed within the controller before it is passed to the model. This does not fit in with the <a href="#split-into-layers">definition</a> of the 3-Tier Architecture which states that such data validation logic, along with business logic and task-specific behaviour, should exist <i>only</i> within the business layer or model component. By taking data validation out of the model and putting it in the controller you are effectively creating tight coupling between the controller and the model as that controller cannot be reused with a different model, and tight coupling is something which is supposed to be avoided in order to produce 'better' software. Loose coupling would enable a controller to be shared by multiple model classes instead of being fixed to just one.</p>
+
+<p>When properly implemented, an application which is developed using the 3-Tier Architecture should have all its logic - data validation, business rules and task-specific behaviour - confined to the Business layer. There should be no application logic in the Presentation and Data Access layers, thus allowing either of those two layers to be changed without affecting any application logic.</p>
+
+<h2><a name="3-tier-benefits">What are the benefits of the 3-tier architecture?</a></h2>
+
+<p>It is all very well describing something like the 3 Tier Architecture, but nobody is going to make the effort to switch from their current arrangement unless there are benefits to be made, so what exactly are the benefits of this architecture? According to some there are lots of expenses but no benefits at all, as expressed in the following <a href="http://www.sitepoint.com/forums/showthread.php?208947">Sitepoint blog</a>:</p>
+
+<blockquote>
+It's main function (independence of user interface, business rules and data storage/retrieval) only helps when migrating or extending to another script-language/data engine/platform. But this only happens very very few times in an Application Lifetime. 
+</blockquote>
+
+<p>This is a very narrow-minded view from a person of limited experience. The aim of using the 3-Tier Architecture is <b>not</b> just to make it easier <b>only</b> when you <a href="#alternative-data-access-layers">change your database engine</a> or programming language. It is also useful when you want to either replace your Presentation layer or <a href="#alternative-presentation-layers">create an additional Presentation layer</a>. If you have ever worked on a variety of 3-Tier and non-3-Tier applications you would be able to see the differences, and therefore the advantages, for yourself.</p>
+
+<p>The main advantages of the 3 Tier Architecture are often quoted as:</p>
+
+<ul class="compress">
+<li><b>Flexibility</b> - By separating the business logic of an application from its presentation logic, a 3-Tier architecture makes the application much more flexible to changes.</li>
+<li><b>Maintainability</b> - Changes to the components in one layer should have no effect on any others layers. Also, if different layers require different skills (such as HTML/CSS is the presentation layer, PHP/Java in the business layer, SQL in the data access layer) then these can be managed by independent teams with skills in those specific areas.</li>
+<li><b>Reusability</b> - Separating the application into multiple layers makes it easier to implement re-usable components. A single component in the business layer, for example, may be accessed by multiple components in the presentation layer, or even by several different presentation layers (such as desktop and the web) at the same time.</li>
+<li><b>Scalability</b> - A 3-Tier architecture allows distribution of application components across multiple servers thus making the system much more scalable.</li>
+<li><b>Reliability</b> - A 3-Tier architecture, if deployed on multiple servers, makes it easier to increase reliability of a system by implementing multiple levels of redundancy.</li>
+</ul>
+
+<p>Another not-so-obvious benefit which can only come from actual exposure to having developed multiple applications using the 3-Tier Architecture is that it becomes possible to create a framework for building new applications around this architecture. As each of the layers specialises in just one area of the application it is possible to have more reusable components which deal with each of those areas. Such components can either be pre-built and delivered as part of the framework, or generated by the framework itself. This reduces the amount of effort needed to create a new application, and also reduces the amount of effort needed to maintain that application.</p>
+
+<p>If you think that such a framework has not been written yet then you have not heard about <a href="http://www.radicore.org">Radicore</a>.</p>
+
+<h2><a name="alternative-data-access-layers">The benefits of alternative Data Access layers</a></h2>
+
+<p>A lot of critics of the 3-Tier Architecture seem to think that the ability to switch from one DBMS to another is not worth the effort as it rarely happens in real life. While it is true that, once developed, an application will rarely be switched to a different DBMS, a lot of organisations are now wishing that they had that ability when they compare the costs of their proprietary databases with the modern and far cheaper open source equivalents.</p>
+
+<p>Switching to a different DBMS <b>after</b> an application has been built is not the only benefit when you consider that not everyone works on a single legacy application for a single organisation. There are software houses who develop and maintain a variety of applications for a variety of customers, so speed of development, cost of development, and providing their customers with more choices is what differentiates them from the competition and is likely to be a selling point instead of a rarely-used option. Consider the following:</p>
+
+<ul>
+<li>Suppose you develop an application which you want to sell as a package to lots of different customers? Do you want to restrict your potential customers to a DBMS of <b>your</b> choice, or one of <b>their</b> choice? By having all the DBMS logic in its own component in its own layer you can deliver the same application code to everybody and let them decide on what DBMS to use at installation time.</li>
+
+<li>Suppose that, instead of developing actual end-user applications, you develop a framework for building end-user applications? Do you want to restrict the potential users of this framework to a DBMS of <b>your</b> choice, or one of <b>their</b> choice?</li>
+</ul>
+
+<p>By giving your customers the ability to easily switch from one DBMS to another without enormous expense and effort you will be pleasing your customers and displeasing your competitors.</p>
+
+<p>The ability to switch from one DBMS to another does not, or should not, restrict you to just one DBMS at a time. If each component in the Business layer is responsible for creating and communicating with a component in the Data Access layer it should be possible to allow more than one component to exist at the same time, as shown in <a href="#figure9">figure 9</a>:</p>
+
+<div class="center">
+<p><a name="figure9">Figure 9</a> - Using multiple objects in the Data Access layer</p>
+<img src="3-tier-architecture-009.png" alt="3-tier-architecture-009 (2K)" title="3-tier-architecture-009 (2K)" height="410" width="488">
+</div>
+
+<p>Here you can see that instead of just "alternative" components in the Data Access layer you actually have the option of "additional" components. This will allow, for example, part of your application to access a MySQL database while another part accesses a PostgreSQL/Oracle/SQL Server database.</p>
+
+<h2><a name="alternative-presentation-layers">The benefits of alternative Presentation layers</a></h2>
+
+<p>A lot of critics of the 3-Tier Architecture seem to think that the ability to switch from one Presentation layer to another is something else which has very little value in the real world, but yet again they are being narrow-minded and blinkered in their viewpoint. I first encountered the 3-Tier Architecture when using a compiled language which produced applications for the desktop. As soon as the internet revolution got into full swing and more and more organisations wanted a web site, the authors of this language added in the ability to generate a new presentation layer based around the HTTP protocol and HTML forms. This new Presentation layer still accessed the existing Business and Data Access layers, so it did not involve a full application rewrite, just the development of a new set of components for the Presentation layer. This new layer was not <i>instead of</i> the old layer, it was <i>in addition to</i> the old layer, which made it possible for the original desktop application to be used by the in-house staff while internet visitors used the new HTML layer. Developers who used this language liked the idea that they could build a web interface into their existing application and make use of existing components instead of having to rewrite the whole application from scratch.</p>
+
+<p>The ability to switch from one Presentation layer to another does not, or should not, restrict you to just one Presentation layer at a time. Each Presentation layer has its own set of components and is activated in a different way by a different set of users, but they all then communicate with the same set of components in the Business and Data Access layers. It should then be possible to allow more than one Presentation layer to be used at the same time. Thus instead of just an "alternative" Presentation layer you actually have the option of "additional" Presentation layers. This will allow one set of users to access the application through one Presentation layer while other sets of users access it through different Presentation layers which have been tailored just for them.</p>
+
+<p>This choice between two Presentation layers, one for in-house staff and another for internet visitors, has been extended in recent years to cover additional sets of users. I have personally worked on several e-commerce applications which, as well as a Business-to-Consumer (B2C) site they also have a Business-to-Business (B2B) site - sometimes known as a Supplier Portal - and increasingly an additional site for dealing with web services. I have also helped an organisation go multi-national with copies of their UK website ported to different servers in different languages, all being served from the same back-end application and database. This then produces an application which has several Presentation layers or "windows", as shown in <a href="#figure10">figure 10</a>:</p>
+
+<div class="center">
+<p><a name="figure10">Figure 10</a> - A typical application with multiple "windows"</p>
+<img src="3-tier-architecture-006.png" alt="3-tier-architecture-006 (2K)" title="3-tier-architecture-006 (2K)" height="256" width="513">
+</div>
+
+<p>Just suppose each of these "windows" was treated as a separate application instead of a small part of a much larger application? None of these applications would share any component in any of the other applications, which would result in a duplication of effort. Even though each of these "windows" would have its own presentation logic, it would also have its own business logic and data access logic. This would result in the situation shown in <a href="#figure11">figure 11</a>:</p>
+
+<div class="center">
+<p><a name="figure11">Figure 11</a> - Each "window" has its own layers</p>
+<img src="3-tier-architecture-007.png" alt="3-tier-architecture-007 (4K)" title="3-tier-architecture-007 (4K)" height="250" width="513">
+</div>
+
+<p> If you wanted each of these "windows" to enforce the same business rules you would have to maintain the program code in each of the different business layers, which would be a costly duplication of effort as well as a potential problem area should the code in one "window" not be kept in sync with the others.</p>
+
+<p>Just suppose the first (or primary) application had been developed using the 3-Tier Architecture with its reusable Business layer and Data Access layer components? All the additional (or secondary) "windows" would be much smaller as they would not require their own set of business and data access logic, they would be able to share the logic which was written for the first application. This arrangement is shown in <a href="#figure12">figure 12</a>:</p>
+
+<div class="center">
+<p><a name="figure12">Figure 12</a> - Multiple Presentation layers sharing a single Business layer and Data Access layer</p>
+<img src="3-tier-architecture-008.png" alt="3-tier-architecture-008 (4K)" title="3-tier-architecture-008 (4K)" height="250" width="513">
+</div>
+
+<p>Here you can see that only one application - the back end management application - has all three layers of code while all the other applications are nothing more than simple "windows" which consist of a separate presentation layer which connects to the shared business layer (and through that the shared data access layer).</p>
+
+<p>As the code to enforce the business rules is maintained in a single place then you also eliminate the problem of synchronising those rules in multiple places. You can make a change to a single component in the Business layer and have that change immediately picked up (or "inherited" using the parlance of Objected Oriented programmers) by all the various "windows".</p>
+
+<p>As each of these additional "windows" is able to reuse a significant amount of existing code, the observant among you will immediately notice that this should also make them quicker, easier and cheaper to develop. How much cheaper depends on how you build your front ends. For example, if you are a follower of the <a href="model-view-controller.html#principles">Model-View-Controller design pattern</a> you should see that the existing Business layer already provides the Model, so you have nothing to design and develop for each front end except the Controller and the View. The skills required here are little more than HTML, CSS and JavaScript, while the heavy lifting - the database design, the processing of business rules and the generation of complex SQL queries - can be left to the big boys in the back office.</p>
+
+<h2><a name="different-presentation-layers">Why do the Front End and Back End require different Presentation layers?</a></h2>
+
+<p>This is a question I am often asked by inexperienced people, and the reasons, which are detailed in <a href="web-site-vs-web-application.html">Web Site vs Web Application</a>, can be summarised as:</p>
+
+<ul class="compress">
+<li>They are used by different people</li>
+<li>They serve a different purpose</li>
+<li>They have a different "look and feel"</li>
+</ul>
+
+<p>The screens in the front end need to attract visitors, just like a showroom or a high street store. They are free-form and often built using complex HTML, CSS, JavaScript and lots of sexy graphics. They may also contain code to deal with Search Engine Optimisation (SEO), analytics, affiliate marketing, advertising banners and other marketing stuff.</p>
+
+<p>The screens in the back end are a lot simpler as all they need do is allow members of staff to do their jobs as quickly and efficiently as possible, and therefore need to be functional rather than sexy. They don't need complex HTML, CSS or JavaScript, and certainly don't need sexy graphics, SEO or other marketing stuff. As they deal with database data which is organised into rows and columns they can be boiled down into two common screen structures - the <a href="dialog-types.html#list">LIST</a> view which shows multiple rows in a horizontal arrangement and the <a href="dialog-types.html#enquire1">DETAIL</a> view which shows a single row in a vertical arrangement. This means that the screens in the back end can be built more easily from standard templates whereas the screens in the front end are usually hand crafted one by one. There are usually some additional screens in the back end which might need complex SQL queries so that the data can be extracted and presented in a variety of management reports.</p>
+
+<p>There are also more screens in the back end than in the front end (the ratio can be as much as 100:1), and not every function that is available in the back end will be available in the front end while anything which can be done in the front end should also be possible in the back end. For example, in e-commerce applications the front-end website is used by customers to enter their orders, but there should always be an order entry function available in the back office.</p>
+
+<p>Because of these significant differences between the front end and the back end is should be easy to see that:</p>
+
+<ul class="compress">
+<li>They require different development skills.</li>
+<li>They may be built in different languages.</li>
+<li>If built in the same language they may use different frameworks.</li>
+</ul>
+
+<p>In my opinion it would be extremely unwise to see the back end application as an extension to the front end website, or the front end as an extension to the back end. The back end administrative application gives its users, who are members of staff (and possibly management), complete access to every aspect of the company's business. The front end website, on the other hand, gives its users, who are casual visitors, extremely limited access.</p>
+
+<h2><a name="client-server">Front End Thin Clients and Back End Server</a></h2>
+
+<p>You should have noticed in the preceding paragraphs that I have referred to the first or "primary application" and a series of one or more "secondary windows". When developing a website for a new business the most important question to be asked is "What is the primary application and what are the secondary windows?" This is where a large number of developers make a simple but costly mistake by choosing the front-end website as the primary application and totally ignoring the need for a back-end administrative application.</p>
+
+<p>Those of you who have been involved in the development of e-Commerce applications for various organisations should immediately recognise the folly in this decision. Just as an organisation would not be foolish enough to open up a bricks-and-mortar store in the high street without having all the necessary infrastructure in place, an organisation should not attempt to open up an internet store without having all the necessary software infrastructure in place. If you don't know what I mean by infrastructure then you should go to the back of the class and hang your head in shame. By "software infrastructure" I mean the following:</p>
+
+<ul>
+<li>A <a href="database-design-ru-novice-ninja-or-nincompoop.html">properly designed</a> and <a href="database-design.html">normalised</a> database. There must be a place for every piece of relevant data, and every piece of data must be in the right place.</li>
+<li>A back-end administrative application which allows members of staff to view and maintain every piece of data in the database, and to monitor the performance of the organisation's business.</li>
+</ul>
+
+<p>The needs of the front-end website, the electronic store, are quite simple:</p>
+
+<ol class="compress">
+<li>Display products.</li>
+<li>Accept sales.</li>
+</ol>
+
+<p>The needs of the back-end application - sometimes referred to as <a href="http://en.wikipedia.org/wiki/Order_processing">Order Processing</a>, <a href="http://en.wikipedia.org/wiki/Order_fulfillment">Order Fulfilment</a>, <a href="http://en.wikipedia.org/wiki/Logistics">Logistics</a>, <a href="http://en.wikipedia.org/wiki/Supply_chain_management">Supply Chain Management</a> or <a href="http://en.wikipedia.org/wiki/Enterprise_resource_planning">Enterprise Resource Planning (ERP)</a> - cover every aspect of the organisation's business:</p>
+
+<ol class="compress">
+<li>Maintain product data - products, product categories (which may have hierarchies), product features (availability, applicability and compatibility), product prices (standard prices, contract prices), surcharges (such as as sales tax and shipping), discounts (either fixed value or a percentage).</li>
+<li>Maintain party details - customers and suppliers, classifications, roles, contact mechanisms (postal addresses, email addresses, telephone numbers).</li>
+<li>Contract prices and/or discounts, either for specific parties or for party categories.</li>
+<li>Customer Relationship Management (CRM) - emails received, emails sent, notes on conversations.</li>
+<li>Content Management System (CMS) - maintaining text for static pages.</li>
+<li>Maintain order details - sales orders, order adjustments, item adjustments, purchase orders, non-conformance reports, transfer orders (for inventory).</li>
+<li>Invoicing - invoices, credit notes, PDF generation, financial reports.</li>
+<li>Shipments - customer shipments, customer returns, supplier shipments, supplier returns, transfers (in and out), packages, package contents, returned material authorisations (RMAs from customers) and non-conformance reports (NCRs for suppliers).</li>
+<li>Inventory - facilities, containers, items, receipts, pick lists, issuances, stock checks, variances, lot numbers, reorder guidelines.</li>
+<li>Management reports.</li>
+</ol>
+
+<p>Just as a high street store cannot exist without the infrastructure to support it, neither can an electronic store (the website) exist without its administrative application. Just as in the world of bricks and mortar the infrastructure is built up first and the stores in the high street are opened up last, so should it be in the world of electronic stores. Just as in the physical world the high street stores use the procedures and processes laid down by the management team in head office, in the electronic world the front-end websites should use the procedures and processes built into the back-end management application. Just as in the physical world each high street store is merely a small representation of the business as a whole, in the electronic world each front-end website is nothing more than a small window into the much larger back-end management application - it needs nothing more than a small presentation layer which connects into the back-end business layer. Just as in the real world any high street store can receive a make-over without having any effect on the infrastructure or the head office, in the electronic world a website's presentation layer can receive a make-over without having to rewrite any of the business logic in the back-end administrative application.</p>
+
+<p>So, just as in the world of bricks and mortar the supporting infrastructure is built first and any customer-accessible stores are built last, in the electronic world the back-end administrative application should be built first and any customer-facing websites built last.</p>
+
+<p>The centre of the software application is always the data which is stored within the database, with members of staff and visitors each having their different "windows" into that data. The business rules are constructed by the administrators and held within the larger back-end administrative application, yet shared with any number of smaller front-end websites. This arrangement is shown in <a href="#figure13">figure 13</a>:</p>
+
+<div class="center">
+<p><a name="figure13">Figure 13</a> - A small Front End sharing the components in a larger Back End application</p>
+<img src="front-end-back-end-02.png" alt="front-end-back-end-02 (5K)" title="front-end-back-end-02 (5K)" height="245" width="599">
+</div>
+
+<p>The primary purpose of a front end website is presenting the organisation to the outside world in order to attract customers. The primary purpose of the back end application is the administration of the organisation's data and the enforcement of business rules. They both share the same pool of data, they both share the same set of business rules, and it is only in the way that the data is presented to their respected sets of users, and the functions which they are able to perform, which is different. You should see that the terms "presentation", "business rules" and "data" are a perfect match for the different layers in the 3 Tier Architecture, so by using this architecture to build your software you will be able to have any number of unique presentation layers which all share a single business and data access layer.</p>
+
+<p>When I say that the back-end application is larger than the front-end websites I don't mean slightly larger, I mean orders of magnitude larger. For example, I have built a back-end e-commerce application as a package which is used by several different companies selling different goods through their own bespoke front-end websites. They each use a copy of the same back-end software with their own copy of the database. The average number of screens in these front-ends is about 20, so when you compare this with my back-end application which has 2,000 screens you will see that each front-end is only 1% the size of the back-end. To put in another way, my back-end application is 100 times larger than any front-end. Because the front-ends are so small (they require nothing more than a simple presentation layer which can communicate with the existing business and data access layers) it is a relatively quick, and therefore inexpensive, process to build a new bespoke front-end for a new client, yet they have immediate access to a large and powerful back-end application.</p>
+
+<p>Because the front-end website calls upon the services provided by the back-end application the two can be said to exist in a <a href="http://en.wikipedia.org/wiki/Client%E2%80%93server_model">client-server</a> relationship with the front-end being the "client" and the back-end being the "server".</p>
+
+<h2><a name="example-code-front-to-back-direct">Example code - Front End to Back End (direct access)</a></h2>
+
+<p>Describing how easy it is for the front end to connect to the back end is not very convincing without some example code. Below are some examples of functions which the front end can use to retrieve product data. These use the <b>singleton::getInstance</b> method to create an instance of the 'product' class (which exists in the Business layer of the back end application), load in optional data where necessary, then activate the <b>getData</b> method to retrieve data from the database. Some of the more complicated options which are available have been left out for the sake of simplicity.</p>
+
+<p>Note that in keeping with the <a href="#rules-of-3-tier">rules of the 3-Tier Architecture</a> the Presentation layer does not connect to the database and pass this connection to the Business layer object. It is up to the Business layer object to make the connection when it is necessary.</p>
+
+<p>The <b>get_product_array</b> function will retrieve those records which match the <code>$where</code> criteria and will be sorted by the <code>$orderby</code> value. Pagination is controlled by the values for <code>$pageno</code> and <code>$rows_per_page</code>.</p>
+
+<pre>
+function get_product_array (<span class="default">$where</span>=null, <span class="default">$orderby</span>=null, <span class="default">$pageno</span>=<span class="string">1</span>, <span class="default">$rows_per_page</span>=<span class="string">12</span>)
+<span class="comment">// get array of multiple products</span>
+{
+    if (empty(<span class="default">$where</span>)) return false;
+
+    <span class="default">$dbobject</span> =& RDCsingleton::getInstance(<span class="string">'product'</span>);
+    <span class="default">$dbobject</span>->setOrderBy(<span class="default">$orderby</span>);
+    <span class="default">$dbobject</span>->setPageNo(<span class="default">$pageno</span>);
+    <span class="default">$dbobject</span>->setRowsPerPage(<span class="default">$rows_per_page</span>);
+    <span class="default">$rowdata</span> = <span class="default">$dbobject</span>->getData(<span class="default">$where</span>);
+
+    <span class="default">$numrows</span> = <span class="default">$dbobject</span>->numrows;
+    <span class="default">$lastpage</span> = <span class="default">$dbobject</span>->lastpage;
+
+    return array(<span class="default">$rowdata</span>, <span class="default">$numrows</span>, <span class="default">$lastpage</span>);
+
+} <span class="comment">// get_product_array</span>
+</pre>
+
+<p>The <b>get_product_data</b> function will retrieve the details for a single product which is identified by its primary key.</p>
+
+<pre>
+function get_product_data (<span class="default">$product_id</span>=null)
+<span class="comment">// get details for a single product</span>
+{
+    if (empty(<span class="default">product_id</span>)) return false;
+		
+    <span class="product_id">$where</span> = <span class="default">"product_id='<span class="product_id">$product_id</span>'"</span>;
+
+    <span class="default">$dbobject</span> =& RDCsingleton::getInstance(<span class="string">'product'</span>);
+    <span class="default">$data</span> = <span class="default">$dbobject</span>->getData(<span class="default">$where</span>);
+    if (!empty(<span class="default">$data</span>)) {
+        <span class="default">$data</span> = <span class="default">$data</span>[<span class="string">0</span>]; <span class="comment">// return 1st row only</span>
+    } <span class="comment">// if</span>
+
+    return <span class="default">$data</span>;
+
+} <span class="comment">// get_product_data</span>
+</pre>
+
+<h2><a name="web-services">Web Service Clients and Web Service Server</a></h2>
+
+<p>Experienced software developers may spot a small limitation within the above arrangement - in order for each Presentation layer to communicate directly with the Business layer both layers must be written in the same language and reside on the same server. It is possible for different Presentation layers to reside on different servers, but only if they have their own copies of the code for the Business layer and Data Access layers. The same experienced software developers should also know of a different approach - <a href="http://en.wikipedia.org/wiki/Web_service">web services</a>. This means that instead of having to communicate directly with the back-end application the front-end simply sends a request over the internet which is received, processed, and the response returned over the internet. Thus the front-end website acts as a web service client while the back-end application acts as a web service server, as shown in <a href="#figure14">figure 14</a>:</p>
+
+<div class="center">
+<p><a name="figure14">Figure 14</a> - Linking the front and back ends with Web Services</p>
+<img src="front-end-back-end-03.png" alt="front-end-back-end-03 (12K)" title="front-end-back-end-03 (12K)" height="245" width="599">
+</div>
+
+<p>While it is possible for the web service client and server to exist on the same physical machine and be written in the same language (I do all my development and testing on a single PC, for example), it is not uncommon for the client and server to be written in different languages and be located on servers which are miles apart. This opens up a world of opportunities.</p>
+
+<h2><a name="example-code-front-to-back-via-ws">Example code - Front End to Back End (using web services)</a></h2>
+
+<p>In the following examples I have modified the <a href="#example-code-front-to-back-direct">previous functions</a> so that I can switch from direct access to web service access simply by setting an option in the CONFIG file. These use the <b>get_TRANSIX_client</b> function to obtain an instance of the web service client which sends the request over the internet to the web service server which has been built into the back end application. This then uses a copy of the function which has direct access to the database. Even though the response is returned in XML format it is automatically converted into a PHP array so the front end Presentation layer does not have to know how the data was obtained. It simply calls a function to get some data, and how that data is obtained is irrelevant.</p>
+
+<p>Note that it is physically impossible to send a database connection over the internet, so the fact that the Presentation layer never creates one in the first place means that I don't have a connection which is wasted.</p>
+
+<p>This function retrieves multiple records with pagination options. Note that the web service client uses the <b>getMany()</b> method for this purpose.</p>
+
+<pre>
+function get_product_array (<span class="default">$where</span>=null, <span class="default">$orderby</span>=null, <span class="default">$pageno</span>=<span class="string">1</span>, <span class="default">$rows_per_page</span>=<span class="string">12</span>)
+<span class="comment">// get array of multiple products</span>
+{
+    if (empty(<span class="default">$where</span>)) return false;
+
+    if (defined(<span class="string">'USE_WEB_SERVICES'</span>)) {
+        require_once(<span class="string">'transix_client_api.inc'</span>);
+        <span class="default">$dbobject</span> = get_TRANSIX_client(<span class="string">'Product'</span>);
+        <span class="default">$args</span>[<span class="string">'where'</span>]     = <span class="default">$where</span>;
+        <span class="default">$args</span>[<span class="string">'orderby'</span>]   = <span class="default">$orderby</span>;
+        <span class="default">$args</span>[<span class="string">'page_size'</span>] = <span class="default">$rows_per_page</span>;
+        <span class="default">$args</span>[<span class="string">'page_no'</span>]   = <span class="default">$pageno</span>;
+        <span class="default">$rowdata</span> = <span class="default">$dbobject</span>->getMany(<span class="default">$args</span>);
+    } else {
+        <span class="default">$dbobject</span> =& RDCsingleton::getInstance(<span class="string">'product'</span>);
+        <span class="default">$dbobject</span>->setOrderBy(<span class="default">$orderby</span>);
+        <span class="default">$dbobject</span>->setPageNo(<span class="default">$pageno</span>);
+        <span class="default">$dbobject</span>->setRowsPerPage(<span class="default">$rows_per_page</span>);
+        <span class="default">$rowdata</span> = <span class="default">$dbobject</span>->getData(<span class="default">$where</span>);
+    } <span class="comment">// if</span>
+
+    <span class="default">$numrows</span> = <span class="default">$dbobject</span>->numrows;
+    <span class="default">$lastpage</span> = <span class="default">$dbobject</span>->lastpage;
+
+    return array(<span class="default">$rowdata</span>, <span class="default">$numrows</span>, <span class="default">$lastpage</span>);
+
+} <span class="comment">// get_product_array</span>
+</pre>
+
+<p>This function retrieves a single record which is identified by its primary key. Note that the web service client uses the <b>get()</b> method for this purpose as it is only expected to provide a single row from the database.</p>
+
+<pre>
+function get_product_data (<span class="default">$product_id</span>=null)
+<span class="comment">// get details for a single product</span>
+{
+    if (empty(<span class="default">$product_id</span>)) return false;
+
+    <span class="default">$where</span> = <span class="string">"product_id='<span class="default">$product_id</span>'"</span>;
+
+    if (defined(<span class="string">'USE_WEB_SERVICES'</span>)) {
+        require_once(<span class="string">'transix_client_api.inc'</span>);
+        <span class="default">$dbobject</span> = get_TRANSIX_client(<span class="string">'Product'</span>);
+        <span class="default">$args</span>[<span class="string">'where'</span>] = <span class="default">$where</span>;
+        <span class="default">$data</span> = <span class="default">$dbobject</span>->get(<span class="default">$args</span>);
+    } else {
+        <span class="default">$dbobject</span> =& RDCsingleton::getInstance(<span class="string">'product'</span>);
+        <span class="default">$data</span> = <span class="default">$dbobject</span>->getData(<span class="default">$where</span>);
+        if (!empty(<span class="default">$data</span>)) {
+            <span class="default">$data</span> = <span class="default">$data</span>[<span class="string">0</span>]; <span class="comment">// return 1st row only</span>
+        } <span class="comment">// if</span>
+    } <span class="comment">// if</span>
+
+    return <span class="default">$data</span>;
+
+} <span class="comment">// get_product_data</span>
+</pre>
+
+<h2><a name="example-business-rules">Example code - business rules in the Business layer</a></h2>
+
+<p>One common question I am asked by novice programmers is "How can you put the code for your business rules in the Business layer component?" A lot depends on how the component is actually built, but the <a href="http://www.radicore.org">RADICORE</a> framework makes this easy by providing components which have empty compartments into which you can insert your code. Each of these compartments will be executed at a predetermined point in the processing sequence, such as pre-insert, post-insert, pre-update, post-update, so when you put code into one of these compartments you know exactly when it will get processed.</p>
+
+<p>For example, suppose there is a business rule which states "when an order's status is changed this must be recorded in the status history table". This can be achieved with the following code in the <a href="functions-and-variables.html#notes._cm_post_updaterecord">_cm_post_updateRecord()</a> method of the ORDER_HEADER class:</p>
+
+<pre>
+function _cm_post_updateRecord (<span class="default">$rowdata</span>, <span class="default">$old_data</span>)
+<span class="comment">// perform custom processing after database record is updated.</span>
+{
+    if (<span class="default">$rowdata</span>[<span class="string">'order_status_type_id'</span>] != <span class="default">$old_data</span>[<span class="string">'order_status_type_id'</span>]) {
+        <span class="default">$dbobject</span> =&amp; RDCsingleton::getInstance(<span class="string">'order_status_hist'</span>);
+        <span class="default">$data</span>[<span class="string">'order_id'</span>]             = <span class="default">$rowdata</span>[<span class="string">'order_id'</span>];
+        <span class="default">$data</span>[<span class="string">'order_status_type_id'</span>] = <span class="default">$rowdata</span>[<span class="string">'order_status_type_id'</span>];
+        <span class="default">$data</span> = <span class="default">$dbobject</span>->insertRecord(<span class="default">$data</span>);
+        if (<span class="default">$dbobject</span>->errors) {
+            <span class="default">$this</span>->errors = array_merge(<span class="default">$this</span>->errors, <span class="default">$dbobject</span>->errors);
+            return <span class="default">$rowdata</span>;
+        } <span class="comment">// if</span>
+    } <span class="comment">// if</span>
+
+    return <span class="default">$rowdata</span>;
+
+} <span class="comment">// _cm_post_updateRecord</span>
+</pre>
+
+<p>Note that the function which calls the <a href="functions-and-variables.html#notes.updaterecord">updateRecord()</a> method on the ORDER_HEADER object is totally oblivious to this business rule, so does not require extra code to carry it out. This mechanism can be extended so that the ORDER_STATUS_HIST component, when inserting a record with a particular status value, can automatically send out an email to the customer regarding that change in status. Again this logic is hidden from the ORDER_HEADER object, or any other object which calls the <a href="functions-and-variables.html#notes.insertrecord">insertRecord()</a> method on the ORDER_STATUS_HIST component.</p>
+
+<p>By putting the code which carries out a business rule into the right place in the right object it is possible to guarantee that the rule will be carried out by all users of that object. By putting the code into the Business layer which is shared by multiple Presentation layers you can guarantee that each of those Presentation layers will share the same business logic without even being aware that any logic exists. So when a Presentation component issues the instruction "update order status" it is unaware that a record is written to the history table or that an email is sent out. In this way each front end Presentation layer can be kept as lean and lightweight as possible as all the heavy lifting is carried out by Business layer components in the back end.</p>
+
+<h2><a name="conclusion">Conclusion</a></h2>
+
+<p>I hope that I have managed to convince you that the 3-Tier Architecture is not just an academic exercise with huge costs and limited benefits. Once you have made the first step then other possibilities come within easy reach:</p>
+
+<ul class="compress">
+<li>It has a much cleaner separation of responsibilities than the Model-View-Controller design pattern in that business logic and data access logic are maintained in totally separate components.</li>
+<li>It gives you the option of using different teams with different skills to develop each of the different layers.</li>
+<li>A single business layer with all that complicated business logic can be used with different data access and presentation layers.</li>
+<li>It provides the ability for multiple data access objects at the same time, not just swappable objects.</li>
+<li>It provides the ability for multiple presentation layers at the same time, not just swappable presentation layers.</li>
+<li>It gives you the option of creating front-end websites which consist of nothing more than an additional presentation layer which hook into the business and data access layers created for the back-end administrative application.</li>
+<li>Each front-end then becomes a simple "thin client" to the back-end "thick server".</li>
+<li>The front-end websites, now being much smaller, can be developed faster and cheaper than before.</li>
+<li>A client-server architecture with direct communication can easily be upgraded to use web services so that the clients can be hosted on different machines and even written in different languages.</li>
+</ul>
+
+<p>When implemented correctly the 3-Tier Architecture can provide a whole series of benefits which would otherwise be very expensive to implement. I would ask you to try it and see, but your current architecture is probably so outdated and badly written that it you can do no more than dream about it. What bad luck!</p>
+
+<h2><a name="references">References</a></h2>
+
+<ul class="compress">
+<li><a href="http://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture">Wikipedia: Three-tier architecture</a></li>
+<li><a href="infrastructure.html#3tier">The 3-Tier Architecture in the Radicore framework</a></li>
+<li><a href="design-patterns.html#3tier">The 3-Tier Architecture (Design Pattern)</a></li>
+<li><a href="model-view-controller.html">The Model-View-Controller (MVC) Design Pattern for PHP</a></li>
+<li><a href="infrastructure-faq.html#faq31">What are the benefits of the 3-tier architecture?</a></li>
+<li><a href="infrastructure-faq.html#faq26">Aren't the MVC and 3-Tier architectures the same thing?</a></li>
+<li><a href="infrastructure-faq.html#faq30">Isn't every web application automatically 3-tier?</a></li>
+<li><a href="infrastructure-faq.html#faq32">Is it really possible to separate business logic from data access logic?</a></li>
+<li><a href="web-site-vs-web-application.html">Web Site vs Web Application</a></li>
+<li><a href="back-to-front.html">Why you should build your web application back-to-front</a></li>
+</ul>
+
+<p>If you want to read some criticisms of my approach then please take a look at the following:</p>
+
+<ul class="compress">
+<li><a href="hero-or-heretic.html#a13">Your system is not 3 Tier</a></li>
+<li><a href="oop-for-heretics.html#dont.understand.3-tier">You don't understand what '3 tier' means</a></li>
+</ul>
+
+<hr>
+<p>&copy; <span class="sig">Tony Marston</span>
+<br>14th October 2012</p>
+
+<p><a href="http://www.tonymarston.net">http://www.tonymarston.net</a>
+<br><a href="http://www.radicore.org">http://www.radicore.org</a></p>
+
+<p><img src="http://www.tonymarston.net/counter.php?noshow&amp;page=/php-mysql/3-tier-architecture.html" alt="counter" border="0"></p>
+
+</body>
+</html>

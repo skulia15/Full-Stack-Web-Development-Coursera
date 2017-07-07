@@ -1,0 +1,126 @@
+In this lesson,
+we are gonna deal with responsive design. I have been using this word quite
+a bit in the previous lesson, but without explaining
+it in a lot of detail. Now, let's consider responsive design in
+detail and understand exactly what we mean by responsive design and how would
+you design a website to be responsive. An immediate question that
+arises in our mind is, why should we consider responsive design? Why should we make our website responsive? When we look at how websites
+are being accessed these days, you'll notice that people access
+websites from a variety of devices. All the way from desktops, laptops,
+tablets, down to mobile phones. So, your website may be viewed by users
+using screens of different sizes. If you design your website with
+a single screen size in mind, then it may render improperly or completely unreadable on
+small screen devices. So if we can't proactively design
+our website to dramatically adapt to the size of the screen
+from which the viewer is visiting your website,
+then that will make it a lot more easy for the visitors to be able to
+see your website clearly. Now, if they can build this
+feature into our website itself so that it will automatically adapt to it's
+layout to the size of the screen from which the user is viewing your website,
+that that will be a great improvement. Responsive design aims to
+achieve this in practice. To do this, we're going to use
+the viewport property of our device, in order to adjust our website
+to the screen of the device. The best way for us to understand responsive design
+is to take a look at an example. Let's have a look at
+the course website itself. So here you see the course website
+opened in a browser window. Now this window is I can
+bring the entire width of my screen which is currently 1280 pixels. Suppose I view the same
+website from a device, which has a much smaller
+screen say about 700 pixels, how would these website be
+rendered in those circumstances? To help us to understand this better, what I'm going to do is to just
+shrink the size of my browser so that my website will automatically adapt
+itself to the size of the browser. So, in some way,
+I am simulating accessing the website from the basis of different screen sizes. So at this moment,
+this would be a 1,200 pixel screen size. Which would be equivalent to
+a typical laptop these days. Now, let's look at what the website
+looks like if you were accessing it from a tablet in the landscape position. So, perhaps, that looks more like
+the size of the screen from a tablet. This is typical tablet landscape sizes are
+around 700 to sometimes even much higher pixel sizes these days, but
+maybe a seven inch older laptop perhaps has a width
+of about 800 pixels. So, this is what your website
+will look like on a tablet. Let's continue shrinking
+the browser window, and see how the website will look
+like at even more smaller sizes. So as you keep shrinking the window size,
+notice how the contents of the website is automatically adapting itself
+to the size of the screen. Now, you notice that when I shrank it
+below a certain point, there was a sudden change in the way the website was being
+shown on the screen in the browser window. So let's see, we have here, and
+then a little step further down you suddenly notice that the website has
+rendered some more differently you see that the navigation bar at
+the top of the window has disappeared, instead to be replaced by
+a button on the left side. Now the navigation bar
+is still accessible. When you click on the button, you now see a sidebar pop up
+with the information that used to be in the sidebar of your website for
+larger screen size. Now this side bar has been
+hidden at this screen size. So, now I can hide this by simply
+clicking at any other location. Also note how the contents
+of the website have adapted themselves to the screen size. So, this would be like a tablet,
+perhaps, in its portrait position. Let's continue to shrink
+the website window down. And use you see how the contents of the
+website are automatically adapting itself. And as we scroll through the website, you see that the contents have
+adapted themselves to the size of the browser window here, or
+equivalently to the size of the screen. How is this possible? This is where responsive
+design comes to our rescue. Another term you will often
+hear people talking about in the context of responsive
+design is Mobile First. What exactly is Mobile First design? Traditionally, when people were
+designing their websites for both larger screen windowed devices like laptops and
+desktops and smaller screens, they would often do the layout for
+the larger screens first, and then try to adapt their content to be appropriately
+displayed on the smaller screen. So in this diagram here that you see the
+traditional approach would have been first to design for a laptop and
+then adapt the content to fit into the smaller window size. Increasingly, people are adopting
+the mobile first approach. What this means is that you first
+design your website with the mobile screen size in mind. First, do all your layout for
+the mobile screen size, and then start adapting your website
+design for larger screen sizes. So as your screen size expands
+the content will automatically flow and then adjust itself to occupy the larger width of the screen that becomes
+available on larger screen devices. In order to achieve mobile first design, there are three things that
+need to come together. First, your front end UI framework should
+be able to support a grid based system. This has been increasingly been opted
+by most front end UI frameworks. So look at anyone of the front end
+frameworks that is in use, and you will see that they will have some
+kind of support for a grid-based system. We'll look at grid-based systems,
+in particular the Bootstrap Grid, in more detail in the next lecture. The second aspect is to have fluid images, or what we call responsive images,
+so you can make your website images automatically
+adapt to the size of the screen. So this again has to be built-in. Bootstrap has good support for
+fluid images or responsive images already available
+within the Bootstrap CSS classes. We'll examine that in more
+detail in the next module. The third kind of support that is
+required is what we call media queries. If you remember, in the previous slide
+I had mentioned about the viewport. Using the viewport,
+you can get a sense of the size of the screen that is being being
+used to view your website. So for mobile devices,
+using the view port properly, you would be able to realize that
+the screen size is fairly small, say around 700 pixels or
+even lesser than that. And for larger screen sizes,
+obviously, you can adapt. Now, this can be used to our advantage
+by putting in media queries and using media queries in
+our CSS class design. How is this achieved in practice? Media queries uses an approach where, within your CSS file, you will define
+slightly different variations for each of the CSS classes depending on
+the size of the window being used. To conduct a media query, you would include a statement
+like this in your CSS file. You would say, @media and screen, and
+you can specify the minimum width. And inside these braces for this media query, you can specify
+the CSS styles that are applicable only if the minimum width of
+the screen is about six, 600 pixels. So like this you can design the CSS
+tiles for different screen sizes. So, for example,
+in Bootstrap as we will see later, you will have media queries which
+will redesign the CSS classes, or rather adapt the CSS classes for
+different screen widths. To help us understand better, I have
+brought up the bootstrap.css file for our project that we had designed
+I opened the bootstrap.css file in brackets, and you can see
+that I have scrolled inside this file to a location where
+a media query is present. So, looking at the code here, you'll see that it says media
+min-width is 1,200 pixels, and if the minimum width of
+the screen is 1,200 pixels, then I am going to define my
+container to be 1,170 pixels. So this is one way you can adapt your CSS classes to the size of the screen. So, a media query like this
+included your CSS file will enable your CSS classes to be redefined for
+different screen sizes. This is one way to implement
+responsive design within your project. Now, you're going to ask yourselves,
+oh that seems so difficult to do. There are so many things to track, and how do I make sure that
+everything works correctly? Don't worry. As a novice you might want
+to start with a pre-designed front end UI framework like Bootstrap. They have already done
+the heavy lifting for you. They have already designed
+the classes to be responsive, so you can start with that and
+once you get more comfortable with these CSS queries and various features,
+then you can go in and tweak the files to suit
+your specific needs.

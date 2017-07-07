@@ -1,0 +1,486 @@
+1
+00:00:02,520 --> 00:00:06,960
+Enquanto você avança no curso, você deve
+estar imaginando como fazer o melhor uso
+
+2
+00:00:06,960 --> 00:00:10,460
+dos recursos de aprendizagem que
+estão disponíveis para você.
+
+3
+00:00:10,460 --> 00:00:13,200
+Permita-me levá-lo em uma rápida jornada
+
+4
+00:00:13,200 --> 00:00:17,440
+através dos recursos de aprendizagem
+que estão disponíveis para você neste curso e
+
+5
+00:00:17,440 --> 00:00:22,910
+como você pode maximizar os benefícios de
+fazer uso desses recursos de aprendizagem.
+
+6
+00:00:25,420 --> 00:00:30,640
+O conteúdo do curso em si é
+organizado em múltiplos módulos.
+
+7
+00:00:30,640 --> 00:00:36,530
+Um módulo possui um tema abrangente
+que guia o conteúdo dentro daquele módulo.
+
+8
+00:00:37,790 --> 00:00:41,260
+Um módulo é organizado em 
+várias lições.
+
+9
+00:00:42,340 --> 00:00:46,740
+Ao final de cada módulo, 
+você terá uma tarefa para entregar.
+
+10
+00:00:46,740 --> 00:00:50,500
+Quando você olha para a organização
+do conteúdo, 
+
+11
+00:00:50,500 --> 00:00:55,300
+cada módulo corresponde 
+a uma semana de trabalho.
+
+12
+00:00:57,040 --> 00:01:00,240
+Quando você olha para uma
+lição típica dentro de um módulo,
+
+13
+00:01:00,240 --> 00:01:04,510
+uma lição estará organizada
+em várias partes.
+
+14
+00:01:04,510 --> 00:01:08,060
+No começo da lição você 
+terá objetivos e
+
+15
+00:01:08,060 --> 00:01:10,730
+resultados que são claramente especificados.
+
+16
+00:01:10,730 --> 00:01:13,680
+Depois disso, haverá uma
+introdução a alguns conceitos e
+
+17
+00:01:13,680 --> 00:01:18,970
+tecnologias que estão relacionadas
+àquela lição em particular.
+
+18
+00:01:18,970 --> 00:01:21,180
+Isso é seguido de um questionário
+de revisão.
+
+19
+00:01:22,630 --> 00:01:26,730
+Após isso, você terá um exercício prático
+onde você irá praticar
+
+20
+00:01:26,730 --> 00:01:27,920
+o que você acabou de aprender.
+
+21
+00:01:28,930 --> 00:01:33,870
+Finalmente, nós forneceremos um
+conjunto de recursos adicionais que você pode
+
+22
+00:01:33,870 --> 00:01:39,600
+seguir para melhorar sua
+compreensão do assunto.
+
+23
+00:01:41,300 --> 00:01:46,490
+Para nos ajudar a entender isto de forma
+mais concreta, vamos fazer uma visita ao site
+
+24
+00:01:46,490 --> 00:01:51,390
+do curso e então observar os
+conteúdos que estão disponíveis.
+
+25
+00:01:52,430 --> 00:01:55,687
+Assim, como você pode ver, no site do curso
+
+26
+00:01:55,687 --> 00:02:00,844
+o conteúdo do curso está organizado
+debaixo desta seção aqui.
+
+27
+00:02:00,844 --> 00:02:05,670
+Você verá que o conteúdo do curso 
+é organizado em semanas.
+
+28
+00:02:05,670 --> 00:02:08,880
+Cada semana corresponde a um módulo de trabalho.
+
+29
+00:02:10,120 --> 00:02:14,290
+Quando você vai para uma semana em particular,
+quando você seleciona uma semana,
+
+30
+00:02:14,290 --> 00:02:18,810
+perceba que a semana em si 
+é organizada em um conjunto de
+
+31
+00:02:18,810 --> 00:02:23,490
+lições em torno de um tema comum.
+
+32
+00:02:23,490 --> 00:02:26,920
+O módulo como um todo possui
+um tema abrangente
+
+33
+00:02:26,920 --> 00:02:30,300
+que orienta o design do módulo.
+
+34
+00:02:30,300 --> 00:02:34,560
+Como exemplo, vamos olhar essa aula
+ sobre design responsivo e
+
+35
+00:02:34,560 --> 00:02:36,310
+o sistema de grade do Bootstrap.
+
+36
+00:02:36,310 --> 00:02:38,000
+Quando você entra na aula,
+
+37
+00:02:38,000 --> 00:02:44,350
+vai começar com os objetivos
+e os resultados dessa aula.
+
+38
+00:02:44,350 --> 00:02:47,840
+Eu sugiro que você leia pelo menos esse documento
+
+39
+00:02:47,840 --> 00:02:52,730
+para entender o que você vai 
+encontrar na aula e
+
+40
+00:02:52,730 --> 00:02:55,470
+quais os resultados no fim da aula.
+
+41
+00:02:55,470 --> 00:03:00,610
+Então, no final do curso, você será capaz de
+
+42
+00:03:00,610 --> 00:03:05,730
+realizar todos esses resultados listados no documento.
+
+43
+00:03:07,620 --> 00:03:12,690
+Após isso, você será um conjunto de 
+aulas disponíveis para você.
+
+44
+00:03:12,690 --> 00:03:20,190
+Você pode assistir todas essas aulas e
+depois disso, você prosseguirá para
+
+45
+00:03:21,300 --> 00:03:26,848
+os exercícios práticos que serão
+entregues a você.
+
+46
+00:03:26,848 --> 00:03:31,690
+Os exercícios práticos são
+ disponibilizados em duas partes.
+
+47
+00:03:31,690 --> 00:03:37,060
+Um, temos um vídeo do
+
+48
+00:03:37,060 --> 00:03:44,370
+exercício sozinho, te guiando por
+cada passo do exercício.
+
+49
+00:03:44,370 --> 00:03:50,280
+Você também tem um documento escrito
+que contém as instruções para
+
+50
+00:03:50,280 --> 00:03:51,370
+o exercício.
+
+51
+00:03:51,370 --> 00:03:54,260
+Então, você deveria assistir o vídeo
+
+52
+00:03:54,260 --> 00:03:57,440
+a fim de entender como o
+ exercício se desenvolve.
+
+53
+00:03:57,440 --> 00:04:00,910
+Vou explicar mais detalhadamente no vídeo.
+
+54
+00:04:00,910 --> 00:04:05,700
+Mas também junto com ele,
+você tem o documento escrito
+
+55
+00:04:05,700 --> 00:04:10,120
+onde eu dou as instruções do
+ exercício passo a passo.
+
+56
+00:04:11,830 --> 00:04:13,410
+Você pode seguí-lo e
+
+57
+00:04:13,410 --> 00:04:18,070
+o mesmo código-fonte que estou usando 
+nos exercícios estão disponíveis para você.
+
+58
+00:04:18,070 --> 00:04:21,410
+Em caso de você decidir copiar
+ e colar o código-fonte,
+
+59
+00:04:21,410 --> 00:04:27,490
+você sempre pode obter o 
+código-fonte desse documento escrito.
+
+60
+00:04:29,520 --> 00:04:34,432
+No fim do exercício prático, você
+terá um teste que ajudará
+
+61
+00:04:34,432 --> 00:04:39,370
+você a revisar os conceitos que
+acabou de ver na aula.
+
+62
+00:04:41,150 --> 00:04:47,650
+Então, ao final de cada aula, teremos
+um conjunto de recursos adicionais.
+
+63
+00:04:47,650 --> 00:04:51,850
+Esses são links para leituras 
+adicionais que você pode seguir
+
+64
+00:04:51,850 --> 00:04:55,510
+a fim de reforçar o que 
+acabou de aprender.
+
+65
+00:04:55,510 --> 00:04:57,060
+É completamente voluntário.
+
+66
+00:04:58,200 --> 00:05:01,990
+Você pode achá-los bem informativos para
+
+67
+00:05:01,990 --> 00:05:04,430
+você ler no seu próprio tempo livre.
+
+68
+00:05:06,890 --> 00:05:11,330
+Para resumir os recursos de aprendizagem,
+que estão disponíveis para você neste
+
+69
+00:05:11,330 --> 00:05:16,520
+curso, incluem aulas em vídeo, 
+temos testes práticos,
+
+70
+00:05:16,520 --> 00:05:23,150
+exercícios práticos, ambos em formato
+de vídeo assim como instruções escritas.
+
+71
+00:05:23,150 --> 00:05:26,790
+E eu de novo lembraria que você
+deveria assistir o vídeo do
+
+72
+00:05:26,790 --> 00:05:31,870
+exercício a fim de entender como
+o exercício se desenvolve passo-a-passo, e
+
+73
+00:05:31,870 --> 00:05:35,000
+links para os recursos adicionais.
+
+74
+00:05:36,790 --> 00:05:41,724
+O motivo dos recursos de aprendizagem 
+estarem organizados do jeito que eles
+
+75
+00:05:41,724 --> 00:05:47,139
+estão é que o melhor modo de aprender
+é não focar somente nos conceitos mas
+
+76
+00:05:47,139 --> 00:05:49,751
+também ter atividades práticas
+
+77
+00:05:49,751 --> 00:05:54,620
+que reforçam o seu entendimento
+dos conceitos.
+
+78
+00:05:54,620 --> 00:05:58,020
+É por isso que temos os exercícios
+práticos após
+
+79
+00:05:58,020 --> 00:06:00,560
+a introdução dos conceitos e tecnologias.
+
+80
+00:06:01,690 --> 00:06:06,820
+Agora isso é onde eu te lembro do 
+tradicional provérbio chinês que
+
+81
+00:06:06,820 --> 00:06:13,360
+diz "Aquilo que escuto eu esqueço, aquilo que 
+vejo eu lembro, aquilo que faço eu aprendo."
+
+82
+00:06:13,360 --> 00:06:20,070
+Deixe-me enfatizar novamente a importância 
+de passar pelos exercícios práticos.
+
+83
+00:06:20,070 --> 00:06:25,510
+É o único modo que você entenderá 
+completamente os conceitos e
+
+84
+00:06:25,510 --> 00:06:28,220
+tecnologias que cobrimos no curso.
+
+85
+00:06:29,920 --> 00:06:35,690
+Outro ponto relacionado que eu quero
+ relembrar é de outro provérbio que diz,
+
+86
+00:06:35,690 --> 00:06:40,550
+Aquele que aprende, mas não pensa, 
+está perdido. Aquele que pensa, mas
+
+87
+00:06:40,550 --> 00:06:43,099
+não aprende, está em grande perigo.
+
+88
+00:06:44,120 --> 00:06:49,090
+Ou melhor, aprender sem pensar
+gera ignorância.
+
+89
+00:06:49,090 --> 00:06:51,850
+Pensar sem aprender é muito perigoso.
+
+90
+00:06:51,850 --> 00:06:58,573
+Agora deixe-me enfatizar que
+ao passar pelos conceitos e
+
+91
+00:06:58,573 --> 00:07:03,670
+tecnologias, e fazer os exercícios práticos,
+
+92
+00:07:03,670 --> 00:07:09,102
+pergunte-se do porquê de estar 
+fazendo esses passos.
+
+93
+00:07:09,102 --> 00:07:13,753
+O que exatamente está planejado para te
+ensinar e qual a razão para
+
+94
+00:07:13,753 --> 00:07:17,770
+fazer os passos do jeito que estão
+sendo feito?
+
+95
+00:07:17,770 --> 00:07:22,630
+É o único modo que você entenderá 
+completamente o que você está fazendo.
+
+96
+00:07:22,630 --> 00:07:25,760
+É muito fácil passar por esse
+tipo de exercícios e
+
+97
+00:07:25,760 --> 00:07:30,360
+conceito sem refletir e no fim você 
+acabará aprendendo nada.
+
+98
+00:07:32,320 --> 00:07:37,030
+Do mesmo modo, se você apenas
+pular a parte do aprendizado e
+
+99
+00:07:37,030 --> 00:07:41,590
+assumir que você aprendeu tudo
+é igualmente perigoso.
+
+100
+00:07:41,590 --> 00:07:47,960
+Por favor, consiga um tempo para
+pensar no que você aprende e entende.
+
+101
+00:07:49,500 --> 00:07:54,480
+Nós sempre temos o fórum de 
+discussão onde qualquer pergunta
+
+102
+00:07:54,480 --> 00:07:59,470
+relacionada aos materiais pode ser
+ esclarecida com mais detalhes.
+
+103
+00:08:00,800 --> 00:08:05,556
+Eu espero que você tenha uma boa experiência
+ de aprendizagem ao passar por esse curso.
