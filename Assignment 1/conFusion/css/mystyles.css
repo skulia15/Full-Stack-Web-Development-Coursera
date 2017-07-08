@@ -61,3 +61,11 @@ body {
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #000000;
 }
+
+.label-white{
+    color: #eeeeee
+}
+
+.unstyledlink{
+    color: inherit
+}
