@@ -1,0 +1,26 @@
+{
+    "name": "confusion",
+    "homepage": "https://github.com/skulia15/Full-Stack-Web-Development-Coursera",
+    "authors": [
+        "Skuli Arnarsson"
+    ],
+    "description": "Coursera project for a full stack development course",
+    "main": "index.html",
+    "keywords": [
+        "conFusion",
+        "Fusion",
+        "restaurant"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "font-awesome": "^4.7.0"
+    }
+}

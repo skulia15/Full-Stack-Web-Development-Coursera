@@ -234,6 +234,15 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-xs" id="carousel-pause">
+                	    <span class="fa fa-pause" aria-hidden="true"></span>
+                    </button>
+                        <button class="btn btn-danger btn-xs" id="carousel-play">
+                	    <span class="fa fa-play" aria-hidden="true"></span>
+                    </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -350,11 +359,17 @@ as	needed	-->
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+            $("#mycarousel").carousel({
+                interval: 2000
+            });
+            $("#carousel-pause").click(function() {
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function() {
+                $("#mycarousel").carousel('cycle');
+            });
         });
     </script>
-
-
 </body>
 
 </html>
