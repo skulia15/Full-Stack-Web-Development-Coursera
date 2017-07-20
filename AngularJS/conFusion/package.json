@@ -2,6 +2,7 @@
     "name": "conFusion",
     "private": true,
     "devDependencies": {
+        "angular-resource": "^1.6.5",
         "angular-route": "^1.6.5",
         "browser-sync": "^2.18.12",
         "del": "^3.0.0",

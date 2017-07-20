@@ -3,7 +3,6 @@
 angular.module('confusionApp')
 
     .controller('MenuController', ['$scope', 'menuFactory', function ($scope, menuFactory) {
-
         $scope.tab = 1;
         $scope.filtText = '';
         $scope.showDetails = false;
@@ -63,7 +62,7 @@ angular.module('confusionApp')
 
             console.log($scope.feedback);
 
-            if ($scope.feedback.agree && ($scope.feedback.mychannel == "")) {
+            if ($scope.feedback.agree && ($scope.feedback.mychannel === "")) {
                 $scope.invalidChannelSelection = true;
                 console.log('incorrect');
             } else {
@@ -114,10 +113,21 @@ angular.module('confusionApp')
                 author: "",
                 date: ""
             };
-        }
+        };
         }])
 
-// implement the IndexController and About Controller here
+    // implement the IndexController and About Controller here
+    .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function ($scope, menuFactory, corporateFactory) {
+        $scope.featuredDish = menuFactory.getDish(0);
+        $scope.featuredPromotion = menuFactory.getPromotion(0);
+        $scope.chef = corporateFactory.getLeader(3);
+
+        }])
+
+    .controller('AboutController', ['$scope', 'corporateFactory', function ($scope, corporateFactory) {
+        $scope.leaders = corporateFactory.getLeaders();
+        }])
+
 
 
 ;
