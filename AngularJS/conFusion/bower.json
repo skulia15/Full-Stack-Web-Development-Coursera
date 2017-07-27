@@ -27,5 +27,9 @@
     "angular": "~1.4.7",
     "angular-route": "~1.4.7",
     "angular-ui-router": "^1.0.5"
+  },
+  "resolutions": {
+    "angular": "1.4.9",
+    "angular-resource": "1.4.9"
   }
 }
