@@ -15,41 +15,40 @@ var gulp = require('gulp'),
     del = require('del'),
     ngannotate = require('gulp-ng-annotate');
 
-gulp.task('jshint', function () {
+gulp.task('jshint', function() {
     return gulp.src('app/scripts/**/*.js')
         .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish', {beep: true}));
+        .pipe(jshint.reporter('jshint-stylish', { beep: true }));
 });
 
 // Clean
-gulp.task('clean', function () {
-    return del(['dist']), del(['../json-server/public'], {force: true});
+gulp.task('clean', function() {
+    return del(['dist']), del(['../json-server/public'], { force: true });
 });
 
 // Default task
-gulp.task('default', ['clean'], function () {
+gulp.task('default', ['clean'], function() {
     gulp.start('usemin', 'imagemin', 'copyfonts');
 });
 
-gulp.task('usemin', ['jshint'], function () {
+gulp.task('usemin', ['jshint'], function() {
     return gulp.src('./app/**/*.html')
         .pipe(usemin({
             css: [minifycss(), rev()],
             js: [ngannotate(), uglify(), rev()]
         }))
-        .pipe(gulp.dest('dist/'))
-        .pipe(gulp.dest('../json-server/public/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 // Images
-gulp.task('imagemin', function () {
+gulp.task('imagemin', function() {
     return del(['dist/images']), gulp.src('app/images/**/*')
-        .pipe(cache(imagemin({optimizationLevel: 3, progressive: true, interlaced: true})))
+        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
         .pipe(gulp.dest('dist/images')).pipe(gulp.dest('../json-server/public/images'))
-        .pipe(notify({message: 'Images task complete'}));
+        .pipe(notify({ message: 'Images task complete' }));
 });
 
-gulp.task('copyfonts', ['clean'], function () {
+gulp.task('copyfonts', ['clean'], function() {
     gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
         .pipe(gulp.dest('./dist/fonts')).pipe(gulp.dest('../json-server/public/fonts'));
     gulp.src('./bower_components/bootstrap/dist/fonts/**/*.{ttf,woff,eof,svg}*')
@@ -57,7 +56,7 @@ gulp.task('copyfonts', ['clean'], function () {
 });
 
 // Watch
-gulp.task('watch', ['browser-sync'], function () {
+gulp.task('watch', ['browser-sync'], function() {
     // Watch .js files
     gulp.watch('{app/scripts/**/*.js,app/styles/**/*.css,app/**/*.html}', ['usemin']);
     // Watch image files
@@ -65,7 +64,7 @@ gulp.task('watch', ['browser-sync'], function () {
 
 });
 
-gulp.task('browser-sync', ['default'], function () {
+gulp.task('browser-sync', ['default'], function() {
     var files = [
         'app/**/*.html',
         'app/styles/**/*.css',
