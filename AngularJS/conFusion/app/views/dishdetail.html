@@ -29,12 +29,12 @@
                     <h4 style="margin-top:0">Customer comments</h4>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <label for="order">Sort by:</label>
-                    <input id="order" type="text" ng-model="ordering">
+                    <label for="orderText">Sort by:</label>
+                    <input id="orderText" type="text" ng-model="orderText">
                 </div>
                 <div class="col-xs-12">
                     <ul>
-                        <li class="list-unstyled" ng-repeat="comment in dish.comments | orderBy : ordering">
+                        <li class="list-unstyled" ng-repeat="comment in dish.comments | orderBy : orderText">
                             <blockquote>
                                 <p>{{comment.rating}} Stars</p>
                                 <p>{{comment.comment}}</p>
