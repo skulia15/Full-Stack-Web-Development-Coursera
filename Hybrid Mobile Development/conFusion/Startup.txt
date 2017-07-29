@@ -1,0 +1,2 @@
+gulp watch // to start up site
+json-server --watch db.json // to start up server
