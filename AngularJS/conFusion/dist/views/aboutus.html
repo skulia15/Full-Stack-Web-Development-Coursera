@@ -15,7 +15,8 @@
     <div class="row row-content">
         <div class="col-xs-12 col-sm-8">
             <h2>Our History</h2>
-            <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+            <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in
+                Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
             <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             <div class="well">
                 <blockquote>
@@ -52,20 +53,20 @@
     <div class="row row-content">
         <div class="col-xs-12 col-sm-9" ng-controller="AboutController">
             <h2>Corporate Leadership</h2>
-
-            <ul class="media-list">
-                <li class="media" ng-repeat="leader in leaders">
-                    <div class="media-left media-middle">
-                        <a>
-                            <img class="media-object img-thumbnail" ng-src="{{leader.image}}" alt="picture of {{leader.name}}">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h2 class="media-heading">{{leader.name}} <small>{{leader.designation}}</small></h2>
-                        <p>{{leader.description}}</p>
-                    </div>
-                </li>
-            </ul>
+            <div ng-if="!showChef">
+                <h3>{{message}}</h3>
+            </div>
+            <div class="media" ng-repeat="leader in leaders" ng-if="showChef">
+                <div class="media-left media-middle">
+                    <a>
+                        <img class="media-object img-thumbnail" ng-src="{{leader.image}}" alt="picture of {{leader.name}}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h2 class="media-heading">{{leader.name}} <small>{{leader.designation}}</small></h2>
+                    <p>{{leader.description}}</p>
+                </div>
+            </div>
 
         </div>
         <div class="col-xs-12 col-sm-3">
