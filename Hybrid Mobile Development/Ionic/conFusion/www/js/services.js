@@ -16,8 +16,6 @@ angular.module('conFusion.services', ['ngResource'])
 
         return $resource(baseURL + "promotions/:id", null, { 'update': { method: 'PUT' } });
     };
-
-
 }])
 
 .factory('corporateFactory', ['$resource', 'baseURL', function($resource, baseURL) {
